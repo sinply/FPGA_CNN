@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="matrix_add.cpp" path="E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\hls\test\matrix_add.cpp"/>
-  </source>
-  <testbench/>
-</autopilotfilemapping:AutoPilotFileMapping>

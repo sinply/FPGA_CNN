@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/sim/verilog
+Econv_ap_fadd_3_full_dsp_32
+Z1 w1597916998
+Z2 DPx21 floating_point_v7_1_6 30 floating_point_v7_1_6_viv_comp 0 22 g]TK?L@0KY2j2LK7olfKG0
+Z3 DEx21 floating_point_v7_1_6 21 floating_point_v7_1_6 0 22 dRi`PYgM:Q45`zAin9L[`0
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z7 8ip/xil_defaultlib/Conv_ap_fadd_3_full_dsp_32.vhd
+Z8 Fip/xil_defaultlib/Conv_ap_fadd_3_full_dsp_32.vhd
+l0
+L59
+V^9fdjcXG>A[4i9R=Zj`O22
+!s100 dke6Fm?mJ24L@?9hSnKOK2
+Z9 OL;C;10.7;67
+32
+Z10 !s110 1597917007
+!i10b 1
+Z11 !s108 1597917007.000000
+Z12 !s90 -work|xil_defaultlib|ip/xil_defaultlib/Conv_ap_fadd_3_full_dsp_32.vhd|
+Z13 !s107 ip/xil_defaultlib/Conv_ap_fadd_3_full_dsp_32.vhd|
+!i113 0
+Z14 o-work xil_defaultlib
+Z15 tExplicit 1 CvgOpt 0
+Aconv_ap_fadd_3_full_dsp_32_arch
+R2
+R4
+R5
+R6
+DEx4 work 26 conv_ap_fadd_3_full_dsp_32 0 22 ^9fdjcXG>A[4i9R=Zj`O22
+l194
+L72
+V7h;AjR]jSE2^X2]BOJ[913
+!s100 4DG]aTRh>7@RHh0d:HEYV2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Econv_ap_fcmp_0_no_dsp_32
+Z16 w1597917000
+R2
+R3
+R4
+R5
+R6
+R0
+Z17 8ip/xil_defaultlib/Conv_ap_fcmp_0_no_dsp_32.vhd
+Z18 Fip/xil_defaultlib/Conv_ap_fcmp_0_no_dsp_32.vhd
+l0
+L59
+VjXTafb2A1mRGS[T[]JR0<3
+!s100 1_SIh[V8FE?Cof_8J^I>L1
+R9
+32
+R10
+!i10b 1
+R11
+Z19 !s90 -work|xil_defaultlib|ip/xil_defaultlib/Conv_ap_fcmp_0_no_dsp_32.vhd|
+Z20 !s107 ip/xil_defaultlib/Conv_ap_fcmp_0_no_dsp_32.vhd|
+!i113 0
+R14
+R15
+Aconv_ap_fcmp_0_no_dsp_32_arch
+R2
+R4
+R5
+R6
+DEx4 work 24 conv_ap_fcmp_0_no_dsp_32 0 22 jXTafb2A1mRGS[T[]JR0<3
+l193
+L72
+VeN0PdVdgF@z?4Kl;K[2=g3
+!s100 P[P@D0V<W31hozgoLfD=^3
+R9
+32
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 0
+R14
+R15
+Econv_ap_fmul_2_max_dsp_32
+Z21 w1597917002
+R2
+R3
+R4
+R5
+R6
+R0
+Z22 8ip/xil_defaultlib/Conv_ap_fmul_2_max_dsp_32.vhd
+Z23 Fip/xil_defaultlib/Conv_ap_fmul_2_max_dsp_32.vhd
+l0
+L59
+Vd^=UR<oPgN?=:`HTiQ06^1
+!s100 cAU@MHNRz<9BUVD4C52:T1
+R9
+32
+R10
+!i10b 1
+R11
+Z24 !s90 -work|xil_defaultlib|ip/xil_defaultlib/Conv_ap_fmul_2_max_dsp_32.vhd|
+!s107 ip/xil_defaultlib/Conv_ap_fmul_2_max_dsp_32.vhd|
+!i113 0
+R14
+R15
+Aconv_ap_fmul_2_max_dsp_32_arch
+R2
+R4
+R5
+R6
+DEx4 work 25 conv_ap_fmul_2_max_dsp_32 0 22 d^=UR<oPgN?=:`HTiQ06^1
+l194
+L72
+VQKiK]D_NgbX8TSLBmL?zL2
+!s100 QK<a;J]_NNeie[]9U;33d3
+R9
+32
+R10
+!i10b 1
+R11
+R24
+Z25 !s107 ip/xil_defaultlib/Conv_ap_fmul_2_max_dsp_32.vhd|
+!i113 0
+R14
+R15

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Aug 20 17:49:49 2020
+# Process ID: 15312
+# Current directory: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/ip_tmp
+# Command line: vivado.exe  -notrace -mode batch -source run_vivado.tcl
+# Log file: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/ip_tmp\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/ip_tmp'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'Conv_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Conv_ap_fadd_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Conv_ap_fadd_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Conv_ap_fcmp_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Conv_ap_fcmp_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Conv_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Conv_ap_fmul_2_max_dsp_32'...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 20 17:50:02 2020...

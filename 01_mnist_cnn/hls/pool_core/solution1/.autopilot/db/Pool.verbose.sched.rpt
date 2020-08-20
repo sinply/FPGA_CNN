@@ -1,0 +1,1087 @@
+
+
+================================================================
+== Vivado HLS Report for 'Pool'
+================================================================
+* Date:           Thu Aug 20 17:53:28 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        pool_core
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|    11.266|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   20|    ?|   20|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+-----+------------------+----------------------+-----------+-----------+-----------+----------+
+        |                         |         Latency        |       Iteration      |  Initiation Interval  |    Trip   |          |
+        |        Loop Name        | min |        max       |        Latency       |  achieved |   target  |   Count   | Pipelined|
+        +-------------------------+-----+------------------+----------------------+-----------+-----------+-----------+----------+
+        |- Loop 1                 |    0|                 ?| 2 ~ 4751012254769447 |          -|          -| 0 ~ 65535 |    no    |
+        | + Loop 1.1              |    0|  4751012254769445|    2 ~ 72495800027   |          -|          -| 0 ~ 65535 |    no    |
+        |  ++ Loop 1.1.1          |    0|       72495800025|     11 ~ 1106215     |          -|          -| 0 ~ 65535 |    no    |
+        |   +++ Loop 1.1.1.1      |    0|           1106190|       3 ~ 4338       |          -|          -|  0 ~ 255  |    no    |
+        |    ++++ Loop 1.1.1.1.1  |    0|              4335|        2 ~ 17        |          -|          -|  0 ~ 255  |    no    |
+        +-------------------------+-----+------------------+----------------------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 76
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / (!exitcond1)
+22 --> 
+	23  / (!exitcond2)
+	21  / (exitcond2)
+23 --> 
+	24  / (!exitcond)
+	22  / (exitcond)
+24 --> 
+	25  / (!exitcond3)
+	54  / (exitcond3 & tmp_6)
+	68  / (exitcond3 & !tmp_6)
+25 --> 
+	26  / true
+26 --> 
+	27  / (!exitcond4 & mode_V_read == 1) | (!exitcond4 & mode_V_read == 2)
+	38  / (!exitcond4 & mode_V_read == 0)
+	53  / (!exitcond4 & mode_V_read == 3)
+	24  / (exitcond4)
+27 --> 
+	28  / (mode_V_read == 1) | (mode_V_read == 2)
+28 --> 
+	29  / (mode_V_read == 1) | (mode_V_read == 2)
+29 --> 
+	30  / (mode_V_read == 1) | (mode_V_read == 2)
+30 --> 
+	31  / (mode_V_read == 1) | (mode_V_read == 2)
+31 --> 
+	32  / (mode_V_read == 1) | (mode_V_read == 2)
+32 --> 
+	33  / (mode_V_read == 1) | (mode_V_read == 2)
+33 --> 
+	34  / (mode_V_read == 1) | (mode_V_read == 2)
+34 --> 
+	35  / (mode_V_read == 1) | (mode_V_read == 2)
+35 --> 
+	36  / (mode_V_read == 1) | (mode_V_read == 2)
+36 --> 
+	37  / (mode_V_read == 1) | (mode_V_read == 2)
+37 --> 
+	53  / (mode_V_read == 1) | (mode_V_read == 2)
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	53  / true
+53 --> 
+	26  / true
+54 --> 
+	55  / true
+55 --> 
+	56  / true
+56 --> 
+	57  / true
+57 --> 
+	58  / true
+58 --> 
+	59  / true
+59 --> 
+	60  / true
+60 --> 
+	61  / true
+61 --> 
+	62  / true
+62 --> 
+	63  / true
+63 --> 
+	64  / true
+64 --> 
+	65  / true
+65 --> 
+	66  / true
+66 --> 
+	67  / true
+67 --> 
+	68  / true
+68 --> 
+	69  / true
+69 --> 
+	70  / true
+70 --> 
+	71  / true
+71 --> 
+	72  / true
+72 --> 
+	73  / true
+73 --> 
+	74  / true
+74 --> 
+	75  / true
+75 --> 
+	76  / true
+76 --> 
+	23  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.64>
+ST_1 : Operation 77 [1/1] (1.00ns)   --->   "%feature_out_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %feature_out)"   --->   Operation 77 'read' 'feature_out_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 78 [1/1] (1.00ns)   --->   "%feature_in_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %feature_in)"   --->   Operation 78 'read' 'feature_in_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 79 [1/1] (1.00ns)   --->   "%mode_V_read = call i2 @_ssdm_op_Read.s_axilite.i2(i2 %mode_V)"   --->   Operation 79 'read' 'mode_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 80 [1/1] (1.00ns)   --->   "%Ky_V_read = call i8 @_ssdm_op_Read.s_axilite.i8(i8 %Ky_V)"   --->   Operation 80 'read' 'Ky_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 81 [1/1] (1.00ns)   --->   "%Kx_V_read = call i8 @_ssdm_op_Read.s_axilite.i8(i8 %Kx_V)"   --->   Operation 81 'read' 'Kx_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 82 [1/1] (1.00ns)   --->   "%Win_V_read = call i16 @_ssdm_op_Read.s_axilite.i16(i16 %Win_V)"   --->   Operation 82 'read' 'Win_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 83 [1/1] (1.00ns)   --->   "%Hin_V_read = call i16 @_ssdm_op_Read.s_axilite.i16(i16 %Hin_V)"   --->   Operation 83 'read' 'Hin_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 84 [1/1] (1.00ns)   --->   "%CHin_V_read = call i16 @_ssdm_op_Read.s_axilite.i16(i16 %CHin_V)"   --->   Operation 84 'read' 'CHin_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_3 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %feature_out_read, i32 2, i32 31)"   --->   Operation 85 'partselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%tmp_5 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %feature_in_read, i32 2, i32 31)"   --->   Operation 86 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%lhs_V = zext i8 %Kx_V_read to i16" [pool_core/pool_core.cpp:21]   --->   Operation 87 'zext' 'lhs_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [20/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 88 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%rhs_V = zext i8 %Ky_V_read to i16"   --->   Operation 89 'zext' 'rhs_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [20/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 90 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 3.64>
+ST_2 : Operation 91 [19/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 91 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 92 [19/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 92 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 3.64>
+ST_3 : Operation 93 [18/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 93 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 94 [18/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 94 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 3.64>
+ST_4 : Operation 95 [17/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 95 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 96 [17/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 96 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 3.64>
+ST_5 : Operation 97 [16/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 97 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 98 [16/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 98 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 3.64>
+ST_6 : Operation 99 [15/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 99 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 100 [15/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 100 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 3.64>
+ST_7 : Operation 101 [14/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 101 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 102 [14/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 102 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 3.64>
+ST_8 : Operation 103 [13/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 103 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 104 [13/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 104 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 3.64>
+ST_9 : Operation 105 [12/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 105 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 106 [12/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 106 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 3.64>
+ST_10 : Operation 107 [11/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 107 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 108 [11/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 108 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 3.64>
+ST_11 : Operation 109 [10/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 109 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 110 [10/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 110 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 3.64>
+ST_12 : Operation 111 [9/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 111 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 112 [9/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 112 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 3.64>
+ST_13 : Operation 113 [8/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 113 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 114 [8/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 114 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 4.17>
+ST_14 : Operation 115 [7/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 115 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 116 [7/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 116 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 117 [1/1] (4.17ns)   --->   "%r_V_16 = mul i16 %rhs_V, %lhs_V" [pool_core/pool_core.cpp:50]   --->   Operation 117 'mul' 'r_V_16' <Predicate = true> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.41>
+ST_15 : Operation 118 [6/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 118 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 119 [6/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 119 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_s = zext i16 %r_V_16 to i32" [pool_core/pool_core.cpp:50]   --->   Operation 120 'zext' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 121 [6/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %tmp_s to float" [pool_core/pool_core.cpp:50]   --->   Operation 121 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 6.41>
+ST_16 : Operation 122 [5/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 122 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 123 [5/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 123 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 124 [5/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %tmp_s to float" [pool_core/pool_core.cpp:50]   --->   Operation 124 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 6.41>
+ST_17 : Operation 125 [4/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 125 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 126 [4/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 126 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 127 [4/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %tmp_s to float" [pool_core/pool_core.cpp:50]   --->   Operation 127 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 6.41>
+ST_18 : Operation 128 [3/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 128 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 129 [3/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 129 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 130 [3/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %tmp_s to float" [pool_core/pool_core.cpp:50]   --->   Operation 130 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 6.41>
+ST_19 : Operation 131 [2/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 131 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 132 [2/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 132 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 133 [2/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %tmp_s to float" [pool_core/pool_core.cpp:50]   --->   Operation 133 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 6.41>
+ST_20 : Operation 134 [1/1] (0.00ns)   --->   "%tmp_31_cast = zext i30 %tmp_3 to i49"   --->   Operation 134 'zext' 'tmp_31_cast' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 135 [1/1] (0.00ns)   --->   "%tmp_32_cast = zext i30 %tmp_5 to i48"   --->   Operation 135 'zext' 'tmp_32_cast' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 136 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %gmem), !map !95"   --->   Operation 136 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16 %CHin_V), !map !100"   --->   Operation 137 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 138 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16 %Hin_V), !map !106"   --->   Operation 138 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 139 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16 %Win_V), !map !110"   --->   Operation 139 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 140 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %Kx_V), !map !114"   --->   Operation 140 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 141 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %Ky_V), !map !118"   --->   Operation 141 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2 %mode_V), !map !122"   --->   Operation 142 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 143 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([5 x i8]* @Pool_str) nounwind"   --->   Operation 143 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %feature_out, [10 x i8]* @mode1, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i64 4294967295, [1 x i8]* @bundle2, [6 x i8]* @p_str3, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:11]   --->   Operation 144 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %gmem, [6 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i64 4294967295, [5 x i8]* @p_str2, [6 x i8]* @p_str3, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:12]   --->   Operation 145 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 146 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %feature_in, [10 x i8]* @mode, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i64 4294967295, [1 x i8]* @bundle, [6 x i8]* @p_str3, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:12]   --->   Operation 146 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 147 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16 %Win_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:13]   --->   Operation 147 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 148 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %Kx_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:14]   --->   Operation 148 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 149 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16 %Hin_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:15]   --->   Operation 149 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 150 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i2 %mode_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:16]   --->   Operation 150 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 151 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %Ky_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:17]   --->   Operation 151 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 152 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16 %CHin_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:18]   --->   Operation 152 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 153 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [pool_core/pool_core.cpp:19]   --->   Operation 153 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 154 [1/20] (3.64ns)   --->   "%r_V_15 = udiv i16 %Win_V_read, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 154 'udiv' 'r_V_15' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 155 [1/20] (3.64ns)   --->   "%tmp_4 = udiv i16 %Hin_V_read, %rhs_V" [pool_core/pool_core.cpp:24]   --->   Operation 155 'udiv' 'tmp_4' <Predicate = true> <Delay = 3.64> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 19> <II = 16> <Delay = 3.64> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 156 [1/1] (0.95ns)   --->   "%tmp_6 = icmp eq i2 %mode_V_read, 0" [pool_core/pool_core.cpp:29]   --->   Operation 156 'icmp' 'tmp_6' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 157 [1/1] (0.95ns)   --->   "%tmp_7 = icmp eq i2 %mode_V_read, 1" [pool_core/pool_core.cpp:32]   --->   Operation 157 'icmp' 'tmp_7' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 158 [1/1] (0.00ns)   --->   "%rhs_V_1 = zext i16 %CHin_V_read to i32" [pool_core/pool_core.cpp:43]   --->   Operation 158 'zext' 'rhs_V_1' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 159 [1/1] (0.00ns)   --->   "%rhs_V_2 = zext i16 %Win_V_read to i48" [pool_core/pool_core.cpp:43]   --->   Operation 159 'zext' 'rhs_V_2' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 160 [1/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %tmp_s to float" [pool_core/pool_core.cpp:50]   --->   Operation 160 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 106 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_20 : Operation 161 [1/1] (0.00ns)   --->   "%rhs_V_1_cast = zext i16 %r_V_15 to i32" [pool_core/pool_core.cpp:51]   --->   Operation 161 'zext' 'rhs_V_1_cast' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 162 [1/1] (0.00ns)   --->   "%rhs_V_2_cast = zext i16 %CHin_V_read to i48" [pool_core/pool_core.cpp:51]   --->   Operation 162 'zext' 'rhs_V_2_cast' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 163 [1/1] (0.00ns) (grouped into LUT with out node p_sum)   --->   "%sum = select i1 %tmp_6, float 0.000000e+00, float 0x4376345780000000" [pool_core/pool_core.cpp:29]   --->   Operation 163 'select' 'sum' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_20 : Operation 164 [1/1] (0.00ns) (grouped into LUT with out node p_sum)   --->   "%tmp_2 = or i1 %tmp_6, %tmp_7" [pool_core/pool_core.cpp:29]   --->   Operation 164 'or' 'tmp_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 165 [1/1] (0.97ns) (out node of the LUT)   --->   "%p_sum = select i1 %tmp_2, float %sum, float 0xC376345780000000" [pool_core/pool_core.cpp:29]   --->   Operation 165 'select' 'p_sum' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_20 : Operation 166 [1/1] (1.76ns)   --->   "br label %.loopexit" [pool_core/pool_core.cpp:24]   --->   Operation 166 'br' <Predicate = true> <Delay = 1.76>
+
+State 21 <SV = 20> <Delay = 2.42>
+ST_21 : Operation 167 [1/1] (0.00ns)   --->   "%op_assign_8 = phi i16 [ 0, %0 ], [ %c, %.loopexit.loopexit ]"   --->   Operation 167 'phi' 'op_assign_8' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 168 [1/1] (0.00ns)   --->   "%i_op_assign_17_cast6 = zext i16 %op_assign_8 to i32" [pool_core/pool_core.cpp:24]   --->   Operation 168 'zext' 'i_op_assign_17_cast6' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 169 [1/1] (2.42ns)   --->   "%exitcond1 = icmp eq i16 %op_assign_8, %CHin_V_read" [pool_core/pool_core.cpp:24]   --->   Operation 169 'icmp' 'exitcond1' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 170 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 65535, i64 0)"   --->   Operation 170 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 171 [1/1] (2.07ns)   --->   "%c = add i16 %op_assign_8, 1" [pool_core/pool_core.cpp:24]   --->   Operation 171 'add' 'c' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 172 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %7, label %.preheader1011.preheader" [pool_core/pool_core.cpp:24]   --->   Operation 172 'br' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 173 [1/1] (0.00ns)   --->   "%rhs_V_7_cast = zext i16 %op_assign_8 to i48" [pool_core/pool_core.cpp:51]   --->   Operation 173 'zext' 'rhs_V_7_cast' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_21 : Operation 174 [1/1] (1.76ns)   --->   "br label %.preheader1011" [pool_core/pool_core.cpp:25]   --->   Operation 174 'br' <Predicate = (!exitcond1)> <Delay = 1.76>
+ST_21 : Operation 175 [1/1] (0.00ns)   --->   "ret void" [pool_core/pool_core.cpp:53]   --->   Operation 175 'ret' <Predicate = (exitcond1)> <Delay = 0.00>
+
+State 22 <SV = 21> <Delay = 8.51>
+ST_22 : Operation 176 [1/1] (0.00ns)   --->   "%i_op_assign_s = phi i16 [ 0, %.preheader1011.preheader ], [ %i, %.preheader1011.loopexit ]"   --->   Operation 176 'phi' 'i_op_assign_s' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 177 [1/1] (0.00ns)   --->   "%phi_mul1 = phi i16 [ 0, %.preheader1011.preheader ], [ %next_mul2, %.preheader1011.loopexit ]"   --->   Operation 177 'phi' 'phi_mul1' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 178 [1/1] (0.00ns)   --->   "%r_V_4 = phi i32 [ 0, %.preheader1011.preheader ], [ %next_mul1, %.preheader1011.loopexit ]" [pool_core/pool_core.cpp:51]   --->   Operation 178 'phi' 'r_V_4' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 179 [1/1] (2.55ns)   --->   "%next_mul1 = add i32 %r_V_4, %rhs_V_1_cast" [pool_core/pool_core.cpp:51]   --->   Operation 179 'add' 'next_mul1' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 180 [1/1] (2.07ns)   --->   "%next_mul2 = add i16 %phi_mul1, %rhs_V"   --->   Operation 180 'add' 'next_mul2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 181 [1/1] (2.42ns)   --->   "%exitcond2 = icmp eq i16 %i_op_assign_s, %tmp_4" [pool_core/pool_core.cpp:25]   --->   Operation 181 'icmp' 'exitcond2' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 182 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 65535, i64 0)"   --->   Operation 182 'speclooptripcount' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 183 [1/1] (2.07ns)   --->   "%i = add i16 %i_op_assign_s, 1" [pool_core/pool_core.cpp:25]   --->   Operation 183 'add' 'i' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 184 [1/1] (0.00ns)   --->   "br i1 %exitcond2, label %.loopexit.loopexit, label %.preheader1010.preheader" [pool_core/pool_core.cpp:25]   --->   Operation 184 'br' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 185 [1/1] (0.00ns)   --->   "%r_V_cast = zext i32 %r_V_4 to i48" [pool_core/pool_core.cpp:51]   --->   Operation 185 'zext' 'r_V_cast' <Predicate = (!exitcond2)> <Delay = 0.00>
+ST_22 : Operation 186 [1/1] (8.51ns)   --->   "%r_V_1 = mul i48 %r_V_cast, %rhs_V_2_cast" [pool_core/pool_core.cpp:51]   --->   Operation 186 'mul' 'r_V_1' <Predicate = (!exitcond2)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 187 [1/1] (1.76ns)   --->   "br label %.preheader1010" [pool_core/pool_core.cpp:26]   --->   Operation 187 'br' <Predicate = (!exitcond2)> <Delay = 1.76>
+ST_22 : Operation 188 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 188 'br' <Predicate = (exitcond2)> <Delay = 0.00>
+
+State 23 <SV = 22> <Delay = 2.55>
+ST_23 : Operation 189 [1/1] (0.00ns)   --->   "%i_op_assign_1 = phi i16 [ %j, %._crit_edge1017 ], [ 0, %.preheader1010.preheader ]"   --->   Operation 189 'phi' 'i_op_assign_1' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 190 [1/1] (0.00ns)   --->   "%r_V_10 = phi i32 [ %next_mul, %._crit_edge1017 ], [ 0, %.preheader1010.preheader ]" [pool_core/pool_core.cpp:43]   --->   Operation 190 'phi' 'r_V_10' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 191 [1/1] (0.00ns)   --->   "%phi_mul8 = phi i16 [ %next_mul9, %._crit_edge1017 ], [ 0, %.preheader1010.preheader ]" [pool_core/pool_core.cpp:21]   --->   Operation 191 'phi' 'phi_mul8' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 192 [1/1] (2.07ns)   --->   "%next_mul9 = add i16 %phi_mul8, %lhs_V" [pool_core/pool_core.cpp:21]   --->   Operation 192 'add' 'next_mul9' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 193 [1/1] (2.55ns)   --->   "%next_mul = add i32 %r_V_10, %rhs_V_1" [pool_core/pool_core.cpp:43]   --->   Operation 193 'add' 'next_mul' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 194 [1/1] (2.42ns)   --->   "%exitcond = icmp eq i16 %i_op_assign_1, %r_V_15" [pool_core/pool_core.cpp:26]   --->   Operation 194 'icmp' 'exitcond' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 195 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 65535, i64 0)"   --->   Operation 195 'speclooptripcount' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 196 [1/1] (2.07ns)   --->   "%j = add i16 %i_op_assign_1, 1" [pool_core/pool_core.cpp:26]   --->   Operation 196 'add' 'j' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 197 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.preheader1011.loopexit, label %.preheader1009.preheader" [pool_core/pool_core.cpp:26]   --->   Operation 197 'br' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 198 [1/1] (1.76ns)   --->   "br label %.preheader1009" [pool_core/pool_core.cpp:36]   --->   Operation 198 'br' <Predicate = (!exitcond)> <Delay = 1.76>
+ST_23 : Operation 199 [1/1] (0.00ns)   --->   "br label %.preheader1011"   --->   Operation 199 'br' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 24 <SV = 23> <Delay = 8.45>
+ST_24 : Operation 200 [1/1] (0.00ns)   --->   "%i_op_assign = phi float [ %sum_3, %.preheader1009.loopexit ], [ %p_sum, %.preheader1009.preheader ]" [pool_core/pool_core.cpp:43]   --->   Operation 200 'phi' 'i_op_assign' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 201 [1/1] (0.00ns)   --->   "%i_op_assign_2 = phi i8 [ %ii, %.preheader1009.loopexit ], [ 0, %.preheader1009.preheader ]"   --->   Operation 201 'phi' 'i_op_assign_2' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 202 [1/1] (1.55ns)   --->   "%exitcond3 = icmp eq i8 %i_op_assign_2, %Ky_V_read" [pool_core/pool_core.cpp:36]   --->   Operation 202 'icmp' 'exitcond3' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 203 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 255, i64 0)"   --->   Operation 203 'speclooptripcount' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 204 [1/1] (1.91ns)   --->   "%ii = add i8 %i_op_assign_2, 1" [pool_core/pool_core.cpp:36]   --->   Operation 204 'add' 'ii' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 205 [1/1] (0.00ns)   --->   "br i1 %exitcond3, label %5, label %.preheader.preheader" [pool_core/pool_core.cpp:36]   --->   Operation 205 'br' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 206 [1/1] (0.00ns)   --->   "%tmp_8 = zext i8 %i_op_assign_2 to i16" [pool_core/pool_core.cpp:39]   --->   Operation 206 'zext' 'tmp_8' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_24 : Operation 207 [1/1] (2.07ns)   --->   "%h_V = add i16 %tmp_8, %phi_mul1" [pool_core/pool_core.cpp:39]   --->   Operation 207 'add' 'h_V' <Predicate = (!exitcond3)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 208 [1/1] (0.00ns)   --->   "%lhs_V_1 = sext i16 %h_V to i32" [pool_core/pool_core.cpp:43]   --->   Operation 208 'sext' 'lhs_V_1' <Predicate = (!exitcond3)> <Delay = 0.00>
+ST_24 : Operation 209 [1/1] (6.38ns)   --->   "%r_V = mul nsw i32 %lhs_V_1, %rhs_V_1" [pool_core/pool_core.cpp:43]   --->   Operation 209 'mul' 'r_V' <Predicate = (!exitcond3)> <Delay = 6.38> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_24 : Operation 210 [1/1] (1.76ns)   --->   "br i1 %tmp_6, label %6, label %._crit_edge1017" [pool_core/pool_core.cpp:49]   --->   Operation 210 'br' <Predicate = (exitcond3)> <Delay = 1.76>
+ST_24 : Operation 211 [16/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 211 'fdiv' 'sum_1' <Predicate = (exitcond3 & tmp_6)> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 8.51>
+ST_25 : Operation 212 [1/1] (0.00ns)   --->   "%lhs_V_2 = sext i32 %r_V to i48" [pool_core/pool_core.cpp:43]   --->   Operation 212 'sext' 'lhs_V_2' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 213 [1/1] (8.51ns)   --->   "%r_V_2 = mul nsw i48 %lhs_V_2, %rhs_V_2" [pool_core/pool_core.cpp:43]   --->   Operation 213 'mul' 'r_V_2' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 214 [1/1] (1.76ns)   --->   "br label %.preheader" [pool_core/pool_core.cpp:37]   --->   Operation 214 'br' <Predicate = true> <Delay = 1.76>
+
+State 26 <SV = 25> <Delay = 2.07>
+ST_26 : Operation 215 [1/1] (0.00ns)   --->   "%sum_3 = phi float [ %i_op_assign, %.preheader.preheader ], [ %sum_3_be, %.preheader.backedge ]" [pool_core/pool_core.cpp:29]   --->   Operation 215 'phi' 'sum_3' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 216 [1/1] (0.00ns)   --->   "%i_op_assign_3 = phi i8 [ 0, %.preheader.preheader ], [ %jj, %.preheader.backedge ]"   --->   Operation 216 'phi' 'i_op_assign_3' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 217 [1/1] (1.55ns)   --->   "%exitcond4 = icmp eq i8 %i_op_assign_3, %Kx_V_read" [pool_core/pool_core.cpp:37]   --->   Operation 217 'icmp' 'exitcond4' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 218 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 255, i64 0)"   --->   Operation 218 'speclooptripcount' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 219 [1/1] (1.91ns)   --->   "%jj = add i8 %i_op_assign_3, 1" [pool_core/pool_core.cpp:37]   --->   Operation 219 'add' 'jj' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 220 [1/1] (0.00ns)   --->   "br i1 %exitcond4, label %.preheader1009.loopexit, label %1" [pool_core/pool_core.cpp:37]   --->   Operation 220 'br' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 221 [1/1] (0.00ns)   --->   "%tmp_10 = zext i8 %i_op_assign_3 to i16" [pool_core/pool_core.cpp:40]   --->   Operation 221 'zext' 'tmp_10' <Predicate = (!exitcond4)> <Delay = 0.00>
+ST_26 : Operation 222 [1/1] (2.07ns)   --->   "%w_V = add i16 %phi_mul8, %tmp_10" [pool_core/pool_core.cpp:40]   --->   Operation 222 'add' 'w_V' <Predicate = (!exitcond4)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 223 [1/1] (1.86ns)   --->   "switch i2 %mode_V_read, label %.preheader.backedge [
+    i2 0, label %2
+    i2 1, label %3
+    i2 -2, label %4
+  ]" [pool_core/pool_core.cpp:41]   --->   Operation 223 'switch' <Predicate = (!exitcond4)> <Delay = 1.86>
+ST_26 : Operation 224 [1/1] (0.00ns)   --->   "br label %.preheader1009"   --->   Operation 224 'br' <Predicate = (exitcond4)> <Delay = 0.00>
+
+State 27 <SV = 26> <Delay = 11.2>
+ST_27 : Operation 225 [1/1] (0.00ns)   --->   "%lhs_V_5 = sext i16 %w_V to i32" [pool_core/pool_core.cpp:45]   --->   Operation 225 'sext' 'lhs_V_5' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_27 : Operation 226 [1/1] (3.36ns)   --->   "%r_V_12 = mul nsw i32 %rhs_V_1, %lhs_V_5" [pool_core/pool_core.cpp:45]   --->   Operation 226 'mul' 'r_V_12' <Predicate = (mode_V_read == 2)> <Delay = 3.36> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 227 [1/1] (0.00ns)   --->   "%rhs_V_9_cast = sext i32 %r_V_12 to i48" [pool_core/pool_core.cpp:45]   --->   Operation 227 'sext' 'rhs_V_9_cast' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_27 : Operation 228 [1/1] (3.02ns)   --->   "%r_V_13 = add i48 %rhs_V_9_cast, %r_V_2" [pool_core/pool_core.cpp:45]   --->   Operation 228 'add' 'r_V_13' <Predicate = (mode_V_read == 2)> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 229 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%r_V_14 = add i48 %rhs_V_7_cast, %r_V_13" [pool_core/pool_core.cpp:45]   --->   Operation 229 'add' 'r_V_14' <Predicate = (mode_V_read == 2)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 230 [1/1] (4.88ns) (root node of TernaryAdder)   --->   "%feature_in2_sum = add i48 %tmp_32_cast, %r_V_14" [pool_core/pool_core.cpp:45]   --->   Operation 230 'add' 'feature_in2_sum' <Predicate = (mode_V_read == 2)> <Delay = 4.88> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 231 [1/1] (0.00ns)   --->   "%feature_in2_sum_cast = sext i48 %feature_in2_sum to i64" [pool_core/pool_core.cpp:45]   --->   Operation 231 'sext' 'feature_in2_sum_cast' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_27 : Operation 232 [1/1] (0.00ns)   --->   "%gmem_addr_3 = getelementptr inbounds float* %gmem, i64 %feature_in2_sum_cast" [pool_core/pool_core.cpp:45]   --->   Operation 232 'getelementptr' 'gmem_addr_3' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_27 : Operation 233 [1/1] (0.00ns)   --->   "%lhs_V_4 = sext i16 %w_V to i32" [pool_core/pool_core.cpp:44]   --->   Operation 233 'sext' 'lhs_V_4' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_27 : Operation 234 [1/1] (3.36ns)   --->   "%r_V_8 = mul nsw i32 %rhs_V_1, %lhs_V_4" [pool_core/pool_core.cpp:44]   --->   Operation 234 'mul' 'r_V_8' <Predicate = (mode_V_read == 1)> <Delay = 3.36> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 235 [1/1] (0.00ns)   --->   "%rhs_V_8_cast = sext i32 %r_V_8 to i48" [pool_core/pool_core.cpp:44]   --->   Operation 235 'sext' 'rhs_V_8_cast' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_27 : Operation 236 [1/1] (3.02ns)   --->   "%r_V_9 = add i48 %rhs_V_8_cast, %r_V_2" [pool_core/pool_core.cpp:44]   --->   Operation 236 'add' 'r_V_9' <Predicate = (mode_V_read == 1)> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 237 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%r_V_11 = add i48 %rhs_V_7_cast, %r_V_9" [pool_core/pool_core.cpp:44]   --->   Operation 237 'add' 'r_V_11' <Predicate = (mode_V_read == 1)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 238 [1/1] (4.88ns) (root node of TernaryAdder)   --->   "%feature_in2_sum5 = add i48 %tmp_32_cast, %r_V_11" [pool_core/pool_core.cpp:44]   --->   Operation 238 'add' 'feature_in2_sum5' <Predicate = (mode_V_read == 1)> <Delay = 4.88> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 239 [1/1] (0.00ns)   --->   "%feature_in2_sum5_cas = sext i48 %feature_in2_sum5 to i64" [pool_core/pool_core.cpp:44]   --->   Operation 239 'sext' 'feature_in2_sum5_cas' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_27 : Operation 240 [1/1] (0.00ns)   --->   "%gmem_addr_2 = getelementptr inbounds float* %gmem, i64 %feature_in2_sum5_cas" [pool_core/pool_core.cpp:44]   --->   Operation 240 'getelementptr' 'gmem_addr_2' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+
+State 28 <SV = 27> <Delay = 8.75>
+ST_28 : Operation 241 [7/7] (8.75ns)   --->   "%gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)" [pool_core/pool_core.cpp:45]   --->   Operation 241 'readreq' 'gmem_load_2_req' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_28 : Operation 242 [7/7] (8.75ns)   --->   "%gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)" [pool_core/pool_core.cpp:44]   --->   Operation 242 'readreq' 'gmem_load_1_req' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 29 <SV = 28> <Delay = 8.75>
+ST_29 : Operation 243 [6/7] (8.75ns)   --->   "%gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)" [pool_core/pool_core.cpp:45]   --->   Operation 243 'readreq' 'gmem_load_2_req' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_29 : Operation 244 [6/7] (8.75ns)   --->   "%gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)" [pool_core/pool_core.cpp:44]   --->   Operation 244 'readreq' 'gmem_load_1_req' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 30 <SV = 29> <Delay = 8.75>
+ST_30 : Operation 245 [5/7] (8.75ns)   --->   "%gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)" [pool_core/pool_core.cpp:45]   --->   Operation 245 'readreq' 'gmem_load_2_req' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_30 : Operation 246 [5/7] (8.75ns)   --->   "%gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)" [pool_core/pool_core.cpp:44]   --->   Operation 246 'readreq' 'gmem_load_1_req' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 31 <SV = 30> <Delay = 8.75>
+ST_31 : Operation 247 [4/7] (8.75ns)   --->   "%gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)" [pool_core/pool_core.cpp:45]   --->   Operation 247 'readreq' 'gmem_load_2_req' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_31 : Operation 248 [4/7] (8.75ns)   --->   "%gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)" [pool_core/pool_core.cpp:44]   --->   Operation 248 'readreq' 'gmem_load_1_req' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 32 <SV = 31> <Delay = 8.75>
+ST_32 : Operation 249 [3/7] (8.75ns)   --->   "%gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)" [pool_core/pool_core.cpp:45]   --->   Operation 249 'readreq' 'gmem_load_2_req' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_32 : Operation 250 [3/7] (8.75ns)   --->   "%gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)" [pool_core/pool_core.cpp:44]   --->   Operation 250 'readreq' 'gmem_load_1_req' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 33 <SV = 32> <Delay = 8.75>
+ST_33 : Operation 251 [2/7] (8.75ns)   --->   "%gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)" [pool_core/pool_core.cpp:45]   --->   Operation 251 'readreq' 'gmem_load_2_req' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_33 : Operation 252 [2/7] (8.75ns)   --->   "%gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)" [pool_core/pool_core.cpp:44]   --->   Operation 252 'readreq' 'gmem_load_1_req' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 34 <SV = 33> <Delay = 8.75>
+ST_34 : Operation 253 [1/7] (8.75ns)   --->   "%gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)" [pool_core/pool_core.cpp:45]   --->   Operation 253 'readreq' 'gmem_load_2_req' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_34 : Operation 254 [1/7] (8.75ns)   --->   "%gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)" [pool_core/pool_core.cpp:44]   --->   Operation 254 'readreq' 'gmem_load_1_req' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 35 <SV = 34> <Delay = 8.75>
+ST_35 : Operation 255 [1/1] (8.75ns)   --->   "%gmem_addr_3_read = call float @_ssdm_op_Read.m_axi.floatP(float* %gmem_addr_3)" [pool_core/pool_core.cpp:45]   --->   Operation 255 'read' 'gmem_addr_3_read' <Predicate = (mode_V_read == 2)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_35 : Operation 256 [1/1] (8.75ns)   --->   "%gmem_addr_2_read = call float @_ssdm_op_Read.m_axi.floatP(float* %gmem_addr_2)" [pool_core/pool_core.cpp:44]   --->   Operation 256 'read' 'gmem_addr_2_read' <Predicate = (mode_V_read == 1)> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 36 <SV = 35> <Delay = 6.78>
+ST_36 : Operation 257 [1/1] (6.78ns)   --->   "%tmp_26 = fcmp ogt float %sum_3, %gmem_addr_3_read" [pool_core/pool_core.cpp:45]   --->   Operation 257 'fcmp' 'tmp_26' <Predicate = (mode_V_read == 2)> <Delay = 6.78> <Core = "FCmp">   --->   Core 105 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 258 [1/1] (6.78ns)   --->   "%tmp_17 = fcmp ogt float %sum_3, %gmem_addr_2_read" [pool_core/pool_core.cpp:44]   --->   Operation 258 'fcmp' 'tmp_17' <Predicate = (mode_V_read == 1)> <Delay = 6.78> <Core = "FCmp">   --->   Core 105 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 4.12>
+ST_37 : Operation 259 [1/1] (0.00ns)   --->   "%sum_3_to_int7 = bitcast float %sum_3 to i32" [pool_core/pool_core.cpp:29]   --->   Operation 259 'bitcast' 'sum_3_to_int7' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_37 : Operation 260 [1/1] (0.00ns)   --->   "%tmp_19 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %sum_3_to_int7, i32 23, i32 30)" [pool_core/pool_core.cpp:29]   --->   Operation 260 'partselect' 'tmp_19' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_37 : Operation 261 [1/1] (0.00ns)   --->   "%tmp_20 = trunc i32 %sum_3_to_int7 to i23" [pool_core/pool_core.cpp:29]   --->   Operation 261 'trunc' 'tmp_20' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_37 : Operation 262 [1/1] (0.00ns)   --->   "%feature_in_load_2_to = bitcast float %gmem_addr_3_read to i32" [pool_core/pool_core.cpp:45]   --->   Operation 262 'bitcast' 'feature_in_load_2_to' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_37 : Operation 263 [1/1] (0.00ns)   --->   "%tmp_21 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %feature_in_load_2_to, i32 23, i32 30)" [pool_core/pool_core.cpp:45]   --->   Operation 263 'partselect' 'tmp_21' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_37 : Operation 264 [1/1] (0.00ns)   --->   "%tmp_22 = trunc i32 %feature_in_load_2_to to i23" [pool_core/pool_core.cpp:45]   --->   Operation 264 'trunc' 'tmp_22' <Predicate = (mode_V_read == 2)> <Delay = 0.00>
+ST_37 : Operation 265 [1/1] (1.55ns)   --->   "%notlhs = icmp ne i8 %tmp_19, -1" [pool_core/pool_core.cpp:29]   --->   Operation 265 'icmp' 'notlhs' <Predicate = (mode_V_read == 2)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 266 [1/1] (2.44ns)   --->   "%notrhs = icmp eq i23 %tmp_20, 0" [pool_core/pool_core.cpp:29]   --->   Operation 266 'icmp' 'notrhs' <Predicate = (mode_V_read == 2)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 267 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_23 = or i1 %notrhs, %notlhs" [pool_core/pool_core.cpp:29]   --->   Operation 267 'or' 'tmp_23' <Predicate = (mode_V_read == 2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 268 [1/1] (1.55ns)   --->   "%notlhs8 = icmp ne i8 %tmp_21, -1" [pool_core/pool_core.cpp:45]   --->   Operation 268 'icmp' 'notlhs8' <Predicate = (mode_V_read == 2)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 269 [1/1] (2.44ns)   --->   "%notrhs9 = icmp eq i23 %tmp_22, 0" [pool_core/pool_core.cpp:45]   --->   Operation 269 'icmp' 'notrhs9' <Predicate = (mode_V_read == 2)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 270 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_24 = or i1 %notrhs9, %notlhs8" [pool_core/pool_core.cpp:45]   --->   Operation 270 'or' 'tmp_24' <Predicate = (mode_V_read == 2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 271 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_25 = and i1 %tmp_23, %tmp_24" [pool_core/pool_core.cpp:29]   --->   Operation 271 'and' 'tmp_25' <Predicate = (mode_V_read == 2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 272 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_27 = and i1 %tmp_25, %tmp_26" [pool_core/pool_core.cpp:45]   --->   Operation 272 'and' 'tmp_27' <Predicate = (mode_V_read == 2)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 273 [1/1] (0.69ns) (out node of the LUT)   --->   "%sum_3_feature_in_loa = select i1 %tmp_27, float %sum_3, float %gmem_addr_3_read" [pool_core/pool_core.cpp:45]   --->   Operation 273 'select' 'sum_3_feature_in_loa' <Predicate = (mode_V_read == 2)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_37 : Operation 274 [1/1] (1.86ns)   --->   "br label %.preheader.backedge" [pool_core/pool_core.cpp:45]   --->   Operation 274 'br' <Predicate = (mode_V_read == 2)> <Delay = 1.86>
+ST_37 : Operation 275 [1/1] (0.00ns)   --->   "%sum_3_to_int = bitcast float %sum_3 to i32" [pool_core/pool_core.cpp:29]   --->   Operation 275 'bitcast' 'sum_3_to_int' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_37 : Operation 276 [1/1] (0.00ns)   --->   "%tmp = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %sum_3_to_int, i32 23, i32 30)" [pool_core/pool_core.cpp:29]   --->   Operation 276 'partselect' 'tmp' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_37 : Operation 277 [1/1] (0.00ns)   --->   "%tmp_11 = trunc i32 %sum_3_to_int to i23" [pool_core/pool_core.cpp:29]   --->   Operation 277 'trunc' 'tmp_11' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_37 : Operation 278 [1/1] (0.00ns)   --->   "%feature_in_load_1_to = bitcast float %gmem_addr_2_read to i32" [pool_core/pool_core.cpp:44]   --->   Operation 278 'bitcast' 'feature_in_load_1_to' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_37 : Operation 279 [1/1] (0.00ns)   --->   "%tmp_12 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %feature_in_load_1_to, i32 23, i32 30)" [pool_core/pool_core.cpp:44]   --->   Operation 279 'partselect' 'tmp_12' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_37 : Operation 280 [1/1] (0.00ns)   --->   "%tmp_13 = trunc i32 %feature_in_load_1_to to i23" [pool_core/pool_core.cpp:44]   --->   Operation 280 'trunc' 'tmp_13' <Predicate = (mode_V_read == 1)> <Delay = 0.00>
+ST_37 : Operation 281 [1/1] (1.55ns)   --->   "%notlhs1 = icmp ne i8 %tmp, -1" [pool_core/pool_core.cpp:29]   --->   Operation 281 'icmp' 'notlhs1' <Predicate = (mode_V_read == 1)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 282 [1/1] (2.44ns)   --->   "%notrhs1 = icmp eq i23 %tmp_11, 0" [pool_core/pool_core.cpp:29]   --->   Operation 282 'icmp' 'notrhs1' <Predicate = (mode_V_read == 1)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 283 [1/1] (0.00ns) (grouped into LUT with out node tmp_18)   --->   "%tmp_14 = or i1 %notrhs1, %notlhs1" [pool_core/pool_core.cpp:29]   --->   Operation 283 'or' 'tmp_14' <Predicate = (mode_V_read == 1)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 284 [1/1] (1.55ns)   --->   "%notlhs2 = icmp ne i8 %tmp_12, -1" [pool_core/pool_core.cpp:44]   --->   Operation 284 'icmp' 'notlhs2' <Predicate = (mode_V_read == 1)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 285 [1/1] (2.44ns)   --->   "%notrhs2 = icmp eq i23 %tmp_13, 0" [pool_core/pool_core.cpp:44]   --->   Operation 285 'icmp' 'notrhs2' <Predicate = (mode_V_read == 1)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 286 [1/1] (0.00ns) (grouped into LUT with out node tmp_18)   --->   "%tmp_15 = or i1 %notrhs2, %notlhs2" [pool_core/pool_core.cpp:44]   --->   Operation 286 'or' 'tmp_15' <Predicate = (mode_V_read == 1)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 287 [1/1] (0.00ns) (grouped into LUT with out node tmp_18)   --->   "%tmp_16 = and i1 %tmp_14, %tmp_15" [pool_core/pool_core.cpp:29]   --->   Operation 287 'and' 'tmp_16' <Predicate = (mode_V_read == 1)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 288 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_18 = and i1 %tmp_16, %tmp_17" [pool_core/pool_core.cpp:44]   --->   Operation 288 'and' 'tmp_18' <Predicate = (mode_V_read == 1)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 289 [1/1] (0.69ns) (out node of the LUT)   --->   "%feature_in_load_1_su = select i1 %tmp_18, float %gmem_addr_2_read, float %sum_3" [pool_core/pool_core.cpp:44]   --->   Operation 289 'select' 'feature_in_load_1_su' <Predicate = (mode_V_read == 1)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_37 : Operation 290 [1/1] (1.86ns)   --->   "br label %.preheader.backedge" [pool_core/pool_core.cpp:44]   --->   Operation 290 'br' <Predicate = (mode_V_read == 1)> <Delay = 1.86>
+
+State 38 <SV = 26> <Delay = 11.2>
+ST_38 : Operation 291 [1/1] (0.00ns)   --->   "%lhs_V_3 = sext i16 %w_V to i32" [pool_core/pool_core.cpp:43]   --->   Operation 291 'sext' 'lhs_V_3' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 292 [1/1] (3.36ns)   --->   "%r_V_5 = mul nsw i32 %rhs_V_1, %lhs_V_3" [pool_core/pool_core.cpp:43]   --->   Operation 292 'mul' 'r_V_5' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_38 : Operation 293 [1/1] (0.00ns)   --->   "%rhs_V_6_cast = sext i32 %r_V_5 to i48" [pool_core/pool_core.cpp:43]   --->   Operation 293 'sext' 'rhs_V_6_cast' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 294 [1/1] (3.02ns)   --->   "%r_V_6 = add i48 %rhs_V_6_cast, %r_V_2" [pool_core/pool_core.cpp:43]   --->   Operation 294 'add' 'r_V_6' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_38 : Operation 295 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%r_V_7 = add i48 %rhs_V_7_cast, %r_V_6" [pool_core/pool_core.cpp:43]   --->   Operation 295 'add' 'r_V_7' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_38 : Operation 296 [1/1] (4.88ns) (root node of TernaryAdder)   --->   "%feature_in2_sum6 = add i48 %r_V_7, %tmp_32_cast" [pool_core/pool_core.cpp:43]   --->   Operation 296 'add' 'feature_in2_sum6' <Predicate = true> <Delay = 4.88> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.44> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_38 : Operation 297 [1/1] (0.00ns)   --->   "%feature_in2_sum6_cas = sext i48 %feature_in2_sum6 to i64" [pool_core/pool_core.cpp:43]   --->   Operation 297 'sext' 'feature_in2_sum6_cas' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 298 [1/1] (0.00ns)   --->   "%gmem_addr_1 = getelementptr inbounds float* %gmem, i64 %feature_in2_sum6_cas" [pool_core/pool_core.cpp:43]   --->   Operation 298 'getelementptr' 'gmem_addr_1' <Predicate = true> <Delay = 0.00>
+
+State 39 <SV = 27> <Delay = 8.75>
+ST_39 : Operation 299 [7/7] (8.75ns)   --->   "%gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)" [pool_core/pool_core.cpp:43]   --->   Operation 299 'readreq' 'gmem_load_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 40 <SV = 28> <Delay = 8.75>
+ST_40 : Operation 300 [6/7] (8.75ns)   --->   "%gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)" [pool_core/pool_core.cpp:43]   --->   Operation 300 'readreq' 'gmem_load_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 41 <SV = 29> <Delay = 8.75>
+ST_41 : Operation 301 [5/7] (8.75ns)   --->   "%gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)" [pool_core/pool_core.cpp:43]   --->   Operation 301 'readreq' 'gmem_load_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 42 <SV = 30> <Delay = 8.75>
+ST_42 : Operation 302 [4/7] (8.75ns)   --->   "%gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)" [pool_core/pool_core.cpp:43]   --->   Operation 302 'readreq' 'gmem_load_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 43 <SV = 31> <Delay = 8.75>
+ST_43 : Operation 303 [3/7] (8.75ns)   --->   "%gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)" [pool_core/pool_core.cpp:43]   --->   Operation 303 'readreq' 'gmem_load_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 44 <SV = 32> <Delay = 8.75>
+ST_44 : Operation 304 [2/7] (8.75ns)   --->   "%gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)" [pool_core/pool_core.cpp:43]   --->   Operation 304 'readreq' 'gmem_load_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 45 <SV = 33> <Delay = 8.75>
+ST_45 : Operation 305 [1/7] (8.75ns)   --->   "%gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)" [pool_core/pool_core.cpp:43]   --->   Operation 305 'readreq' 'gmem_load_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 46 <SV = 34> <Delay = 8.75>
+ST_46 : Operation 306 [1/1] (8.75ns)   --->   "%gmem_addr_1_read = call float @_ssdm_op_Read.m_axi.floatP(float* %gmem_addr_1)" [pool_core/pool_core.cpp:43]   --->   Operation 306 'read' 'gmem_addr_1_read' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 47 <SV = 35> <Delay = 7.25>
+ST_47 : Operation 307 [5/5] (7.25ns)   --->   "%sum_2 = fadd float %sum_3, %gmem_addr_1_read" [pool_core/pool_core.cpp:43]   --->   Operation 307 'fadd' 'sum_2' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 36> <Delay = 7.25>
+ST_48 : Operation 308 [4/5] (7.25ns)   --->   "%sum_2 = fadd float %sum_3, %gmem_addr_1_read" [pool_core/pool_core.cpp:43]   --->   Operation 308 'fadd' 'sum_2' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 37> <Delay = 7.25>
+ST_49 : Operation 309 [3/5] (7.25ns)   --->   "%sum_2 = fadd float %sum_3, %gmem_addr_1_read" [pool_core/pool_core.cpp:43]   --->   Operation 309 'fadd' 'sum_2' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 38> <Delay = 7.25>
+ST_50 : Operation 310 [2/5] (7.25ns)   --->   "%sum_2 = fadd float %sum_3, %gmem_addr_1_read" [pool_core/pool_core.cpp:43]   --->   Operation 310 'fadd' 'sum_2' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 39> <Delay = 7.25>
+ST_51 : Operation 311 [1/5] (7.25ns)   --->   "%sum_2 = fadd float %sum_3, %gmem_addr_1_read" [pool_core/pool_core.cpp:43]   --->   Operation 311 'fadd' 'sum_2' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 40> <Delay = 1.86>
+ST_52 : Operation 312 [1/1] (1.86ns)   --->   "br label %.preheader.backedge" [pool_core/pool_core.cpp:43]   --->   Operation 312 'br' <Predicate = true> <Delay = 1.86>
+
+State 53 <SV = 41> <Delay = 0.00>
+ST_53 : Operation 313 [1/1] (0.00ns)   --->   "%sum_3_be = phi float [ %sum_2, %2 ], [ %sum_3, %1 ], [ %feature_in_load_1_su, %3 ], [ %sum_3_feature_in_loa, %4 ]"   --->   Operation 313 'phi' 'sum_3_be' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 314 [1/1] (0.00ns)   --->   "br label %.preheader"   --->   Operation 314 'br' <Predicate = true> <Delay = 0.00>
+
+State 54 <SV = 24> <Delay = 6.07>
+ST_54 : Operation 315 [15/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 315 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 25> <Delay = 6.07>
+ST_55 : Operation 316 [14/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 316 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 26> <Delay = 6.07>
+ST_56 : Operation 317 [13/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 317 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 27> <Delay = 6.07>
+ST_57 : Operation 318 [12/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 318 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 28> <Delay = 6.07>
+ST_58 : Operation 319 [11/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 319 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 29> <Delay = 6.07>
+ST_59 : Operation 320 [10/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 320 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 30> <Delay = 6.07>
+ST_60 : Operation 321 [9/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 321 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 31> <Delay = 6.07>
+ST_61 : Operation 322 [8/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 322 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 32> <Delay = 6.07>
+ST_62 : Operation 323 [7/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 323 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 33> <Delay = 6.07>
+ST_63 : Operation 324 [6/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 324 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 34> <Delay = 6.07>
+ST_64 : Operation 325 [5/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 325 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 35> <Delay = 6.07>
+ST_65 : Operation 326 [4/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 326 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 36> <Delay = 6.07>
+ST_66 : Operation 327 [3/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 327 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 37> <Delay = 6.07>
+ST_67 : Operation 328 [2/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 328 'fdiv' 'sum_1' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 38> <Delay = 6.07>
+ST_68 : Operation 329 [1/16] (6.07ns)   --->   "%sum_1 = fdiv float %i_op_assign, %tmp_1" [pool_core/pool_core.cpp:50]   --->   Operation 329 'fdiv' 'sum_1' <Predicate = (tmp_6)> <Delay = 6.07> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 330 [1/1] (1.76ns)   --->   "br label %._crit_edge1017" [pool_core/pool_core.cpp:50]   --->   Operation 330 'br' <Predicate = (tmp_6)> <Delay = 1.76>
+ST_68 : Operation 331 [1/1] (2.55ns)   --->   "%tmp1 = add i32 %i_op_assign_17_cast6, %r_V_10" [pool_core/pool_core.cpp:51]   --->   Operation 331 'add' 'tmp1' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 332 [1/1] (0.00ns)   --->   "%tmp1_cast = zext i32 %tmp1 to i48" [pool_core/pool_core.cpp:51]   --->   Operation 332 'zext' 'tmp1_cast' <Predicate = true> <Delay = 0.00>
+ST_68 : Operation 333 [1/1] (3.10ns)   --->   "%tmp_9 = add i48 %r_V_1, %tmp1_cast" [pool_core/pool_core.cpp:51]   --->   Operation 333 'add' 'tmp_9' <Predicate = true> <Delay = 3.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 39> <Delay = 3.10>
+ST_69 : Operation 334 [1/1] (0.00ns)   --->   "%sum_5 = phi float [ %sum_1, %6 ], [ %i_op_assign, %5 ]"   --->   Operation 334 'phi' 'sum_5' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 335 [1/1] (0.00ns)   --->   "%tmp_17_cast_cast = zext i48 %tmp_9 to i49" [pool_core/pool_core.cpp:51]   --->   Operation 335 'zext' 'tmp_17_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 336 [1/1] (3.10ns)   --->   "%feature_out4_sum = add i49 %tmp_17_cast_cast, %tmp_31_cast" [pool_core/pool_core.cpp:51]   --->   Operation 336 'add' 'feature_out4_sum' <Predicate = true> <Delay = 3.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 337 [1/1] (0.00ns)   --->   "%feature_out4_sum_cas = zext i49 %feature_out4_sum to i64" [pool_core/pool_core.cpp:51]   --->   Operation 337 'zext' 'feature_out4_sum_cas' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 338 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr inbounds float* %gmem, i64 %feature_out4_sum_cas" [pool_core/pool_core.cpp:51]   --->   Operation 338 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+
+State 70 <SV = 40> <Delay = 8.75>
+ST_70 : Operation 339 [1/1] (8.75ns)   --->   "%gmem_addr_req = call i1 @_ssdm_op_WriteReq.m_axi.floatP(float* %gmem_addr, i32 1)" [pool_core/pool_core.cpp:51]   --->   Operation 339 'writereq' 'gmem_addr_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 71 <SV = 41> <Delay = 8.75>
+ST_71 : Operation 340 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.m_axi.floatP(float* %gmem_addr, float %sum_5, i4 -1)" [pool_core/pool_core.cpp:51]   --->   Operation 340 'write' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 72 <SV = 42> <Delay = 8.75>
+ST_72 : Operation 341 [5/5] (8.75ns)   --->   "%gmem_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)" [pool_core/pool_core.cpp:51]   --->   Operation 341 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 73 <SV = 43> <Delay = 8.75>
+ST_73 : Operation 342 [4/5] (8.75ns)   --->   "%gmem_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)" [pool_core/pool_core.cpp:51]   --->   Operation 342 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 74 <SV = 44> <Delay = 8.75>
+ST_74 : Operation 343 [3/5] (8.75ns)   --->   "%gmem_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)" [pool_core/pool_core.cpp:51]   --->   Operation 343 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 75 <SV = 45> <Delay = 8.75>
+ST_75 : Operation 344 [2/5] (8.75ns)   --->   "%gmem_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)" [pool_core/pool_core.cpp:51]   --->   Operation 344 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 76 <SV = 46> <Delay = 8.75>
+ST_76 : Operation 345 [1/5] (8.75ns)   --->   "%gmem_addr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)" [pool_core/pool_core.cpp:51]   --->   Operation 345 'writeresp' 'gmem_addr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_76 : Operation 346 [1/1] (0.00ns)   --->   "br label %.preheader1010" [pool_core/pool_core.cpp:26]   --->   Operation 346 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4.65ns
+The critical path consists of the following:
+	s_axi read on port 'Ky_V' [13]  (1 ns)
+	'udiv' operation ('tmp_4', pool_core/pool_core.cpp:24) [43]  (3.65 ns)
+
+ <State 2>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 3>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 4>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 5>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 6>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 7>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 8>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 9>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 10>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 11>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 12>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 13>: 3.65ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core/pool_core.cpp:21) [41]  (3.65 ns)
+
+ <State 14>: 4.17ns
+The critical path consists of the following:
+	'mul' operation ('r.V', pool_core/pool_core.cpp:50) [48]  (4.17 ns)
+
+ <State 15>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', pool_core/pool_core.cpp:50) [50]  (6.41 ns)
+
+ <State 16>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', pool_core/pool_core.cpp:50) [50]  (6.41 ns)
+
+ <State 17>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', pool_core/pool_core.cpp:50) [50]  (6.41 ns)
+
+ <State 18>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', pool_core/pool_core.cpp:50) [50]  (6.41 ns)
+
+ <State 19>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', pool_core/pool_core.cpp:50) [50]  (6.41 ns)
+
+ <State 20>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', pool_core/pool_core.cpp:50) [50]  (6.41 ns)
+
+ <State 21>: 2.43ns
+The critical path consists of the following:
+	'phi' operation ('c') with incoming values : ('c', pool_core/pool_core.cpp:24) [58]  (0 ns)
+	'icmp' operation ('exitcond1', pool_core/pool_core.cpp:24) [60]  (2.43 ns)
+
+ <State 22>: 8.51ns
+The critical path consists of the following:
+	'phi' operation ('r.V', pool_core/pool_core.cpp:51) with incoming values : ('next_mul1', pool_core/pool_core.cpp:51) [70]  (0 ns)
+	'mul' operation ('r.V', pool_core/pool_core.cpp:51) [79]  (8.51 ns)
+
+ <State 23>: 2.55ns
+The critical path consists of the following:
+	'phi' operation ('r.V', pool_core/pool_core.cpp:43) with incoming values : ('next_mul', pool_core/pool_core.cpp:43) [83]  (0 ns)
+	'add' operation ('next_mul', pool_core/pool_core.cpp:43) [86]  (2.55 ns)
+
+ <State 24>: 8.46ns
+The critical path consists of the following:
+	'phi' operation ('ii') with incoming values : ('ii', pool_core/pool_core.cpp:36) [95]  (0 ns)
+	'add' operation ('h.V', pool_core/pool_core.cpp:39) [102]  (2.08 ns)
+	'mul' operation ('r.V', pool_core/pool_core.cpp:43) [104]  (6.38 ns)
+
+ <State 25>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('r.V', pool_core/pool_core.cpp:43) [106]  (8.51 ns)
+
+ <State 26>: 2.08ns
+The critical path consists of the following:
+	'phi' operation ('jj') with incoming values : ('jj', pool_core/pool_core.cpp:37) [110]  (0 ns)
+	'add' operation ('w.V', pool_core/pool_core.cpp:40) [117]  (2.08 ns)
+
+ <State 27>: 11.3ns
+The critical path consists of the following:
+	'mul' operation ('r.V', pool_core/pool_core.cpp:45) [121]  (3.36 ns)
+	'add' operation ('r.V', pool_core/pool_core.cpp:45) [123]  (3.02 ns)
+	'add' operation ('r.V', pool_core/pool_core.cpp:45) [124]  (0 ns)
+	'add' operation ('feature_in2_sum', pool_core/pool_core.cpp:45) [125]  (4.89 ns)
+
+ <State 28>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:45) [128]  (8.75 ns)
+
+ <State 29>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:45) [128]  (8.75 ns)
+
+ <State 30>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:45) [128]  (8.75 ns)
+
+ <State 31>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:45) [128]  (8.75 ns)
+
+ <State 32>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:45) [128]  (8.75 ns)
+
+ <State 33>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:45) [128]  (8.75 ns)
+
+ <State 34>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:45) [128]  (8.75 ns)
+
+ <State 35>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'gmem' (pool_core/pool_core.cpp:45) [129]  (8.75 ns)
+
+ <State 36>: 6.79ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_26', pool_core/pool_core.cpp:45) [143]  (6.79 ns)
+
+ <State 37>: 4.12ns
+The critical path consists of the following:
+	'icmp' operation ('notrhs', pool_core/pool_core.cpp:29) [137]  (2.45 ns)
+	'or' operation ('tmp_23', pool_core/pool_core.cpp:29) [138]  (0 ns)
+	'and' operation ('tmp_25', pool_core/pool_core.cpp:29) [142]  (0 ns)
+	'and' operation ('tmp_27', pool_core/pool_core.cpp:45) [144]  (0.978 ns)
+	'select' operation ('sum_3_feature_in_loa', pool_core/pool_core.cpp:45) [145]  (0.698 ns)
+
+ <State 38>: 11.3ns
+The critical path consists of the following:
+	'mul' operation ('r.V', pool_core/pool_core.cpp:43) [177]  (3.36 ns)
+	'add' operation ('r.V', pool_core/pool_core.cpp:43) [179]  (3.02 ns)
+	'add' operation ('r.V', pool_core/pool_core.cpp:43) [180]  (0 ns)
+	'add' operation ('feature_in2_sum6', pool_core/pool_core.cpp:43) [181]  (4.89 ns)
+
+ <State 39>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:43) [184]  (8.75 ns)
+
+ <State 40>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:43) [184]  (8.75 ns)
+
+ <State 41>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:43) [184]  (8.75 ns)
+
+ <State 42>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:43) [184]  (8.75 ns)
+
+ <State 43>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:43) [184]  (8.75 ns)
+
+ <State 44>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:43) [184]  (8.75 ns)
+
+ <State 45>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:43) [184]  (8.75 ns)
+
+ <State 46>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'gmem' (pool_core/pool_core.cpp:43) [185]  (8.75 ns)
+
+ <State 47>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core/pool_core.cpp:43) [186]  (7.26 ns)
+
+ <State 48>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core/pool_core.cpp:43) [186]  (7.26 ns)
+
+ <State 49>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core/pool_core.cpp:43) [186]  (7.26 ns)
+
+ <State 50>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core/pool_core.cpp:43) [186]  (7.26 ns)
+
+ <State 51>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core/pool_core.cpp:43) [186]  (7.26 ns)
+
+ <State 52>: 1.86ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('sum') with incoming values : ('p_sum', pool_core/pool_core.cpp:29) ('sum_3_feature_in_loa', pool_core/pool_core.cpp:45) ('feature_in_load_1_su', pool_core/pool_core.cpp:44) ('sum', pool_core/pool_core.cpp:43) [189]  (1.86 ns)
+
+ <State 53>: 0ns
+The critical path consists of the following:
+
+ <State 54>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 55>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 56>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 57>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 58>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 59>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 60>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 61>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 62>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 63>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 64>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 65>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 66>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 67>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 68>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core/pool_core.cpp:50) [196]  (6.08 ns)
+
+ <State 69>: 3.1ns
+The critical path consists of the following:
+	'add' operation ('feature_out4_sum', pool_core/pool_core.cpp:51) [204]  (3.1 ns)
+	'getelementptr' operation ('gmem_addr', pool_core/pool_core.cpp:51) [206]  (0 ns)
+
+ <State 70>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core/pool_core.cpp:51) [207]  (8.75 ns)
+
+ <State 71>: 8.75ns
+The critical path consists of the following:
+	bus write on port 'gmem' (pool_core/pool_core.cpp:51) [208]  (8.75 ns)
+
+ <State 72>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core/pool_core.cpp:51) [209]  (8.75 ns)
+
+ <State 73>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core/pool_core.cpp:51) [209]  (8.75 ns)
+
+ <State 74>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core/pool_core.cpp:51) [209]  (8.75 ns)
+
+ <State 75>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core/pool_core.cpp:51) [209]  (8.75 ns)
+
+ <State 76>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core/pool_core.cpp:51) [209]  (8.75 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

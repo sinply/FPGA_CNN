@@ -1,0 +1,655 @@
+INFO-FLOW: Workspace E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1 opened at Thu Aug 20 17:53:18 +0800 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.112 sec.
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.115 sec.
+Command     ap_source done; 0.115 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.224 sec.
+Execute   set_part xc7z020clg400-1 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'pool_core/pool_core.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling pool_core/pool_core.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted pool_core/pool_core.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/ProgramData/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "pool_core/pool_core.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp" 
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/ProgramData/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E pool_core/pool_core.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp
+Command       clang done; 0.797 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/ProgramData/Xilinx/Vivado/2018.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp"  -o "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/ProgramData/Xilinx/Vivado/2018.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.04 sec.
+INFO-FLOW: GCC PP time: 1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp std=gnu++98 -directive=E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.435 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp std=gnu++98 -directive=E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/solution1.json 
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/solution1.json -quiet -fix-errors E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.412 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/xilinx-dataflow-lawyer.pool_core.pp.0.cpp.diag.yml E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/xilinx-dataflow-lawyer.pool_core.pp.0.cpp.out.log 2> E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/xilinx-dataflow-lawyer.pool_core.pp.0.cpp.err.log 
+Command       ap_eval done; 0.387 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.88 sec.
+INFO-FLOW: tidy-3.1 time 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.951 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/ProgramData/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.2.cpp" 
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/ProgramData/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.2.cpp
+Command       clang done; 0.742 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/ProgramData/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.bc" 
+INFO-FLOW: exec D:/ProgramData/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/ProgramData/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot -I D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.bc
+Command       clang done; 1.1 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/pool_core.g.bc -hls-opt -except-internalize Pool -LD:/ProgramData/Xilinx/Vivado/2018.2/win64/lib -lhlsm -lhlsmc++ -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.985 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 102.313 ; gain = 45.668
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 102.313 ; gain = 45.668
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.pp.bc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/ProgramData/Xilinx/Vivado/2018.2/win64/lib -lfloatconversion -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.415 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top Pool -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.0.bc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 115.379 ; gain = 58.734
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.1.bc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 122.453 ; gain = 65.809
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.g.1.bc to E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.o.1.bc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 0.161 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.101 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 152.664 ; gain = 96.020
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.o.2.bc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 0.184 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 154.508 ; gain = 97.863
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.153 sec.
+Command     elaborate done; 9.644 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'Pool' ...
+Execute       ap_set_top_model Pool 
+Execute       get_model_list Pool -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model Pool 
+Execute       get_model_list Pool -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Pool
+INFO-FLOW: Configuring Module : Pool ...
+Execute       set_default_model Pool 
+Execute       apply_spec_resource_limit Pool 
+INFO-FLOW: Model list for preprocess: Pool
+INFO-FLOW: Preprocessing Module: Pool ...
+Execute       set_default_model Pool 
+Execute       cdfg_preprocess -model Pool 
+Execute       rtl_gen_preprocess Pool 
+INFO-FLOW: Model list for synthesis: Pool
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Pool 
+Execute       schedule -model Pool 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (11.2658ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'mul' operation ('r.V', pool_core/pool_core.cpp:45) (3.36 ns)
+	'add' operation ('r.V', pool_core/pool_core.cpp:45) (3.02 ns)
+	'add' operation ('r.V', pool_core/pool_core.cpp:45) (0 ns)
+	'add' operation ('feature_in2_sum', pool_core/pool_core.cpp:45) (4.89 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.575 seconds; current allocated memory: 104.867 MB.
+Execute       report -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+Execute       db_write -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.sched.adb -f 
+INFO-FLOW: Finish scheduling Pool.
+Execute       set_default_model Pool 
+Execute       bind -model Pool 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Pool
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.162 seconds; current allocated memory: 105.748 MB.
+Execute       report -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.verbose.bind.rpt -verbose -f 
+Execute       db_write -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.bind.adb -f 
+INFO-FLOW: Finish binding Pool.
+Execute       get_model_list Pool -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Pool 
+INFO-FLOW: Model list for RTL generation: Pool
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Pool -vendor xilinx -mg_file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/CHin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Hin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Win_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Kx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/Ky_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/mode_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/feature_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Pool/feature_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Pool' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'CHin_V', 'Hin_V', 'Win_V', 'Kx_V', 'Ky_V', 'mode_V', 'feature_in' and 'feature_out' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'Pool_fadd_32ns_32ns_32_5_full_dsp_1' to 'Pool_fadd_32ns_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_fdiv_32ns_32ns_32_16_1' to 'Pool_fdiv_32ns_32cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_sitofp_32ns_32_6_1' to 'Pool_sitofp_32ns_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_fcmp_32ns_32ns_1_1_1' to 'Pool_fcmp_32ns_32eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_udiv_16ns_8ns_16_20_seq_1' to 'Pool_udiv_16ns_8nfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_mul_mul_16s_16ns_32_1_1' to 'Pool_mul_mul_16s_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Pool_mac_muladd_16ns_16s_48ns_48_1_1' to 'Pool_mac_muladd_1hbi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Pool_fadd_32ns_32bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_fcmp_32ns_32eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_fdiv_32ns_32cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_mac_muladd_1hbi': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_mul_mul_16s_g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_sitofp_32ns_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Pool_udiv_16ns_8nfYi': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Pool'.
+Command       create_rtl_model done; 0.184 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 107.684 MB.
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Pool -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/syn/systemc/Pool -synmodules Pool 
+Execute       gen_rtl Pool -istop -style xilinx -f -lang vhdl -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/syn/vhdl/Pool 
+Execute       gen_rtl Pool -istop -style xilinx -f -lang vlog -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/syn/verilog/Pool 
+Execute       export_constraint_db -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.constraint.tcl -f -tool general 
+Execute       report -model Pool -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.design.xml -verbose -f -dv 
+Execute       report -model Pool -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info Pool -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool -p E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db 
+Execute       report -model Pool -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/syn/report/Pool_csynth.rpt -f 
+Execute       report -model Pool -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/syn/report/Pool_csynth.xml -f -x 
+Execute       report -model Pool -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.verbose.rpt -verbose -f 
+Command       report done; 0.124 sec.
+Execute       db_write -model Pool -o E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.adb -f 
+Execute       sc_get_clocks Pool 
+Execute       sc_get_portdomain Pool 
+INFO-FLOW: Model list for RTL component generation: Pool
+INFO-FLOW: Handling components in module [Pool] ... 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+INFO-FLOW: Found component Pool_fadd_32ns_32bkb.
+INFO-FLOW: Append model Pool_fadd_32ns_32bkb
+INFO-FLOW: Found component Pool_fdiv_32ns_32cud.
+INFO-FLOW: Append model Pool_fdiv_32ns_32cud
+INFO-FLOW: Found component Pool_sitofp_32ns_dEe.
+INFO-FLOW: Append model Pool_sitofp_32ns_dEe
+INFO-FLOW: Found component Pool_fcmp_32ns_32eOg.
+INFO-FLOW: Append model Pool_fcmp_32ns_32eOg
+INFO-FLOW: Found component Pool_udiv_16ns_8nfYi.
+INFO-FLOW: Append model Pool_udiv_16ns_8nfYi
+INFO-FLOW: Found component Pool_mul_mul_16s_g8j.
+INFO-FLOW: Append model Pool_mul_mul_16s_g8j
+INFO-FLOW: Found component Pool_mac_muladd_1hbi.
+INFO-FLOW: Append model Pool_mac_muladd_1hbi
+INFO-FLOW: Found component Pool_AXILiteS_s_axi.
+INFO-FLOW: Append model Pool_AXILiteS_s_axi
+INFO-FLOW: Found component Pool_gmem_m_axi.
+INFO-FLOW: Append model Pool_gmem_m_axi
+INFO-FLOW: Append model Pool
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: Pool_fadd_32ns_32bkb Pool_fdiv_32ns_32cud Pool_sitofp_32ns_dEe Pool_fcmp_32ns_32eOg Pool_udiv_16ns_8nfYi Pool_mul_mul_16s_g8j Pool_mac_muladd_1hbi Pool_AXILiteS_s_axi Pool_gmem_m_axi Pool
+INFO-FLOW: To file: write model Pool_fadd_32ns_32bkb
+INFO-FLOW: To file: write model Pool_fdiv_32ns_32cud
+INFO-FLOW: To file: write model Pool_sitofp_32ns_dEe
+INFO-FLOW: To file: write model Pool_fcmp_32ns_32eOg
+INFO-FLOW: To file: write model Pool_udiv_16ns_8nfYi
+INFO-FLOW: To file: write model Pool_mul_mul_16s_g8j
+INFO-FLOW: To file: write model Pool_mac_muladd_1hbi
+INFO-FLOW: To file: write model Pool_AXILiteS_s_axi
+INFO-FLOW: To file: write model Pool_gmem_m_axi
+INFO-FLOW: To file: write model Pool
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.104 sec.
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.107 sec.
+Command       ap_source done; 0.108 sec.
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+INFO: [RTMG 210-282] Generating pipelined core: 'Pool_udiv_16ns_8nfYi_div'
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.529 sec.
+Execute       get_config_sdx -target 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.108 sec.
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.111 sec.
+Command       ap_source done; 0.111 sec.
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+Command       ap_source done; 0.119 sec.
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.constraint.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.constraint.tcl 
+Execute       sc_get_clocks Pool 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/impl/misc/Pool_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/impl/misc/Pool_ap_fcmp_0_no_dsp_32_ip.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/impl/misc/Pool_ap_fdiv_14_no_dsp_32_ip.tcl 
+Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/impl/misc/Pool_ap_sitofp_4_no_dsp_32_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 164.543 ; gain = 107.898
+INFO: [SYSC 207-301] Generating SystemC RTL for Pool.
+INFO: [VHDL 208-304] Generating VHDL RTL for Pool.
+INFO: [VLOG 209-307] Generating Verilog RTL for Pool.
+Command     autosyn done; 3.51 sec.
+Command   csynth_design done; 13.159 sec.
+Command ap_source done; 13.458 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1 opened at Thu Aug 20 17:55:37 +0800 2020
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.115 sec.
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.118 sec.
+Command     ap_source done; 0.118 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.228 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.105 sec.
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.107 sec.
+Command     ap_source done; 0.107 sec.
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.106 sec.
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.109 sec.
+Command     ap_source done; 0.109 sec.
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.compgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.constraint.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.rtl_wrap.cfg.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.constraint.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.constraint.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.constraint.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/Pool.tbgen.tcl 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.108 sec.
+Execute         source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.109 sec.
+Command     ap_source done; 0.11 sec.
+Execute     source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/ProgramData/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command   export_design done; 17.16 sec.
+Command ap_source done; 17.4 sec.
+Execute cleanup_all 

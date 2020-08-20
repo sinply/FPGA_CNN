@@ -1,0 +1,123 @@
+
+
+================================================================
+== Vivado HLS Report for 'matrix_add'
+================================================================
+* Date:           Thu Aug 20 14:56:59 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        test
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------+-----+-----+------------+--------------+--------------+
+|ap_start    |  in |    1| ap_ctrl_hs |  matrix_add  | return value |
+|ap_done     | out |    1| ap_ctrl_hs |  matrix_add  | return value |
+|ap_idle     | out |    1| ap_ctrl_hs |  matrix_add  | return value |
+|ap_ready    | out |    1| ap_ctrl_hs |  matrix_add  | return value |
+|A_address0  | out |    4|  ap_memory |       A      |     array    |
+|A_ce0       | out |    1|  ap_memory |       A      |     array    |
+|A_we0       | out |    1|  ap_memory |       A      |     array    |
+|A_d0        | out |   32|  ap_memory |       A      |     array    |
+|A_q0        |  in |   32|  ap_memory |       A      |     array    |
+|A_address1  | out |    4|  ap_memory |       A      |     array    |
+|A_ce1       | out |    1|  ap_memory |       A      |     array    |
+|A_we1       | out |    1|  ap_memory |       A      |     array    |
+|A_d1        | out |   32|  ap_memory |       A      |     array    |
+|A_q1        |  in |   32|  ap_memory |       A      |     array    |
+|B           |  in |  512|   ap_none  |       B      |    pointer   |
+|C_address0  | out |    4|  ap_memory |       C      |     array    |
+|C_ce0       | out |    1|  ap_memory |       C      |     array    |
+|C_we0       | out |    1|  ap_memory |       C      |     array    |
+|C_d0        | out |   32|  ap_memory |       C      |     array    |
+|C_q0        |  in |   32|  ap_memory |       C      |     array    |
+|C_address1  | out |    4|  ap_memory |       C      |     array    |
+|C_ce1       | out |    1|  ap_memory |       C      |     array    |
+|C_we1       | out |    1|  ap_memory |       C      |     array    |
+|C_d1        | out |   32|  ap_memory |       C      |     array    |
+|C_q1        |  in |   32|  ap_memory |       C      |     array    |
++------------+-----+-----+------------+--------------+--------------+
+

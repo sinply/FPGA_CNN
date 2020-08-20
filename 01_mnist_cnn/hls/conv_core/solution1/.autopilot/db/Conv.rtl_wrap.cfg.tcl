@@ -125,7 +125,7 @@ set DataType9 "[list ap_uint 1 ]"
 set Port9 [list $PortName9 $Interface9 $DataType9 $Pointer9 $Dims9 $Const9 $Volatile9 $ArrayOpt9]
 lappend PortList $Port9
 set PortName10 "feature_in"
-set BitWidth10 "64"
+set BitWidth10 "32"
 set ArrayOpt10 ""
 set Const10 "0"
 set Volatile10 "0"
@@ -137,7 +137,7 @@ set DataType10 "float"
 set Port10 [list $PortName10 $Interface10 $DataType10 $Pointer10 $Dims10 $Const10 $Volatile10 $ArrayOpt10]
 lappend PortList $Port10
 set PortName11 "W"
-set BitWidth11 "64"
+set BitWidth11 "32"
 set ArrayOpt11 ""
 set Const11 "0"
 set Volatile11 "0"
@@ -149,7 +149,7 @@ set DataType11 "float"
 set Port11 [list $PortName11 $Interface11 $DataType11 $Pointer11 $Dims11 $Const11 $Volatile11 $ArrayOpt11]
 lappend PortList $Port11
 set PortName12 "bias"
-set BitWidth12 "64"
+set BitWidth12 "32"
 set ArrayOpt12 ""
 set Const12 "0"
 set Volatile12 "0"
@@ -161,7 +161,7 @@ set DataType12 "float"
 set Port12 [list $PortName12 $Interface12 $DataType12 $Pointer12 $Dims12 $Const12 $Volatile12 $ArrayOpt12]
 lappend PortList $Port12
 set PortName13 "feature_out"
-set BitWidth13 "64"
+set BitWidth13 "32"
 set ArrayOpt13 ""
 set Const13 "0"
 set Volatile13 "0"

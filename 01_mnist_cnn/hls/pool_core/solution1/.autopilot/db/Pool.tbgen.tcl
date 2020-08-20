@@ -1,12 +1,11 @@
 set C_TypeInfoList {{ 
 "Pool" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"CHin": [[],"0"] }, {"Hin": [[],"0"] }, {"Win": [[],"0"] }, {"Kx": [[],"1"] }, {"Ky": [[],"1"] }, {"mode": [[],"2"] }, {"feature_in": [[],{ "pointer": "3"}] }, {"feature_out": [[],{ "pointer": "3"}] }],[],""], 
+"0": [ "ap_uint<16>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 16}}]],""]}}], 
 "1": [ "ap_uint<8>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 8}}]],""]}}], 
-"3": [ "Dtype_f", {"typedef": [[[], {"scalar": "float"}],""]}], 
 "2": [ "ap_uint<2>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 2}}]],""]}}], 
-"0": [ "ap_uint<16>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 16}}]],""]}}]
+"3": [ "Dtype_f", {"typedef": [[[], {"scalar": "float"}],""]}]
 }}
 set moduleName Pool
-set isTaskLevelControl 1
 set isCombinational 0
 set isDatapathOnly 0
 set isPipelined 0
@@ -15,7 +14,6 @@ set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
-set isEnableWaveformDebug 1
 set C_modelName {Pool}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -176,60 +174,44 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BUSER" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
 		"CDFG" : "Pool",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "20", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
 		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "IO",
-				"BlockSignal" : [
-					{"Name" : "gmem_blk_n_AR", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_R", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}]},
-			{"Name" : "CHin_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Hin_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Win_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Kx_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Ky_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "mode_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "feature_in", "Type" : "None", "Direction" : "I"},
-			{"Name" : "feature_out", "Type" : "None", "Direction" : "I"}]},
+		{"Name" : "gmem", "Type" : "MAXI", "Direction" : "IO",
+			"BlockSignal" : [
+			{"Name" : "gmem_blk_n_AR", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_R", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}]},
+		{"Name" : "CHin_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Hin_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Win_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Kx_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Ky_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "mode_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "feature_in", "Type" : "None", "Direction" : "I"},
+		{"Name" : "feature_out", "Type" : "None", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_AXILiteS_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_gmem_m_axi_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_fadd_32ns_32bkb_U1", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_fdiv_32ns_32cud_U2", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_sitofp_32ns_dEe_U3", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_fcmp_32ns_32eOg_U4", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_udiv_16ns_8nfYi_U5", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_udiv_16ns_8nfYi_U6", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mul_mul_16s_g8j_U7", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mac_muladd_1hbi_U8", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mac_muladd_1hbi_U9", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mac_muladd_1hbi_U10", "Parent" : "0"}]}
-
-
-set ArgLastReadFirstWriteLatency {
-	Pool {
-		gmem {Type IO LastRead 42 FirstWrite 41}
-		CHin_V {Type I LastRead 0 FirstWrite -1}
-		Hin_V {Type I LastRead 0 FirstWrite -1}
-		Win_V {Type I LastRead 0 FirstWrite -1}
-		Kx_V {Type I LastRead 0 FirstWrite -1}
-		Ky_V {Type I LastRead 0 FirstWrite -1}
-		mode_V {Type I LastRead 0 FirstWrite -1}
-		feature_in {Type I LastRead 0 FirstWrite -1}
-		feature_out {Type I LastRead 0 FirstWrite -1}}}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_fadd_32ns_32bkb_U0", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_fdiv_32ns_32cud_U1", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_sitofp_32ns_dEe_U2", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_fcmp_32ns_32eOg_U3", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_udiv_16ns_8nfYi_U4", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_udiv_16ns_8nfYi_U5", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mul_32s_16s_g8j_U6", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mul_32s_16nshbi_U7", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mul_mul_16nsibs_U8", "Parent" : "0"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mac_muladd_1jbC_U9", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mac_muladd_1jbC_U10", "Parent" : "0"},
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Pool_mac_muladd_1jbC_U11", "Parent" : "0"}]}
 
 set hasDtUnsupportedChannel 0
 

@@ -1,13 +1,12 @@
 set C_TypeInfoList {{ 
 "Conv" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"CHin": [[],"0"] }, {"Hin": [[],"0"] }, {"Win": [[],"0"] }, {"CHout": [[],"0"] }, {"Kx": [[],"1"] }, {"Ky": [[],"1"] }, {"Sx": [[],"1"] }, {"Sy": [[],"1"] }, {"mode": [[],"2"] }, {"relu_en": [[],"2"] }, {"feature_in": [[],{ "pointer": "3"}] }, {"W": [[],{ "pointer": "4"}] }, {"bias": [[],{ "pointer": "4"}] }, {"feature_out": [[],{ "pointer": "3"}] }],[],""], 
-"1": [ "ap_uint<8>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 8}}]],""]}}], 
 "4": [ "Dtype_w", {"typedef": [[[], {"scalar": "float"}],""]}], 
-"0": [ "ap_uint<16>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 16}}]],""]}}], 
 "2": [ "ap_uint<1>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 1}}]],""]}}], 
+"0": [ "ap_uint<16>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 16}}]],""]}}], 
+"1": [ "ap_uint<8>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 8}}]],""]}}], 
 "3": [ "Dtype_f", {"typedef": [[[], {"scalar": "float"}],""]}]
 }}
 set moduleName Conv
-set isTaskLevelControl 1
 set isCombinational 0
 set isDatapathOnly 0
 set isPipelined 0
@@ -16,7 +15,6 @@ set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
-set isEnableWaveformDebug 1
 set C_modelName {Conv}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -189,77 +187,54 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BUSER" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
 		"CDFG" : "Conv",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
+		"VariableLatency" : "1",
+		"AlignedPipeline" : "0",
+		"UnalignedPipeline" : "0",
+		"ProcessNetwork" : "0",
 		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
+		"ControlExist" : "1",
 		"Port" : [
-			{"Name" : "gmem", "Type" : "MAXI", "Direction" : "IO",
-				"BlockSignal" : [
-					{"Name" : "gmem_blk_n_AR", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_R", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"},
-					{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}]},
-			{"Name" : "CHin_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Hin_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Win_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "CHout_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Kx_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Ky_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Sx_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "Sy_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "mode_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "relu_en_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "feature_in", "Type" : "None", "Direction" : "I"},
-			{"Name" : "W", "Type" : "None", "Direction" : "I"},
-			{"Name" : "bias", "Type" : "None", "Direction" : "I"},
-			{"Name" : "feature_out", "Type" : "None", "Direction" : "I"}]},
+		{"Name" : "gmem", "Type" : "MAXI", "Direction" : "IO",
+			"BlockSignal" : [
+			{"Name" : "gmem_blk_n_AR", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_R", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_AW", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_W", "Type" : "RtlSignal"},
+			{"Name" : "gmem_blk_n_B", "Type" : "RtlSignal"}]},
+		{"Name" : "CHin_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Hin_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Win_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "CHout_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Kx_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Ky_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Sx_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "Sy_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "mode_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "relu_en_V", "Type" : "None", "Direction" : "I"},
+		{"Name" : "feature_in", "Type" : "None", "Direction" : "I"},
+		{"Name" : "W", "Type" : "None", "Direction" : "I"},
+		{"Name" : "bias", "Type" : "None", "Direction" : "I"},
+		{"Name" : "feature_out", "Type" : "None", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_AXILiteS_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_gmem_m_axi_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_fadd_32ns_32bkb_U1", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_fmul_32ns_32cud_U2", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_fcmp_32ns_32dEe_U3", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_sdiv_19s_9nseOg_U4", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_sdiv_19s_9nseOg_U5", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_mul_16nsfYi_U6", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_mul_16nsg8j_U7", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_mul_16nsfYi_U8", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mac_muladd_1hbi_U9", "Parent" : "0"}]}
-
-
-set ArgLastReadFirstWriteLatency {
-	Conv {
-		gmem {Type IO LastRead 43 FirstWrite 42}
-		CHin_V {Type I LastRead 0 FirstWrite -1}
-		Hin_V {Type I LastRead 0 FirstWrite -1}
-		Win_V {Type I LastRead 0 FirstWrite -1}
-		CHout_V {Type I LastRead 0 FirstWrite -1}
-		Kx_V {Type I LastRead 0 FirstWrite -1}
-		Ky_V {Type I LastRead 0 FirstWrite -1}
-		Sx_V {Type I LastRead 0 FirstWrite -1}
-		Sy_V {Type I LastRead 0 FirstWrite -1}
-		mode_V {Type I LastRead 0 FirstWrite -1}
-		relu_en_V {Type I LastRead 0 FirstWrite -1}
-		feature_in {Type I LastRead 0 FirstWrite -1}
-		W {Type I LastRead 0 FirstWrite -1}
-		bias {Type I LastRead 0 FirstWrite -1}
-		feature_out {Type I LastRead 0 FirstWrite -1}}}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_fadd_32ns_32bkb_U0", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_fmul_32ns_32cud_U1", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_fcmp_32ns_32dEe_U2", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_sdiv_19s_9nseOg_U3", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_sdiv_19s_9nseOg_U4", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_32s_16nsfYi_U5", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_32s_16nsfYi_U6", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_32s_16nsfYi_U7", "Parent" : "0"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_mul_16nsg8j_U8", "Parent" : "0"},
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Conv_mul_mul_16nshbi_U9", "Parent" : "0"}]}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "-1", "Max" : "-1"}
-	, {"Name" : "Interval", "Min" : "0", "Max" : "0"}
+	{"Name" : "Latency", "Min" : "24", "Max" : "-1"}
+	, {"Name" : "Interval", "Min" : "25", "Max" : "0"}
 ]}
 
 set PipelineEnableSignalInfo {[

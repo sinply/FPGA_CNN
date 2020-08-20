@@ -2,53 +2,7 @@
 #
 # Makefile rules for autopilot SystemC simulation flow
 #
-#-  (c) Copyright 2011-2018 Xilinx, Inc. All rights reserved.
-#-
-#-  This file contains confidential and proprietary information
-#-  of Xilinx, Inc. and is protected under U.S. and
-#-  international copyright and other intellectual property
-#-  laws.
-#-
-#-  DISCLAIMER
-#-  This disclaimer is not a license and does not grant any
-#-  rights to the materials distributed herewith. Except as
-#-  otherwise provided in a valid license issued to you by
-#-  Xilinx, and to the maximum extent permitted by applicable
-#-  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-#-  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
-#-  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
-#-  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
-#-  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
-#-  (2) Xilinx shall not be liable (whether in contract or tort,
-#-  including negligence, or under any other theory of
-#-  liability) for any loss or damage of any kind or nature
-#-  related to, arising under or in connection with these
-#-  materials, including for any direct, or any indirect,
-#-  special, incidental, or consequential loss or damage
-#-  (including loss of data, profits, goodwill, or any type of
-#-  loss or damage suffered as a result of any action brought
-#-  by a third party) even if such damage or loss was
-#-  reasonably foreseeable or Xilinx had been advised of the
-#-  possibility of the same.
-#-
-#-  CRITICAL APPLICATIONS
-#-  Xilinx products are not designed or intended to be fail-
-#-  safe, or for use in any application requiring fail-safe
-#-  performance, such as life-support or safety devices or
-#-  systems, Class III medical devices, nuclear facilities,
-#-  applications related to the deployment of airbags, or any
-#-  other applications that could lead to death, personal
-#-  injury, or severe property or environmental damage
-#-  (individually and collectively, "Critical
-#-  Applications"). Customer assumes the sole risk and
-#-  liability of any use of Xilinx products in Critical
-#-  Applications, subject only to applicable laws and
-#-  regulations governing limitations on product liability.
-#-
-#-  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
-#-  PART OF THIS FILE AT ALL TIMES. 
-#- ************************************************************************
-
+# __VIVADO_HLS_COPYRIGHT-INFO__
 #
 #===------------------------------------------------------------------------===#
 
@@ -101,35 +55,27 @@ ifndef HLS_SYSTEMC_HOME
 endif
 
 ifndef HLS_SYSTEMC_LIB_PATH
-  ifeq ($(AUTOPILOT_MACH),win64)
-    ifdef __USE_CLANG__
-      HLS_SYSTEMC_LIB_PATH = $(AUTOPILOT_TOOL)/systemc/clang
-    else
-      HLS_SYSTEMC_LIB_PATH = $(AUTOPILOT_TOOL)/systemc/gcc
-    endif
-  else
-    HLS_SYSTEMC_LIB_PATH = $(AUTOPILOT_TOOL)/systemc/lib
-  endif
+  HLS_SYSTEMC_LIB_PATH = $(AUTOPILOT_TOOL)/systemc/lib
 endif
 
 ifndef HLS_FPO_LIB_PATH
-   HLS_FPO_LIB_PATH = $(AUTOPILOT_TOOL)/fpo_v7_0
-endif
-
-ifndef HLS_OPENCV_LIB_PATH
-  ifneq ($(AUTOPILOT_MACH),win64)
-    #ifdef __USE_CLANG__
-    #  HLS_OPENCV_LIB_PATH = $(AUTOPILOT_TOOL)/opencv/opencv_clang
-    #else
-      HLS_OPENCV_LIB_PATH = $(AUTOPILOT_TOOL)/opencv/opencv_gcc
-    #endif
+  ifdef __HLS_FPO_v6_1__
+    HLS_FPO_LIB_PATH = $(AUTOPILOT_TOOL)/fpo_v6_1
   else
-    HLS_OPENCV_LIB_PATH = $(AUTOPILOT_TOOL)/opencv
+    ifdef __HLS_FPO_v6_2__
+      HLS_FPO_LIB_PATH = $(AUTOPILOT_TOOL)/fpo_v6_2
+    else
+      HLS_FPO_LIB_PATH = $(AUTOPILOT_TOOL)/fpo_v7_0
+    endif
   endif
 endif
 
+ifndef HLS_OPENCV_LIB_PATH
+  HLS_OPENCV_LIB_PATH = $(AUTOPILOT_TOOL)/opencv
+endif
+
 ifndef HLS_FFT_LIB_PATH
-  HLS_FFT_LIB_PATH = $(AUTOPILOT_TOOL)/fft_v9_1
+  HLS_FFT_LIB_PATH = $(AUTOPILOT_TOOL)/fft_v9_0
 endif
 
 ifndef HLS_FIR_LIB_PATH
@@ -139,11 +85,6 @@ endif
 ifndef HLS_DDS_LIB_PATH
   HLS_DDS_LIB_PATH = $(AUTOPILOT_TOOL)/dds_v6_0
 endif
-
-ifndef HLS_MATHHLS_LIB_PATH
-  HLS_MATHHLS_LIB_PATH = $(AUTOPILOT_ROOT)/$(AUTOPILOT_MACH)/lib/csim
-endif
-
 
 ifdef __USE_CLANG__
 ifdef AP_CLANG_PATH
@@ -180,7 +121,6 @@ OPENCVLIB = $(HLS_OPENCV_LIB_PATH)
 FFTLIB = $(HLS_FFT_LIB_PATH)
 FIRLIB = $(HLS_FIR_LIB_PATH)
 DDSLIB = $(HLS_DDS_LIB_PATH)
-MATHHLSLIB = $(HLS_MATHHLS_LIB_PATH)
 DEFINE =
 ATBG_CFLAG = -DSST_SIM_ENABLE -DSST_ATBG_ENABLE
 IFLAG += -I $(INCPATH) -I "$(SYSCINC)"
@@ -191,43 +131,17 @@ IFLAG += -I "$(AUTOPILOT_TECH)/generic/SystemC/AESL_comp"
 LFLAG += -Wl,--as-needed
 LFLAG += -Wl,-rpath,"$(SYSCLIB)" -L "$(SYSCLIB)" -lsystemc -lpthread
 
-ifdef __SIM_MATHHLS__
-
-  ifdef __USE_CLANG__ 
-    ifeq ($(AUTOPILOT_MACH),win64)
-      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-CLANG39-x64
-    else
-      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-CLANG39
-    endif
-  else 
-    ifeq ($(AUTOPILOT_MACH),win64)
-      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-GCC62-x64
-    else
-      LFLAG += -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsmc++-GCC46
-    endif
-  endif
-
-  ifndef __SIM_MATHSTD__ 
-    ifdef __USE_CLANG__ 
-      ifeq ($(AUTOPILOT_MACH),win64)
-        LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-CLANG39-x64
-      else
-        LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-CLANG39
-      endif
-    else
-      ifeq ($(AUTOPILOT_MACH),win64)
-        LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-GCC62-x64
-      else
-        LFLAG += -fno-builtin -fno-inline -Wl,-rpath,"$(MATHHLSLIB)" -L "$(MATHHLSLIB)" -lhlsm-GCC46
-      endif
-    endif
-  endif
-
-  export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(MATHHLSLIB)
-endif
-
 ifdef __SIM_FPO__
-   LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel
+#LFLAG += -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v6_1_bitacc_cmodel -z muldefs
+  ifdef __HLS_FPO_v6_1__
+    LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v6_1_bitacc_cmodel
+  else
+    ifdef __HLS_FPO_v6_2__
+      LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v6_2_bitacc_cmodel
+    else
+      LFLAG += -Wl,-rpath,"$(FPOLIB)" -L "$(FPOLIB)" -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel
+    endif
+  endif
 endif
 
 ifdef __SIM_OPENCV__
@@ -235,13 +149,12 @@ ifdef __SIM_OPENCV__
     LFLAG += -Wl,-rpath,"$(OPENCVLIB)" -L "$(OPENCVLIB)" -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_gpu -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videostab
   else
     CV_VER = 245
-    #delete lopencv_superres245 for win64
-    LFLAG += -Wl,-rpath,"$(OPENCVLIB)" -L "$(OPENCVLIB)" -lopencv_calib3d$(CV_VER) -lopencv_contrib$(CV_VER) -lopencv_core$(CV_VER) -lopencv_features2d$(CV_VER) -lopencv_flann$(CV_VER) -lopencv_gpu$(CV_VER) -lopencv_highgui$(CV_VER) -lopencv_imgproc$(CV_VER) -lopencv_legacy$(CV_VER) -lopencv_ml$(CV_VER) -lopencv_objdetect$(CV_VER) -lopencv_photo$(CV_VER) -lopencv_stitching$(CV_VER) -lopencv_video$(CV_VER) -lopencv_videostab$(CV_VER)
+    LFLAG += -Wl,-rpath,"$(OPENCVLIB)" -L "$(OPENCVLIB)" -lopencv_calib3d$(CV_VER) -lopencv_contrib$(CV_VER) -lopencv_core$(CV_VER) -lopencv_features2d$(CV_VER) -lopencv_flann$(CV_VER) -lopencv_gpu$(CV_VER) -lopencv_highgui$(CV_VER) -lopencv_imgproc$(CV_VER) -lopencv_legacy$(CV_VER) -lopencv_ml$(CV_VER) -lopencv_objdetect$(CV_VER) -lopencv_photo$(CV_VER) -lopencv_stitching$(CV_VER) -lopencv_superres$(CV_VER) -lopencv_video$(CV_VER) -lopencv_videostab$(CV_VER)
   endif
 endif
 
 ifdef __SIM_FFT__
-  LFLAG += -Wl,-rpath,"$(FFTLIB)" -L "$(FFTLIB)" -lIp_xfft_v9_1_bitacc_cmodel
+  LFLAG += -Wl,-rpath,"$(FFTLIB)" -L "$(FFTLIB)" -lIp_xfft_v9_0_bitacc_cmodel
   export LD_LIBRARY_PATH := ${LD_LIBRARY_PATH}:$(FFTLIB)
 endif
 
@@ -270,7 +183,7 @@ else
 CFLAG += -D__USE_XOPEN2K8
 DFLAG += -D__USE_XOPEN2K8
 endif
-
+	
 
 ifndef HLS_SOURCES
   # Find all .cpp, .cp, .cxx, .cc, .c++, .c, .C in current directory and in $(HLS_RtlSCDir).
@@ -365,11 +278,7 @@ CPPFLAGS += -m32
 LDFLAGS += -m32
 endif
 
-ifdef __USE_CLANG__
-CXX.Flags += $(CXXFLAGS) -fpermissive $(ExtraCXXFlags) $(TOOLCHAIN)
-else
 CXX.Flags += $(CXXFLAGS) -fpermissive $(ExtraCXXFlags)
-endif
 C.Flags   += $(CFLAGS) $(ExtraCFlags)
 CPP.Flags += $(CPPFLAGS) 
 LD.Flags  += $(LDFLAGS) $(ExtraLDFlags)
@@ -378,11 +287,6 @@ LibTool.Flags := --tag=CXX
 #CompileCommonOpts := -Wall -W -Wwrite-strings -Wno-unused
 CompileCommonOpts := 
 
-ifdef __USE_CLANG__
-ifdef __COSIM_FLOW__
-#CompileCommonOpts += -D_GLIBCXX_USE_CXX11_ABI=0
-endif
-endif
 
 #-------------- C/C++ to binary ----------------------------------------
 Compile.C     = $(CC) $(CPP.Flags) $(CompileCommonOpts) -c $(C.Flags)
@@ -437,9 +341,9 @@ $(ObjDir)/%.o: %.c $(ObjDir)/.dir
 Extra.BCCPP.Flags += -emit-llvm -DAUTOPILOT_BC_SIM
 BCC.Flags = $(CPP.Flags) $(CompileCommonOpts) $(C.Flags) $(Extra.BCCPP.Flags)
 BCCXX.Flags = $(CPP.Flags) $(CompileCommonOpts) $(CXX.Flags) $(Extra.BCCPP.Flags)
-Compile.BCC   = $(AUTOPILOT_TOOL)/clang/bin/clang -hls $(BCC.Flags) -c -emit-llvm 
-Compile.BCCXX = $(AUTOPILOT_TOOL)/clang/bin/clang++ -hls $(BCCXX.Flags) -c -emit-llvm
-Compile.BCLD  = $(AUTOPILOT_TOOL)/clang/bin/llvm-ld -disable-inlining
+Compile.BCC   = clang -hls $(BCC.Flags) -c -emit-llvm 
+Compile.BCCXX = clang++ -hls $(BCCXX.Flags) -c -emit-llvm
+Compile.BCLD  = llvm-ld -disable-inlining
 
 #ifndef BCLibDir
 #BCLibDir = $(HLS_RtlSCDir)/../tmp

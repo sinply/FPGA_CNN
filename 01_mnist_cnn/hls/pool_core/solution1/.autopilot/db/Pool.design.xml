@@ -13,7 +13,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>11.266</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.82</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>20</Best-caseLatency>
@@ -35,10 +35,10 @@
 <IterationLatency>
 <range>
 <min>2</min>
-<max>4751012254769447</max>
+<max>4752116027679272</max>
 </range>
 </IterationLatency>
-<PipelineDepth>2 ~ 4751012254769447</PipelineDepth>
+<PipelineDepth>2 ~ 4752116027679272</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
 <TripCount>
@@ -47,14 +47,14 @@
 <max>65535</max>
 </range>
 </TripCount>
-<Latency>0 ~ 4751012254769445</Latency>
+<Latency>0 ~ 4752116027679270</Latency>
 <IterationLatency>
 <range>
 <min>2</min>
-<max>72495800027</max>
+<max>72512642522</max>
 </range>
 </IterationLatency>
-<PipelineDepth>2 ~ 72495800027</PipelineDepth>
+<PipelineDepth>2 ~ 72512642522</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
 <TripCount>
@@ -63,14 +63,14 @@
 <max>65535</max>
 </range>
 </TripCount>
-<Latency>0 ~ 72495800025</Latency>
+<Latency>0 ~ 72512642520</Latency>
 <IterationLatency>
 <range>
-<min>11</min>
-<max>1106215</max>
+<min>13</min>
+<max>1106472</max>
 </range>
 </IterationLatency>
-<PipelineDepth>11 ~ 1106215</PipelineDepth>
+<PipelineDepth>13 ~ 1106472</PipelineDepth>
 <Loop1.1.1.1>
 <Name>Loop 1.1.1.1</Name>
 <TripCount>
@@ -79,14 +79,14 @@
 <max>255</max>
 </range>
 </TripCount>
-<Latency>0 ~ 1106190</Latency>
+<Latency>0 ~ 1106445</Latency>
 <IterationLatency>
 <range>
-<min>3</min>
-<max>4338</max>
+<min>4</min>
+<max>4339</max>
 </range>
 </IterationLatency>
-<PipelineDepth>3 ~ 4338</PipelineDepth>
+<PipelineDepth>4 ~ 4339</PipelineDepth>
 <Loop1.1.1.1.1>
 <Name>Loop 1.1.1.1.1</Name>
 <TripCount>
@@ -113,9 +113,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>2</BRAM_18K>
-<DSP48E>12</DSP48E>
-<FF>3860</FF>
-<LUT>5011</LUT>
+<DSP48E>11</DSP48E>
+<FF>3475</FF>
+<LUT>4399</LUT>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>

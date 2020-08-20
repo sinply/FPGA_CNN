@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Conv'" level="0">
-<item name = "Date">Thu Aug 20 17:45:08 2020
+<item name = "Date">Thu Aug 20 20:12:05 2020
 </item>
-<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Version">2016.4 (Build 1722992 on Wed Mar 08 18:30:27 MST 2017)</item>
 <item name = "Project">conv_core</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.750, 1.25</column>
+<column name="ap_clk">10.00, 8.75, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, none</column>
+<column name="">24, ?, 25, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,12 +35,12 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">?, ?, ?, -, -, 0 ~ 65535, no</column>
-<column name=" + Loop 1.1">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ Loop 1.1.1">?, ?, 21 ~ 80967115011, -, -, ?, no</column>
-<column name="   +++ Loop 1.1.1.1">0, 80967114990, 3 ~ 317518098, -, -, 0 ~ 255, no</column>
-<column name="    ++++ Loop 1.1.1.1.1">0, 317518095, 2 ~ 1245169, -, -, 0 ~ 255, no</column>
-<column name="     +++++ Loop 1.1.1.1.1.1">0, 1245165, 19, -, -, 0 ~ 65535, no</column>
+<column name="- Loop 1">0, ?, 2 ~ ?, -, -, 0 ~ 65535, no</column>
+<column name=" + Loop 1.1">0, ?, 2 ~ 5864731839422462, -, -, 0 ~ 65535, no</column>
+<column name="  ++ Loop 1.1.1">0, 5864731839422460, 21 ~ 89490071556, -, -, 0 ~ 65535, no</column>
+<column name="   +++ Loop 1.1.1.1">0, 89490071535, 2 ~ 350941457, -, -, 0 ~ 255, no</column>
+<column name="    ++++ Loop 1.1.1.1.1">0, 350941455, 2 ~ 1376241, -, -, 0 ~ 255, no</column>
+<column name="     +++++ Loop 1.1.1.1.1.1">0, 1376235, 21, -, -, 0 ~ 65535, no</column>
 </table>
 </item>
 </section>

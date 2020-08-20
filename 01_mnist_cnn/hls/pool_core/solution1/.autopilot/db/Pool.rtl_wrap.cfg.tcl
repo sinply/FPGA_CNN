@@ -77,7 +77,7 @@ set DataType5 "[list ap_uint 2 ]"
 set Port5 [list $PortName5 $Interface5 $DataType5 $Pointer5 $Dims5 $Const5 $Volatile5 $ArrayOpt5]
 lappend PortList $Port5
 set PortName6 "feature_in"
-set BitWidth6 "64"
+set BitWidth6 "32"
 set ArrayOpt6 ""
 set Const6 "0"
 set Volatile6 "0"
@@ -89,7 +89,7 @@ set DataType6 "float"
 set Port6 [list $PortName6 $Interface6 $DataType6 $Pointer6 $Dims6 $Const6 $Volatile6 $ArrayOpt6]
 lappend PortList $Port6
 set PortName7 "feature_out"
-set BitWidth7 "64"
+set BitWidth7 "32"
 set ArrayOpt7 ""
 set Const7 "0"
 set Volatile7 "0"

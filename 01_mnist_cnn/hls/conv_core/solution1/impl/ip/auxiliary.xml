@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Conv" xd:componentRef="Conv" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Conv" xd:componentRef="Conv" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
   <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
   <xd:arg xd:name="*(feature_in)" xd:originalName="feature_in" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="31:0" xd:dataWidth="32" xd:bufferDirection="in"/>
   <xd:arg xd:name="*(W)" xd:originalName="W" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="31:0" xd:dataWidth="32" xd:bufferDirection="in"/>
@@ -19,6 +19,6 @@
   <xd:arg xd:name="W" xd:originalName="W" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x68" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="bias" xd:originalName="bias" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x70" xd:handshakeRef="ap_none"/>
   <xd:arg xd:name="feature_out" xd:originalName="feature_out" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x78" xd:handshakeRef="ap_none"/>
-  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="4292" xd:FF="3738" xd:BRAM="2" xd:DSP="18"/>
+  <xd:latencyEstimates xd:best-case="24" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="3632" xd:FF="3183" xd:BRAM="2" xd:DSP="14"/>
 </xd:acceleratorMap>

@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Pool'" level="0">
-<item name = "Date">Thu Aug 20 17:53:28 2020
+<item name = "Date">Thu Aug 20 20:15:28 2020
 </item>
-<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Version">2016.4 (Build 1722992 on Wed Mar 08 18:30:27 MST 2017)</item>
 <item name = "Project">pool_core</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 11.266, 1.25</column>
+<column name="ap_clk">10.00, 8.82, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">20, ?, 20, ?, none</column>
+<column name="">20, ?, 21, ?, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">0, ?, 2 ~ 4751012254769447, -, -, 0 ~ 65535, no</column>
-<column name=" + Loop 1.1">0, 4751012254769445, 2 ~ 72495800027, -, -, 0 ~ 65535, no</column>
-<column name="  ++ Loop 1.1.1">0, 72495800025, 11 ~ 1106215, -, -, 0 ~ 65535, no</column>
-<column name="   +++ Loop 1.1.1.1">0, 1106190, 3 ~ 4338, -, -, 0 ~ 255, no</column>
+<column name="- Loop 1">0, ?, 2 ~ 4752116027679272, -, -, 0 ~ 65535, no</column>
+<column name=" + Loop 1.1">0, 4752116027679270, 2 ~ 72512642522, -, -, 0 ~ 65535, no</column>
+<column name="  ++ Loop 1.1.1">0, 72512642520, 13 ~ 1106472, -, -, 0 ~ 65535, no</column>
+<column name="   +++ Loop 1.1.1.1">0, 1106445, 4 ~ 4339, -, -, 0 ~ 255, no</column>
 <column name="    ++++ Loop 1.1.1.1.1">0, 4335, 2 ~ 17, -, -, 0 ~ 255, no</column>
 </table>
 </item>

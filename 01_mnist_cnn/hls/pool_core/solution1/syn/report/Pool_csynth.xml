@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2018.2</Version>
+<Version>2016.4</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -17,7 +17,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>11.266</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.82</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -44,7 +44,7 @@
 <IterationLatency>
 <range>
 <min>2</min>
-<max>4751012254769447</max>
+<max>4752116027679272</max>
 </range>
 </IterationLatency>
 <Loop1.1>
@@ -57,13 +57,13 @@
 <Latency>
 <range>
 <min>0</min>
-<max>4751012254769445</max>
+<max>4752116027679270</max>
 </range>
 </Latency>
 <IterationLatency>
 <range>
 <min>2</min>
-<max>72495800027</max>
+<max>72512642522</max>
 </range>
 </IterationLatency>
 <Loop1.1.1>
@@ -76,13 +76,13 @@
 <Latency>
 <range>
 <min>0</min>
-<max>72495800025</max>
+<max>72512642520</max>
 </range>
 </Latency>
 <IterationLatency>
 <range>
-<min>11</min>
-<max>1106215</max>
+<min>13</min>
+<max>1106472</max>
 </range>
 </IterationLatency>
 <Loop1.1.1.1>
@@ -95,13 +95,13 @@
 <Latency>
 <range>
 <min>0</min>
-<max>1106190</max>
+<max>1106445</max>
 </range>
 </Latency>
 <IterationLatency>
 <range>
-<min>3</min>
-<max>4338</max>
+<min>4</min>
+<max>4339</max>
 </range>
 </IterationLatency>
 <Loop1.1.1.1.1>
@@ -134,9 +134,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>2</BRAM_18K>
-<DSP48E>12</DSP48E>
-<FF>3860</FF>
-<LUT>5011</LUT>
+<DSP48E>11</DSP48E>
+<FF>3475</FF>
+<LUT>4399</LUT>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>

@@ -1,0 +1,5 @@
+   Build using "D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/msys/bin/g++.exe"
+   Compiling apatb_Pool.cpp
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling pool_core.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

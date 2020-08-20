@@ -1,0 +1,16 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+@W [SIM-369] AXI_master port 'feature_in' has a depth of '1'. Insufficient depth may result in simulation mismatch or freeze.
+@W [SIM-369] AXI_master port 'feature_out' has a depth of '1'. Insufficient depth may result in simulation mismatch or freeze.
+   Build using "D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/msys/bin/g++.exe"
+   Compiling apatb_Pool.cpp
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling pool_core.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@E [SIM-344] Rtl simulation failed.
+@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***

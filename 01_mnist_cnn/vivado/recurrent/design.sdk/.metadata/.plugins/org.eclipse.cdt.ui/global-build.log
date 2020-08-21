@@ -1,0 +1,29 @@
+15:44:13 **** Incremental Build of configuration Debug for project mnist_cnn ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mnist_cnn_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:7: warning: unused variable 'label' [-Wunused-variable]
+   int label;
+       ^
+Finished building: ../src/helloworld.c
+ 
+Building target: mnist_cnn.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mnist_cnn_bsp/ps7_cortexa9_0/lib -o "mnist_cnn.elf"  ./src/Convolution.o ./src/Pool.o ./src/helloworld.o ./src/platform.o ./src/sd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: mnist_cnn.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size mnist_cnn.elf  |tee "mnist_cnn.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61552	   1208	 949952	1012712	  f73e8	mnist_cnn.elf
+Finished building: mnist_cnn.elf.size
+ 
+15:44:26 **** Incremental Build of configuration Debug for project mnist_cnn ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.

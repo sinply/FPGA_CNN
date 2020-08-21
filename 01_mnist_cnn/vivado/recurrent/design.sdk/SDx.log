@@ -1,0 +1,1043 @@
+20:44:32 INFO  : Registering command handlers for SDK TCF services
+20:44:32 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\temp_xsdb_launch_script.tcl
+20:44:32 INFO  : Validating SDSoC License
+20:44:33 INFO  : License available for SDSoC
+20:44:33 INFO  : Validating SDAccel License
+20:44:33 INFO  : License for SDAccel is unavailable
+20:44:34 INFO  : XSCT server has started successfully.
+20:44:34 INFO  : Successfully done setting XSCT server connection channel  
+20:44:34 INFO  : Successfully done setting SDK workspace  
+20:46:27 INFO  : Project 'cnn' created. You can now create BSPs and application projects targeting this hardware platform.
+08:17:29 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\temp_xsdb_launch_script.tcl
+08:17:31 INFO  : XSCT server has started successfully.
+08:17:34 INFO  : Successfully done setting XSCT server connection channel  
+08:17:34 INFO  : Successfully done setting SDK workspace  
+08:17:38 INFO  : Registering command handlers for SDK TCF services
+08:17:39 INFO  : Validating SDSoC License
+08:17:39 INFO  : License available for SDSoC
+08:17:39 INFO  : Validating SDAccel License
+08:17:39 INFO  : License for SDAccel is unavailable
+08:35:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+08:35:21 INFO  : 'fpga -state' command is executed.
+08:35:25 INFO  : Memory regions updated for context APU
+08:36:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:36:46 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+08:36:46 INFO  : 'jtag frequency' command is executed.
+08:36:46 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+08:36:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+08:36:49 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+08:36:49 INFO  : Context for 'APU' is selected.
+08:36:49 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+08:36:49 INFO  : Context for 'APU' is selected.
+08:36:49 INFO  : 'stop' command is executed.
+08:36:49 INFO  : 'ps7_init' command is executed.
+08:36:49 INFO  : 'ps7_post_config' command is executed.
+08:36:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:36:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:36:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:36:49 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:36:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+08:36:49 INFO  : Memory regions updated for context APU
+08:36:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:36:49 INFO  : 'con' command is executed.
+08:36:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+08:36:49 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+08:37:31 INFO  : Disconnected from the channel tcfchan#1.
+08:38:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:38:11 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+08:38:11 INFO  : 'jtag frequency' command is executed.
+08:38:11 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+08:38:11 INFO  : Context for 'APU' is selected.
+08:38:11 INFO  : System reset is completed.
+08:38:14 INFO  : 'after 3000' command is executed.
+08:38:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+08:38:16 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+08:38:16 INFO  : Context for 'APU' is selected.
+08:38:16 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+08:38:16 INFO  : Context for 'APU' is selected.
+08:38:17 INFO  : 'ps7_init' command is executed.
+08:38:17 INFO  : 'ps7_post_config' command is executed.
+08:38:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:38:17 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:38:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+08:38:17 INFO  : Memory regions updated for context APU
+08:38:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:38:17 INFO  : 'con' command is executed.
+08:38:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+08:38:17 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+08:39:59 INFO  : Disconnected from the channel tcfchan#2.
+09:37:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:37:44 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:37:44 INFO  : 'jtag frequency' command is executed.
+09:37:44 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:37:44 INFO  : Context for 'APU' is selected.
+09:37:44 INFO  : System reset is completed.
+09:37:47 INFO  : 'after 3000' command is executed.
+09:37:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:37:49 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:37:49 INFO  : Context for 'APU' is selected.
+09:37:49 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:37:49 INFO  : Context for 'APU' is selected.
+09:37:50 INFO  : 'ps7_init' command is executed.
+09:37:50 INFO  : 'ps7_post_config' command is executed.
+09:37:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:37:50 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:37:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+09:37:50 INFO  : Memory regions updated for context APU
+09:37:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:37:50 INFO  : 'con' command is executed.
+09:37:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:37:50 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+09:38:05 INFO  : Disconnected from the channel tcfchan#3.
+09:38:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:38:46 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:38:46 INFO  : 'jtag frequency' command is executed.
+09:38:46 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:38:46 INFO  : Context for 'APU' is selected.
+09:38:46 INFO  : System reset is completed.
+09:38:49 INFO  : 'after 3000' command is executed.
+09:38:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:38:52 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:38:52 INFO  : Context for 'APU' is selected.
+09:38:52 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:38:52 INFO  : Context for 'APU' is selected.
+09:38:52 INFO  : 'ps7_init' command is executed.
+09:38:52 INFO  : 'ps7_post_config' command is executed.
+09:38:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:38:52 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/conv_test/Debug/conv_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:38:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/conv_test/Debug/conv_test.elf
+----------------End of Script----------------
+
+09:38:52 INFO  : Memory regions updated for context APU
+09:38:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:38:52 INFO  : 'con' command is executed.
+09:38:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:38:52 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_conv_test.elf_on_local.tcl'
+09:39:10 INFO  : Disconnected from the channel tcfchan#4.
+09:42:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:42:18 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:42:18 INFO  : 'jtag frequency' command is executed.
+09:42:18 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:42:18 INFO  : Context for 'APU' is selected.
+09:42:18 INFO  : System reset is completed.
+09:42:22 INFO  : 'after 3000' command is executed.
+09:42:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:42:24 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:42:24 INFO  : Context for 'APU' is selected.
+09:42:24 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:42:24 INFO  : Context for 'APU' is selected.
+09:42:25 INFO  : 'ps7_init' command is executed.
+09:42:25 INFO  : 'ps7_post_config' command is executed.
+09:42:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:42:25 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:42:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:42:25 INFO  : Memory regions updated for context APU
+09:42:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:42:25 INFO  : 'con' command is executed.
+09:42:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:42:25 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:43:02 INFO  : Disconnected from the channel tcfchan#5.
+09:43:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:43:23 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:43:23 INFO  : 'jtag frequency' command is executed.
+09:43:23 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:43:23 INFO  : Context for 'APU' is selected.
+09:43:23 INFO  : System reset is completed.
+09:43:26 INFO  : 'after 3000' command is executed.
+09:43:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:43:29 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:43:29 INFO  : Context for 'APU' is selected.
+09:43:29 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:43:29 INFO  : Context for 'APU' is selected.
+09:43:29 INFO  : 'ps7_init' command is executed.
+09:43:29 INFO  : 'ps7_post_config' command is executed.
+09:43:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:43:29 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:43:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:43:29 INFO  : Memory regions updated for context APU
+09:43:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:43:29 INFO  : 'con' command is executed.
+09:43:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:43:29 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:44:03 INFO  : Disconnected from the channel tcfchan#6.
+09:46:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:08 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:46:08 INFO  : 'jtag frequency' command is executed.
+09:46:08 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:46:08 INFO  : Context for 'APU' is selected.
+09:46:08 INFO  : System reset is completed.
+09:46:11 INFO  : 'after 3000' command is executed.
+09:46:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:46:14 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:46:14 INFO  : Context for 'APU' is selected.
+09:46:14 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:46:14 INFO  : Context for 'APU' is selected.
+09:46:14 INFO  : 'ps7_init' command is executed.
+09:46:14 INFO  : 'ps7_post_config' command is executed.
+09:46:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:15 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:46:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:46:15 INFO  : Memory regions updated for context APU
+09:46:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:46:15 INFO  : 'con' command is executed.
+09:46:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:46:15 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:46:43 INFO  : Disconnected from the channel tcfchan#7.
+09:46:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:54 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:46:54 INFO  : 'jtag frequency' command is executed.
+09:46:54 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:46:54 INFO  : Context for 'APU' is selected.
+09:46:54 INFO  : System reset is completed.
+09:46:57 INFO  : 'after 3000' command is executed.
+09:46:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:47:00 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:47:00 INFO  : Context for 'APU' is selected.
+09:47:01 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:47:01 INFO  : Context for 'APU' is selected.
+09:47:01 INFO  : 'ps7_init' command is executed.
+09:47:01 INFO  : 'ps7_post_config' command is executed.
+09:47:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:47:01 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:47:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:47:01 INFO  : Memory regions updated for context APU
+09:47:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:47:01 INFO  : 'con' command is executed.
+09:47:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:47:01 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:47:46 INFO  : Disconnected from the channel tcfchan#8.
+09:49:37 INFO  : Registering command handlers for SDK TCF services
+09:49:37 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\temp_xsdb_launch_script.tcl
+09:49:38 INFO  : Validating SDSoC License
+09:49:39 INFO  : License available for SDSoC
+09:49:39 INFO  : Validating SDAccel License
+09:49:39 INFO  : License for SDAccel is unavailable
+09:49:39 INFO  : XSCT server has started successfully.
+09:49:39 INFO  : Successfully done setting XSCT server connection channel  
+09:49:40 INFO  : Successfully done setting SDK workspace  
+09:50:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:50:19 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:50:19 INFO  : 'jtag frequency' command is executed.
+09:50:19 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:50:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:50:22 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:50:22 INFO  : Context for 'APU' is selected.
+09:50:22 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:50:22 INFO  : Context for 'APU' is selected.
+09:50:22 INFO  : 'stop' command is executed.
+09:50:23 INFO  : 'ps7_init' command is executed.
+09:50:23 INFO  : 'ps7_post_config' command is executed.
+09:50:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:50:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:50:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:50:23 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:50:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:50:23 INFO  : Memory regions updated for context APU
+09:50:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:50:24 INFO  : 'con' command is executed.
+09:50:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:50:24 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:50:39 INFO  : Disconnected from the channel tcfchan#1.
+09:51:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:36 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:51:36 INFO  : 'jtag frequency' command is executed.
+09:51:36 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:51:36 INFO  : Context for 'APU' is selected.
+09:51:36 INFO  : System reset is completed.
+09:51:39 INFO  : 'after 3000' command is executed.
+09:51:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:51:42 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:51:42 INFO  : Context for 'APU' is selected.
+09:51:42 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:51:42 INFO  : Context for 'APU' is selected.
+09:51:43 INFO  : 'ps7_init' command is executed.
+09:51:43 INFO  : 'ps7_post_config' command is executed.
+09:51:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:51:43 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:51:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:51:43 INFO  : Memory regions updated for context APU
+09:51:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:51:43 INFO  : 'con' command is executed.
+09:51:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:51:43 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:51:54 INFO  : Disconnected from the channel tcfchan#2.
+09:52:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:23 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:52:23 INFO  : 'jtag frequency' command is executed.
+09:52:23 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:52:23 INFO  : Context for 'APU' is selected.
+09:52:23 INFO  : System reset is completed.
+09:52:26 INFO  : 'after 3000' command is executed.
+09:52:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:52:29 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:52:29 INFO  : Context for 'APU' is selected.
+09:52:29 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:52:29 INFO  : Context for 'APU' is selected.
+09:52:30 INFO  : 'ps7_init' command is executed.
+09:52:30 INFO  : 'ps7_post_config' command is executed.
+09:52:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:52:30 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/conv_test/Debug/conv_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:52:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/conv_test/Debug/conv_test.elf
+----------------End of Script----------------
+
+09:52:30 INFO  : Memory regions updated for context APU
+09:52:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:52:30 INFO  : 'con' command is executed.
+09:52:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:52:30 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_conv_test.elf_on_local.tcl'
+09:52:48 INFO  : Disconnected from the channel tcfchan#3.
+09:53:46 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\temp_xsdb_launch_script.tcl
+09:53:48 INFO  : XSCT server has started successfully.
+09:55:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:48 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:55:48 INFO  : 'jtag frequency' command is executed.
+09:55:48 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:55:48 INFO  : Context for 'APU' is selected.
+09:55:48 INFO  : System reset is completed.
+09:55:51 INFO  : 'after 3000' command is executed.
+09:55:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:55:54 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:55:54 INFO  : Context for 'APU' is selected.
+09:55:54 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:55:54 INFO  : Context for 'APU' is selected.
+09:55:55 INFO  : 'ps7_init' command is executed.
+09:55:55 INFO  : 'ps7_post_config' command is executed.
+09:55:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:55:55 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:55:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:55:55 INFO  : Memory regions updated for context APU
+09:55:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:55:55 INFO  : 'con' command is executed.
+09:55:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:55:55 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:56:21 INFO  : Disconnected from the channel tcfchan#1.
+09:56:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:56:49 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:56:49 INFO  : 'jtag frequency' command is executed.
+09:56:49 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+09:56:49 INFO  : Context for 'APU' is selected.
+09:56:49 INFO  : System reset is completed.
+09:56:52 INFO  : 'after 3000' command is executed.
+09:56:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+09:56:55 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+09:56:55 INFO  : Context for 'APU' is selected.
+09:56:55 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+09:56:55 INFO  : Context for 'APU' is selected.
+09:56:55 INFO  : 'ps7_init' command is executed.
+09:56:55 INFO  : 'ps7_post_config' command is executed.
+09:56:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:56 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:56:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+09:56:56 INFO  : Memory regions updated for context APU
+09:56:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:56 INFO  : 'con' command is executed.
+09:56:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+09:56:56 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+09:59:58 INFO  : Disconnected from the channel tcfchan#2.
+09:59:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:59 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+09:59:59 INFO  : 'jtag frequency' command is executed.
+09:59:59 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+10:00:00 INFO  : Context for 'APU' is selected.
+10:00:00 INFO  : System reset is completed.
+10:00:03 INFO  : 'after 3000' command is executed.
+10:00:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+10:00:05 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+10:00:05 INFO  : Context for 'APU' is selected.
+10:00:06 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+10:00:06 INFO  : Context for 'APU' is selected.
+10:00:06 INFO  : 'ps7_init' command is executed.
+10:00:06 INFO  : 'ps7_post_config' command is executed.
+10:00:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:07 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:00:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+10:00:07 INFO  : Memory regions updated for context APU
+10:00:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:00:07 INFO  : 'con' command is executed.
+10:00:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+10:00:07 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+10:00:40 INFO  : Disconnected from the channel tcfchan#3.
+10:02:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:33 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+10:02:33 INFO  : 'jtag frequency' command is executed.
+10:02:33 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+10:02:33 INFO  : Context for 'APU' is selected.
+10:02:33 INFO  : System reset is completed.
+10:02:36 INFO  : 'after 3000' command is executed.
+10:02:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+10:02:39 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+10:02:39 INFO  : Context for 'APU' is selected.
+10:02:39 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+10:02:39 INFO  : Context for 'APU' is selected.
+10:02:40 INFO  : 'ps7_init' command is executed.
+10:02:40 INFO  : 'ps7_post_config' command is executed.
+10:02:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:40 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:02:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+10:02:40 INFO  : Memory regions updated for context APU
+10:02:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:40 INFO  : 'con' command is executed.
+10:02:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+10:02:40 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+10:03:15 INFO  : Disconnected from the channel tcfchan#4.
+10:06:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:54 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+10:06:54 INFO  : 'jtag frequency' command is executed.
+10:06:54 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+10:06:54 INFO  : Context for 'APU' is selected.
+10:06:54 INFO  : System reset is completed.
+10:06:57 INFO  : 'after 3000' command is executed.
+10:06:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+10:07:00 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+10:07:00 INFO  : Context for 'APU' is selected.
+10:07:00 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+10:07:00 INFO  : Context for 'APU' is selected.
+10:07:01 INFO  : 'ps7_init' command is executed.
+10:07:01 INFO  : 'ps7_post_config' command is executed.
+10:07:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:07:01 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:07:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/pool_test/Debug/pool_test.elf
+----------------End of Script----------------
+
+10:07:01 INFO  : Memory regions updated for context APU
+10:07:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:07:01 INFO  : 'con' command is executed.
+10:07:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+10:07:01 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_pool_test.elf_on_local.tcl'
+10:07:06 INFO  : Disconnected from the channel tcfchan#5.
+10:27:53 INFO  : Registering command handlers for SDK TCF services
+10:27:53 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\temp_xsdb_launch_script.tcl
+10:27:55 INFO  : XSCT server has started successfully.
+10:27:55 INFO  : Successfully done setting XSCT server connection channel  
+10:27:56 INFO  : Successfully done setting SDK workspace  
+10:27:57 INFO  : Validating SDSoC License
+10:27:57 INFO  : License available for SDSoC
+10:27:57 INFO  : Validating SDAccel License
+10:27:58 INFO  : License for SDAccel is unavailable
+10:30:59 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\temp_xsdb_launch_script.tcl
+10:31:01 INFO  : XSCT server has started successfully.
+10:42:53 INFO  : Refreshed build settings on project mnist_cnn
+10:43:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:43:57 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+10:43:57 INFO  : 'jtag frequency' command is executed.
+10:43:57 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+10:43:57 INFO  : Context for 'APU' is selected.
+10:43:57 INFO  : System reset is completed.
+10:44:00 INFO  : 'after 3000' command is executed.
+10:44:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+10:44:03 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+10:44:03 INFO  : Context for 'APU' is selected.
+10:44:03 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+10:44:03 INFO  : Context for 'APU' is selected.
+10:44:04 INFO  : 'ps7_init' command is executed.
+10:44:04 INFO  : 'ps7_post_config' command is executed.
+10:44:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:04 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:44:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+10:44:04 INFO  : Memory regions updated for context APU
+10:44:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:04 INFO  : 'con' command is executed.
+10:44:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+10:44:04 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+10:45:55 INFO  : Disconnected from the channel tcfchan#1.
+10:53:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:32 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+10:53:32 INFO  : 'jtag frequency' command is executed.
+10:53:32 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+10:53:33 INFO  : Context for 'APU' is selected.
+10:53:33 INFO  : System reset is completed.
+10:53:36 INFO  : 'after 3000' command is executed.
+10:53:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+10:53:38 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+10:53:39 INFO  : Context for 'APU' is selected.
+10:53:39 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+10:53:39 INFO  : Context for 'APU' is selected.
+10:53:39 INFO  : 'ps7_init' command is executed.
+10:53:39 INFO  : 'ps7_post_config' command is executed.
+10:53:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:39 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:53:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+10:53:39 INFO  : Memory regions updated for context APU
+10:53:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:40 INFO  : 'con' command is executed.
+10:53:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+10:53:40 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+10:54:04 INFO  : Disconnected from the channel tcfchan#2.
+10:56:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:56:36 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+10:56:36 INFO  : 'jtag frequency' command is executed.
+10:56:36 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl' is done.
+10:56:36 INFO  : Context for 'APU' is selected.
+10:56:36 INFO  : System reset is completed.
+10:56:39 INFO  : 'after 3000' command is executed.
+10:56:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+10:56:42 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit"
+10:56:42 INFO  : Context for 'APU' is selected.
+10:56:42 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf'.
+10:56:42 INFO  : Context for 'APU' is selected.
+10:56:43 INFO  : 'ps7_init' command is executed.
+10:56:43 INFO  : 'ps7_post_config' command is executed.
+10:56:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:56:43 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:56:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+10:56:43 INFO  : Memory regions updated for context APU
+10:56:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:56:43 INFO  : 'con' command is executed.
+10:56:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+10:56:43 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+10:58:31 INFO  : Disconnected from the channel tcfchan#3.
+15:02:52 INFO  : Registering command handlers for SDK TCF services
+15:02:52 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\recurrent\design.sdk\temp_xsdb_launch_script.tcl
+15:02:53 INFO  : Validating SDSoC License
+15:02:54 INFO  : License available for SDSoC
+15:02:54 INFO  : Validating SDAccel License
+15:02:54 INFO  : License for SDAccel is unavailable
+15:02:55 INFO  : XSCT server has started successfully.
+15:02:55 INFO  : Successfully done setting XSCT server connection channel  
+15:02:57 INFO  : Successfully done setting SDK workspace  
+15:03:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:49 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+15:03:49 INFO  : 'jtag frequency' command is executed.
+15:03:49 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl' is done.
+15:03:49 INFO  : Context for 'APU' is selected.
+15:03:49 INFO  : System reset is completed.
+15:03:52 INFO  : 'after 3000' command is executed.
+15:03:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+15:03:55 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit"
+15:03:55 INFO  : Context for 'APU' is selected.
+15:03:55 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf'.
+15:03:55 INFO  : Context for 'APU' is selected.
+15:03:55 INFO  : 'ps7_init' command is executed.
+15:03:55 INFO  : 'ps7_post_config' command is executed.
+15:03:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:55 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:03:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+15:03:55 INFO  : Memory regions updated for context APU
+15:03:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:55 INFO  : 'con' command is executed.
+15:03:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+15:03:55 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\recurrent\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+15:04:51 INFO  : Disconnected from the channel tcfchan#1.
+15:08:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:07 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+15:08:07 INFO  : 'jtag frequency' command is executed.
+15:08:07 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl' is done.
+15:08:08 INFO  : Context for 'APU' is selected.
+15:08:08 INFO  : System reset is completed.
+15:08:11 INFO  : 'after 3000' command is executed.
+15:08:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+15:08:13 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit"
+15:08:14 INFO  : Context for 'APU' is selected.
+15:08:14 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf'.
+15:08:14 INFO  : Context for 'APU' is selected.
+15:08:14 INFO  : 'ps7_init' command is executed.
+15:08:14 INFO  : 'ps7_post_config' command is executed.
+15:08:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:14 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:08:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+15:08:14 INFO  : Memory regions updated for context APU
+15:08:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:14 INFO  : 'con' command is executed.
+15:08:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+15:08:14 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\recurrent\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+15:10:21 INFO  : Disconnected from the channel tcfchan#2.
+15:32:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:36 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+15:32:36 INFO  : 'jtag frequency' command is executed.
+15:32:36 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl' is done.
+15:32:37 INFO  : Context for 'APU' is selected.
+15:32:37 INFO  : System reset is completed.
+15:32:40 INFO  : 'after 3000' command is executed.
+15:32:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+15:32:42 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit"
+15:32:43 INFO  : Context for 'APU' is selected.
+15:32:43 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf'.
+15:32:43 INFO  : Context for 'APU' is selected.
+15:32:43 INFO  : 'ps7_init' command is executed.
+15:32:43 INFO  : 'ps7_post_config' command is executed.
+15:32:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:43 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:32:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+15:32:43 INFO  : Memory regions updated for context APU
+15:32:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:32:43 INFO  : 'con' command is executed.
+15:32:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+15:32:43 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\recurrent\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+15:36:00 INFO  : Disconnected from the channel tcfchan#3.
+15:44:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:34 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+15:44:34 INFO  : 'jtag frequency' command is executed.
+15:44:34 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl' is done.
+15:44:34 INFO  : Context for 'APU' is selected.
+15:44:34 INFO  : System reset is completed.
+15:44:37 INFO  : 'after 3000' command is executed.
+15:44:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+15:44:40 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit"
+15:44:40 INFO  : Context for 'APU' is selected.
+15:44:40 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf'.
+15:44:40 INFO  : Context for 'APU' is selected.
+15:44:41 INFO  : 'ps7_init' command is executed.
+15:44:41 INFO  : 'ps7_post_config' command is executed.
+15:44:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:41 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:44:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf
+----------------End of Script----------------
+
+15:44:41 INFO  : Memory regions updated for context APU
+15:44:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:41 INFO  : 'con' command is executed.
+15:44:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+15:44:41 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\recurrent\design.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mnist_cnn.elf_on_local.tcl'
+15:48:21 INFO  : Disconnected from the channel tcfchan#4.

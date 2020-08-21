@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4_sdx (64-bit)
+# SW Build 1806307 on Thu Mar  9 15:24:31 MST 2017
+# IP Build 1759159 on Thu Jan 26 07:31:30 MST 2017
+# Start of session at: Thu Aug 20 20:28:54 2020
+# Process ID: 16148
+# Current directory: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.runs/synth_1/design_1_wrapper.vds
+# Journal file: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/design.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

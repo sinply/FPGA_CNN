@@ -1,0 +1,1026 @@
+!SESSION 2020-08-21 15:02:16.140 -----------------------------------------------
+eclipse.buildId=2016.1
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file E:\Exercise\FPGA\FPGA_CNN\01_mnist_cnn\vivado\recurrent\design.sdk\.metadata\.bak_0.log
+Created Time: 2020-08-21 15:07:31.832
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:31.832
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:31.897
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:32.692
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:32.700
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:32.765
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:33.276
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:33.284
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:33.354
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:33.865
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:33.873
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:33.943
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:34.739
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:34.747
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:34.848
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:38.788
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:38.795
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:38.861
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:39.853
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:39.861
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:39.928
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:40.805
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:40.812
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:40.879
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:40.947
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-08-21 15:07:40.968
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:486)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:287)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:07:50.690
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:07:50.695
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:07:50.696
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:07:50.698
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:07:50.699
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:07:50.700
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 15:08:00.762
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:00.763
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:02.892
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:02.893
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.668
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2016.4_sdx]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.668
+!MESSAGE XSCT Command: [version], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.670
+!MESSAGE XSCT command with result: [version], Result: [null, 2016.4_sdx]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.670
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.686
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.687
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.702
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.702
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.708
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.709
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.724
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.725
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.731
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.732
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.747
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.748
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.756
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.757
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.772
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.772
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.778
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.779
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.794
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.795
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203368853A" && level == 0}], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.814
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203368853A" && level == 0}], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.814
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.849
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.850
+!MESSAGE XSCT Command: [source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.852
+!MESSAGE XSCT command with result: [source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:07.853
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:08.154
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:08.155
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:08.242
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:08.242
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.244
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.255
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.262
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.263
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.278
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.279
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.582
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:11.583
+!MESSAGE XSCT Command: [fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:13.909
+!MESSAGE XSCT command with result: [fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:13.930
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.241
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.242
+!MESSAGE XSCT Command: [loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.270
+!MESSAGE XSCT command with result: [loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf], Result: [null, design_1_wrapper_0]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.271
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.291
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.291
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.579
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.580
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.584
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.585
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.604
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.604
+!MESSAGE XSCT Command: [dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.765
+!MESSAGE XSCT command with result: [dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.798
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.890
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.956
+!MESSAGE XSCT Command: [con], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:08:14.962
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:10:21.169
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-183
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:10:21.172
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-183
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:14.618
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:15.943
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:15.944
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:15.946
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:15.947
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:15.948
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:16.156
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:16.160
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:16.161
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:16.164
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:16.164
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:16.166
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 15:32:29.665
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:29.666
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:31.805
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:31.806
+!MESSAGE XSCT Command: [version -server], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.590
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2016.4_sdx]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.591
+!MESSAGE XSCT Command: [version], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.592
+!MESSAGE XSCT command with result: [version], Result: [null, 2016.4_sdx]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.593
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.627
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.627
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.643
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.644
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.652
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.652
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.667
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.669
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.674
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.674
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.690
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.690
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.696
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.697
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.712
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.713
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.719
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.719
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.734
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.735
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203368853A" && level == 0}], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.751
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203368853A" && level == 0}], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.752
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.791
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.792
+!MESSAGE XSCT Command: [source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.794
+!MESSAGE XSCT command with result: [source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:36.795
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:37.106
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:37.107
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:37.185
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:37.186
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.189
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.225
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.233
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.234
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.253
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.254
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.551
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:40.552
+!MESSAGE XSCT Command: [fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:42.877
+!MESSAGE XSCT command with result: [fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:42.903
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.214
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.215
+!MESSAGE XSCT Command: [loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.242
+!MESSAGE XSCT command with result: [loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf], Result: [null, design_1_wrapper_1]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.243
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.265
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.266
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.554
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.555
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.559
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.560
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.579
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.580
+!MESSAGE XSCT Command: [dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.744
+!MESSAGE XSCT command with result: [dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.764
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.855
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.856
+!MESSAGE XSCT Command: [con], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:32:43.862
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:36:00.917
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-237
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:36:00.920
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-237
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:10.993
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:12.207
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:12.207
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:12.210
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:12.210
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:12.211
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:20.003
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:20.007
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:20.008
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:20.010
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:20.011
+!MESSAGE XSCT Command: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:20.013
+!MESSAGE XSCT command with result: [::hsi::utils::closesw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-08-21 15:44:27.270
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:27.271
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:29.410
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:29.411
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.165
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2016.4_sdx]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.166
+!MESSAGE XSCT Command: [version], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.167
+!MESSAGE XSCT command with result: [version], Result: [null, 2016.4_sdx]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.167
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.201
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.202
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.218
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.219
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.229
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.230
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.246
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.247
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.252
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.253
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.269
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.269
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.275
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.276
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.291
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.292
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.298
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.298
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.314
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.314
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203368853A" && level == 0}], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.330
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203368853A" && level == 0}], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.331
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.366
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.366
+!MESSAGE XSCT Command: [source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.368
+!MESSAGE XSCT command with result: [source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/ps7_init.tcl], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.369
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.669
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.670
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.757
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:34.757
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:37.758
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:37.772
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:37.778
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203368853A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:37.779
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:37.794
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:37.795
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:38.104
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:38.105
+!MESSAGE XSCT Command: [fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.435
+!MESSAGE XSCT command with result: [fpga -file E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.447
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.761
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.762
+!MESSAGE XSCT Command: [loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.788
+!MESSAGE XSCT command with result: [loadhw E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/cnn/system.hdf], Result: [null, design_1_wrapper_2]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.789
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.808
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:40.809
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.124
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.125
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.130
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.130
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.150
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.151
+!MESSAGE XSCT Command: [dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.315
+!MESSAGE XSCT command with result: [dow E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/vivado/recurrent/design.sdk/mnist_cnn/Debug/mnist_cnn.elf], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.336
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.428
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.429
+!MESSAGE XSCT Command: [con], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:44:41.434
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:48:21.108
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-308
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-08-21 15:48:21.112
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-308

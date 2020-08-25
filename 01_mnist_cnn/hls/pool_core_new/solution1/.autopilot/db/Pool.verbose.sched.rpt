@@ -1,0 +1,1575 @@
+
+
+================================================================
+== Vivado HLS Report for 'Pool'
+================================================================
+* Date:           Sun Aug 23 16:40:58 2020
+
+* Version:        2016.4 (Build 1722992 on Wed Mar 08 18:30:27 MST 2017)
+* Project:        pool_core_new
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   20|    ?|   21|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+-----+------------------+----------------------+-----------+-----------+-----------+----------+
+        |                         |         Latency        |       Iteration      |  Initiation Interval  |    Trip   |          |
+        |        Loop Name        | min |        max       |        Latency       |  achieved |   target  |   Count   | Pipelined|
+        +-------------------------+-----+------------------+----------------------+-----------+-----------+-----------+----------+
+        |- Loop 1                 |    0|                 ?| 2 ~ 4194629106788117 |          -|          -| 0 ~ 65535 |    no    |
+        | + Loop 1.1              |    0|  4194629106788115|    9 ~ 64005937389   |          -|          -| 0 ~ 65535 |    no    |
+        |  ++ Loop 1.1.1          |    0|       64005937380|      3 ~ 976668      |          -|          -| 0 ~ 65535 |    no    |
+        |   +++ Loop 1.1.1.1      |    0|            976650|       5 ~ 3830       |          -|          -|  0 ~ 255  |    no    |
+        |    ++++ Loop 1.1.1.1.1  |    0|              3825|        2 ~ 15        |          -|          -|  0 ~ 255  |    no    |
+        +-------------------------+-----+------------------+----------------------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 75
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / (!exitcond4)
+22 --> 
+	23  / (!exitcond1)
+	21  / (exitcond1)
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	72  / (exitcond)
+	27  / (!exitcond)
+27 --> 
+	28  / (!exitcond2)
+	56  / (exitcond2 & tmp_2)
+	71  / (exitcond2 & !tmp_2)
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / (!exitcond3 & mode_V_read == 1) | (!exitcond3 & mode_V_read == 2)
+	42  / (!exitcond3 & mode_V_read == 0)
+	55  / (!exitcond3 & mode_V_read == 3)
+	27  / (exitcond3)
+32 --> 
+	33  / (mode_V_read == 1) | (mode_V_read == 2)
+33 --> 
+	34  / (mode_V_read == 1) | (mode_V_read == 2)
+34 --> 
+	35  / (mode_V_read == 1) | (mode_V_read == 2)
+35 --> 
+	36  / (mode_V_read == 1) | (mode_V_read == 2)
+36 --> 
+	37  / (mode_V_read == 1) | (mode_V_read == 2)
+37 --> 
+	38  / (mode_V_read == 1) | (mode_V_read == 2)
+38 --> 
+	39  / (mode_V_read == 1) | (mode_V_read == 2)
+39 --> 
+	40  / (mode_V_read == 1) | (mode_V_read == 2)
+40 --> 
+	41  / (mode_V_read == 1) | (mode_V_read == 2)
+41 --> 
+	55  / (mode_V_read == 1) | (mode_V_read == 2)
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	53  / true
+53 --> 
+	54  / true
+54 --> 
+	55  / true
+55 --> 
+	31  / true
+56 --> 
+	57  / true
+57 --> 
+	58  / true
+58 --> 
+	59  / true
+59 --> 
+	60  / true
+60 --> 
+	61  / true
+61 --> 
+	62  / true
+62 --> 
+	63  / true
+63 --> 
+	64  / true
+64 --> 
+	65  / true
+65 --> 
+	66  / true
+66 --> 
+	67  / true
+67 --> 
+	68  / true
+68 --> 
+	69  / true
+69 --> 
+	70  / true
+70 --> 
+	71  / true
+71 --> 
+	26  / true
+72 --> 
+	73  / true
+73 --> 
+	74  / true
+74 --> 
+	75  / true
+75 --> 
+	22  / true
+* FSM state operations: 
+
+ <State 1>: 5.66ns
+ST_1: feature_out_read (10)  [1/1] 1.00ns
+:0  %feature_out_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %feature_out)
+
+ST_1: feature_in_read (11)  [1/1] 1.00ns
+:1  %feature_in_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %feature_in)
+
+ST_1: mode_V_read (12)  [1/1] 1.00ns
+:2  %mode_V_read = call i2 @_ssdm_op_Read.s_axilite.i2(i2 %mode_V)
+
+ST_1: Ky_V_read (13)  [1/1] 1.00ns
+:3  %Ky_V_read = call i8 @_ssdm_op_Read.s_axilite.i8(i8 %Ky_V)
+
+ST_1: Kx_V_read (14)  [1/1] 1.00ns
+:4  %Kx_V_read = call i8 @_ssdm_op_Read.s_axilite.i8(i8 %Kx_V)
+
+ST_1: Win_V_read (15)  [1/1] 1.00ns
+:5  %Win_V_read = call i16 @_ssdm_op_Read.s_axilite.i16(i16 %Win_V)
+
+ST_1: Hin_V_read (16)  [1/1] 1.00ns
+:6  %Hin_V_read = call i16 @_ssdm_op_Read.s_axilite.i16(i16 %Hin_V)
+
+ST_1: CHin_V_read (17)  [1/1] 1.00ns
+:7  %CHin_V_read = call i16 @_ssdm_op_Read.s_axilite.i16(i16 %CHin_V)
+
+ST_1: feature_out3 (18)  [1/1] 0.00ns
+:8  %feature_out3 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %feature_out_read, i32 2, i32 31)
+
+ST_1: feature_in1 (20)  [1/1] 0.00ns
+:10  %feature_in1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %feature_in_read, i32 2, i32 31)
+
+ST_1: lhs_V (40)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:21
+:30  %lhs_V = zext i8 %Kx_V_read to i16
+
+ST_1: r_V (41)  [20/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_1: rhs_V (42)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:22
+:32  %rhs_V = zext i8 %Ky_V_read to i16
+
+ST_1: r_V_1 (43)  [20/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 2>: 4.66ns
+ST_2: r_V (41)  [19/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_2: r_V_1 (43)  [19/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 3>: 4.66ns
+ST_3: r_V (41)  [18/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_3: r_V_1 (43)  [18/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 4>: 4.66ns
+ST_4: r_V (41)  [17/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_4: r_V_1 (43)  [17/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 5>: 4.66ns
+ST_5: r_V (41)  [16/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_5: r_V_1 (43)  [16/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 6>: 4.66ns
+ST_6: r_V (41)  [15/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_6: r_V_1 (43)  [15/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 7>: 4.66ns
+ST_7: r_V (41)  [14/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_7: r_V_1 (43)  [14/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 8>: 4.66ns
+ST_8: r_V (41)  [13/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_8: r_V_1 (43)  [13/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 9>: 4.66ns
+ST_9: r_V (41)  [12/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_9: r_V_1 (43)  [12/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 10>: 4.66ns
+ST_10: r_V (41)  [11/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_10: r_V_1 (43)  [11/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 11>: 4.66ns
+ST_11: r_V (41)  [10/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_11: r_V_1 (43)  [10/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 12>: 4.66ns
+ST_12: r_V (41)  [9/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_12: r_V_1 (43)  [9/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 13>: 4.66ns
+ST_13: r_V (41)  [8/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_13: r_V_1 (43)  [8/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+
+ <State 14>: 6.38ns
+ST_14: r_V (41)  [7/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_14: r_V_1 (43)  [7/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+ST_14: r_V_2 (49)  [1/1] 6.38ns  loc: pool_core_new/pool_core.cpp:50
+:39  %r_V_2 = mul i16 %lhs_V, %rhs_V
+
+
+ <State 15>: 6.41ns
+ST_15: r_V (41)  [6/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_15: r_V_1 (43)  [6/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+ST_15: tmp_s (50)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:50
+:40  %tmp_s = zext i16 %r_V_2 to i32
+
+ST_15: tmp_3 (51)  [6/6] 6.41ns  loc: pool_core_new/pool_core.cpp:50
+:41  %tmp_3 = sitofp i32 %tmp_s to float
+
+
+ <State 16>: 6.41ns
+ST_16: r_V (41)  [5/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_16: r_V_1 (43)  [5/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+ST_16: tmp_3 (51)  [5/6] 6.41ns  loc: pool_core_new/pool_core.cpp:50
+:41  %tmp_3 = sitofp i32 %tmp_s to float
+
+
+ <State 17>: 6.41ns
+ST_17: r_V (41)  [4/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_17: r_V_1 (43)  [4/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+ST_17: tmp_3 (51)  [4/6] 6.41ns  loc: pool_core_new/pool_core.cpp:50
+:41  %tmp_3 = sitofp i32 %tmp_s to float
+
+
+ <State 18>: 6.41ns
+ST_18: r_V (41)  [3/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_18: r_V_1 (43)  [3/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+ST_18: tmp_3 (51)  [3/6] 6.41ns  loc: pool_core_new/pool_core.cpp:50
+:41  %tmp_3 = sitofp i32 %tmp_s to float
+
+
+ <State 19>: 6.41ns
+ST_19: r_V (41)  [2/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_19: r_V_1 (43)  [2/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+ST_19: tmp_3 (51)  [2/6] 6.41ns  loc: pool_core_new/pool_core.cpp:50
+:41  %tmp_3 = sitofp i32 %tmp_s to float
+
+
+ <State 20>: 6.41ns
+ST_20: tmp_8 (19)  [1/1] 0.00ns
+:9  %tmp_8 = zext i30 %feature_out3 to i32
+
+ST_20: tmp_7 (21)  [1/1] 0.00ns
+:11  %tmp_7 = zext i30 %feature_in1 to i32
+
+ST_20: StgValue_135 (22)  [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBitsMap(float* %gmem), !map !91
+
+ST_20: StgValue_136 (23)  [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecBitsMap(i16 %CHin_V), !map !96
+
+ST_20: StgValue_137 (24)  [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecBitsMap(i16 %Hin_V), !map !102
+
+ST_20: StgValue_138 (25)  [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecBitsMap(i16 %Win_V), !map !106
+
+ST_20: StgValue_139 (26)  [1/1] 0.00ns
+:16  call void (...)* @_ssdm_op_SpecBitsMap(i8 %Kx_V), !map !110
+
+ST_20: StgValue_140 (27)  [1/1] 0.00ns
+:17  call void (...)* @_ssdm_op_SpecBitsMap(i8 %Ky_V), !map !114
+
+ST_20: StgValue_141 (28)  [1/1] 0.00ns
+:18  call void (...)* @_ssdm_op_SpecBitsMap(i2 %mode_V), !map !118
+
+ST_20: StgValue_142 (29)  [1/1] 0.00ns
+:19  call void (...)* @_ssdm_op_SpecTopModule([5 x i8]* @Pool_str) nounwind
+
+ST_20: StgValue_143 (30)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:11
+:20  call void (...)* @_ssdm_op_SpecInterface(i32 %feature_out, [10 x i8]* @mode1, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i64 4294967295, [1 x i8]* @bundle2, [6 x i8]* @p_str2, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_144 (31)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:12
+:21  call void (...)* @_ssdm_op_SpecInterface(float* %gmem, [6 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i64 4294967295, [1 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_145 (32)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:12
+:22  call void (...)* @_ssdm_op_SpecInterface(i32 %feature_in, [10 x i8]* @mode, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i64 4294967295, [1 x i8]* @bundle, [6 x i8]* @p_str2, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_146 (33)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:13
+:23  call void (...)* @_ssdm_op_SpecInterface(i16 %Win_V, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_147 (34)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:14
+:24  call void (...)* @_ssdm_op_SpecInterface(i8 %Kx_V, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_148 (35)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:15
+:25  call void (...)* @_ssdm_op_SpecInterface(i16 %Hin_V, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_149 (36)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:16
+:26  call void (...)* @_ssdm_op_SpecInterface(i2 %mode_V, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_150 (37)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:17
+:27  call void (...)* @_ssdm_op_SpecInterface(i8 %Ky_V, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_151 (38)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:18
+:28  call void (...)* @_ssdm_op_SpecInterface(i16 %CHin_V, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: StgValue_152 (39)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:19
+:29  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_20: r_V (41)  [1/20] 4.66ns  loc: pool_core_new/pool_core.cpp:21
+:31  %r_V = udiv i16 %Win_V_read, %lhs_V
+
+ST_20: r_V_1 (43)  [1/20] 4.66ns  loc: pool_core_new/pool_core.cpp:22
+:33  %r_V_1 = udiv i16 %Hin_V_read, %rhs_V
+
+ST_20: tmp_5 (44)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:22
+:34  %tmp_5 = zext i16 %r_V_1 to i32
+
+ST_20: tmp_6 (45)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:21
+:35  %tmp_6 = zext i16 %r_V to i32
+
+ST_20: tmp_2 (46)  [1/1] 1.36ns  loc: pool_core_new/pool_core.cpp:29
+:36  %tmp_2 = icmp eq i2 %mode_V_read, 0
+
+ST_20: tmp_1 (47)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:43
+:37  %tmp_1 = zext i16 %Win_V_read to i32
+
+ST_20: rhs_V_1 (48)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:43
+:38  %rhs_V_1 = zext i16 %Hin_V_read to i32
+
+ST_20: tmp_3 (51)  [1/6] 6.41ns  loc: pool_core_new/pool_core.cpp:50
+:41  %tmp_3 = sitofp i32 %tmp_s to float
+
+ST_20: tmp_4 (52)  [1/1] 1.36ns  loc: pool_core_new/pool_core.cpp:32
+:42  %tmp_4 = icmp eq i2 %mode_V_read, 1
+
+ST_20: sum (53)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29 (grouped into LUT with out node p_sum)
+:43  %sum = select i1 %tmp_2, float 0.000000e+00, float 0x4376345780000000
+
+ST_20: tmp_9 (54)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29 (grouped into LUT with out node p_sum)
+:44  %tmp_9 = or i1 %tmp_2, %tmp_4
+
+ST_20: p_sum (55)  [1/1] 1.37ns  loc: pool_core_new/pool_core.cpp:29 (out node of the LUT)
+:45  %p_sum = select i1 %tmp_9, float %sum, float 0xC376345780000000
+
+ST_20: StgValue_165 (56)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:24
+:46  br label %.loopexit
+
+
+ <State 21>: 2.44ns
+ST_21: op_assign (58)  [1/1] 0.00ns
+.loopexit:0  %op_assign = phi i16 [ 0, %0 ], [ %c, %.loopexit.loopexit ]
+
+ST_21: phi_mul1 (59)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:21
+.loopexit:1  %phi_mul1 = phi i32 [ 0, %0 ], [ %next_mul2, %.loopexit.loopexit ]
+
+ST_21: phi_mul2 (60)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:43
+.loopexit:2  %phi_mul2 = phi i32 [ 0, %0 ], [ %next_mul1, %.loopexit.loopexit ]
+
+ST_21: next_mul1 (61)  [1/1] 2.44ns  loc: pool_core_new/pool_core.cpp:43
+.loopexit:3  %next_mul1 = add i32 %phi_mul2, %tmp_1
+
+ST_21: next_mul2 (62)  [1/1] 2.44ns  loc: pool_core_new/pool_core.cpp:21
+.loopexit:4  %next_mul2 = add i32 %phi_mul1, %tmp_6
+
+ST_21: exitcond4 (63)  [1/1] 2.28ns  loc: pool_core_new/pool_core.cpp:24
+.loopexit:5  %exitcond4 = icmp eq i16 %op_assign, %CHin_V_read
+
+ST_21: empty (64)  [1/1] 0.00ns
+.loopexit:6  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 65535, i64 0)
+
+ST_21: c (65)  [1/1] 1.96ns  loc: pool_core_new/pool_core.cpp:24
+.loopexit:7  %c = add i16 %op_assign, 1
+
+ST_21: StgValue_174 (66)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:24
+.loopexit:8  br i1 %exitcond4, label %8, label %.preheader1017.preheader
+
+ST_21: StgValue_175 (68)  [1/1] 1.57ns
+.preheader1017.preheader:0  br label %.preheader1017
+
+ST_21: StgValue_176 (197)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:53
+:0  ret void
+
+
+ <State 22>: 8.52ns
+ST_22: i_op_assign_s (70)  [1/1] 0.00ns
+.preheader1017:0  %i_op_assign_s = phi i16 [ %i, %7 ], [ 0, %.preheader1017.preheader ]
+
+ST_22: phi_mul9 (71)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:22
+.preheader1017:1  %phi_mul9 = phi i16 [ %next_mul3, %7 ], [ 0, %.preheader1017.preheader ]
+
+ST_22: next_mul3 (72)  [1/1] 1.96ns  loc: pool_core_new/pool_core.cpp:22
+.preheader1017:2  %next_mul3 = add i16 %phi_mul9, %rhs_V
+
+ST_22: i_op_assign_13_cast4 (73)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1017:3  %i_op_assign_13_cast4 = zext i16 %i_op_assign_s to i32
+
+ST_22: exitcond1 (74)  [1/1] 2.28ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1017:4  %exitcond1 = icmp eq i16 %i_op_assign_s, %r_V
+
+ST_22: empty_6 (75)  [1/1] 0.00ns
+.preheader1017:5  %empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 65535, i64 0)
+
+ST_22: i (76)  [1/1] 1.96ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1017:6  %i = add i16 %i_op_assign_s, 1
+
+ST_22: StgValue_184 (77)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1017:7  br i1 %exitcond1, label %.loopexit.loopexit, label %.preheader1016.preheader
+
+ST_22: tmp (79)  [1/1] 2.44ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1016.preheader:0  %tmp = add i32 %i_op_assign_13_cast4, %phi_mul1
+
+ST_22: tmp1 (80)  [3/3] 6.08ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1016.preheader:1  %tmp1 = mul i32 %tmp, %tmp_5
+
+ST_22: StgValue_187 (195)  [1/1] 0.00ns
+.loopexit.loopexit:0  br label %.loopexit
+
+
+ <State 23>: 6.08ns
+ST_23: tmp1 (80)  [2/3] 6.08ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1016.preheader:1  %tmp1 = mul i32 %tmp, %tmp_5
+
+
+ <State 24>: 8.52ns
+ST_24: tmp1 (80)  [1/3] 6.08ns  loc: pool_core_new/pool_core.cpp:25
+.preheader1016.preheader:1  %tmp1 = mul i32 %tmp, %tmp_5
+
+ST_24: feature_out4_sum (81)  [1/1] 2.44ns  loc: pool_core_new/pool_core.cpp:51
+.preheader1016.preheader:2  %feature_out4_sum = add i32 %tmp_8, %tmp1
+
+
+ <State 25>: 8.75ns
+ST_25: gmem_addr (82)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:51
+.preheader1016.preheader:3  %gmem_addr = getelementptr inbounds float* %gmem, i32 %feature_out4_sum
+
+ST_25: gmem_addr_wr_req (83)  [1/1] 8.75ns  loc: pool_core_new/pool_core.cpp:51
+.preheader1016.preheader:4  %gmem_addr_wr_req = call i1 @_ssdm_op_WriteReq.m_axi.floatP(float* %gmem_addr, i32 %tmp_5)
+
+ST_25: StgValue_193 (84)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:26
+.preheader1016.preheader:5  br label %.preheader1016
+
+
+ <State 26>: 8.75ns
+ST_26: i_op_assign_1 (86)  [1/1] 0.00ns
+.preheader1016:0  %i_op_assign_1 = phi i16 [ %j, %._crit_edge1022 ], [ 0, %.preheader1016.preheader ]
+
+ST_26: phi_mul (87)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:21
+.preheader1016:1  %phi_mul = phi i16 [ %next_mul, %._crit_edge1022 ], [ 0, %.preheader1016.preheader ]
+
+ST_26: next_mul (88)  [1/1] 1.96ns  loc: pool_core_new/pool_core.cpp:21
+.preheader1016:2  %next_mul = add i16 %phi_mul, %lhs_V
+
+ST_26: exitcond (89)  [1/1] 2.28ns  loc: pool_core_new/pool_core.cpp:26
+.preheader1016:3  %exitcond = icmp eq i16 %i_op_assign_1, %r_V_1
+
+ST_26: empty_7 (90)  [1/1] 0.00ns
+.preheader1016:4  %empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 65535, i64 0)
+
+ST_26: j (91)  [1/1] 1.96ns  loc: pool_core_new/pool_core.cpp:26
+.preheader1016:5  %j = add i16 %i_op_assign_1, 1
+
+ST_26: StgValue_200 (92)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:26
+.preheader1016:6  br i1 %exitcond, label %7, label %.preheader1015.preheader
+
+ST_26: StgValue_201 (94)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:36
+.preheader1015.preheader:0  br label %.preheader1015
+
+ST_26: gmem_addr_wr_resp (192)  [5/5] 8.75ns  loc: pool_core_new/pool_core.cpp:51
+:0  %gmem_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)
+
+
+ <State 27>: 6.08ns
+ST_27: i_op_assign (96)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:43
+.preheader1015:0  %i_op_assign = phi float [ %sum_3, %.preheader1015.loopexit ], [ %p_sum, %.preheader1015.preheader ]
+
+ST_27: i_op_assign_2 (97)  [1/1] 0.00ns
+.preheader1015:1  %i_op_assign_2 = phi i8 [ %ii, %.preheader1015.loopexit ], [ 0, %.preheader1015.preheader ]
+
+ST_27: exitcond2 (98)  [1/1] 2.00ns  loc: pool_core_new/pool_core.cpp:36
+.preheader1015:2  %exitcond2 = icmp eq i8 %i_op_assign_2, %Kx_V_read
+
+ST_27: empty_8 (99)  [1/1] 0.00ns
+.preheader1015:3  %empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 255, i64 0)
+
+ST_27: ii (100)  [1/1] 1.72ns  loc: pool_core_new/pool_core.cpp:36
+.preheader1015:4  %ii = add i8 %i_op_assign_2, 1
+
+ST_27: StgValue_208 (101)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:36
+.preheader1015:5  br i1 %exitcond2, label %5, label %.preheader.preheader
+
+ST_27: tmp_10 (103)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:39
+.preheader.preheader:0  %tmp_10 = zext i8 %i_op_assign_2 to i16
+
+ST_27: w_V (104)  [1/1] 1.96ns  loc: pool_core_new/pool_core.cpp:39
+.preheader.preheader:1  %w_V = add i16 %tmp_10, %phi_mul9
+
+ST_27: lhs_V_1 (105)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:43
+.preheader.preheader:2  %lhs_V_1 = sext i16 %w_V to i32
+
+ST_27: r_V3 (106)  [1/1] 2.44ns  loc: pool_core_new/pool_core.cpp:43
+.preheader.preheader:3  %r_V3 = add i32 %phi_mul2, %lhs_V_1
+
+ST_27: StgValue_213 (183)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:49
+:0  br i1 %tmp_2, label %6, label %._crit_edge1022
+
+ST_27: sum_1 (185)  [16/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 28>: 6.08ns
+ST_28: tmp_11 (107)  [3/3] 6.08ns  loc: pool_core_new/pool_core.cpp:43
+.preheader.preheader:4  %tmp_11 = mul i32 %r_V3, %rhs_V_1
+
+
+ <State 29>: 6.08ns
+ST_29: tmp_11 (107)  [2/3] 6.08ns  loc: pool_core_new/pool_core.cpp:43
+.preheader.preheader:4  %tmp_11 = mul i32 %r_V3, %rhs_V_1
+
+
+ <State 30>: 6.08ns
+ST_30: tmp_11 (107)  [1/3] 6.08ns  loc: pool_core_new/pool_core.cpp:43
+.preheader.preheader:4  %tmp_11 = mul i32 %r_V3, %rhs_V_1
+
+ST_30: StgValue_218 (108)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:37
+.preheader.preheader:5  br label %.preheader
+
+
+ <State 31>: 5.90ns
+ST_31: sum_3 (110)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29
+.preheader:0  %sum_3 = phi float [ %i_op_assign, %.preheader.preheader ], [ %sum_3_be, %.preheader.backedge ]
+
+ST_31: i_op_assign_3 (111)  [1/1] 0.00ns
+.preheader:1  %i_op_assign_3 = phi i8 [ 0, %.preheader.preheader ], [ %jj, %.preheader.backedge ]
+
+ST_31: exitcond3 (112)  [1/1] 2.00ns  loc: pool_core_new/pool_core.cpp:37
+.preheader:2  %exitcond3 = icmp eq i8 %i_op_assign_3, %Ky_V_read
+
+ST_31: empty_9 (113)  [1/1] 0.00ns
+.preheader:3  %empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 255, i64 0)
+
+ST_31: jj (114)  [1/1] 1.72ns  loc: pool_core_new/pool_core.cpp:37
+.preheader:4  %jj = add i8 %i_op_assign_3, 1
+
+ST_31: StgValue_224 (115)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:37
+.preheader:5  br i1 %exitcond3, label %.preheader1015.loopexit, label %1
+
+ST_31: tmp_12 (117)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:40
+:0  %tmp_12 = zext i8 %i_op_assign_3 to i16
+
+ST_31: h_V (118)  [1/1] 1.96ns  loc: pool_core_new/pool_core.cpp:40
+:1  %h_V = add i16 %phi_mul, %tmp_12
+
+ST_31: StgValue_227 (119)  [1/1] 1.88ns  loc: pool_core_new/pool_core.cpp:41
+:2  switch i2 %mode_V_read, label %.preheader.backedge [
+    i2 0, label %2
+    i2 1, label %3
+    i2 -2, label %4
+  ]
+
+ST_31: tmp_26 (121)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:45
+:0  %tmp_26 = sext i16 %h_V to i32
+
+ST_31: tmp_27 (122)  [1/1] 1.97ns  loc: pool_core_new/pool_core.cpp:45
+:1  %tmp_27 = add i32 %tmp_11, %tmp_26
+
+ST_31: feature_in2_sum (123)  [1/1] 1.97ns  loc: pool_core_new/pool_core.cpp:45
+:2  %feature_in2_sum = add i32 %tmp_27, %tmp_7
+
+ST_31: tmp_15 (145)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:44
+:0  %tmp_15 = sext i16 %h_V to i32
+
+ST_31: tmp_16 (146)  [1/1] 1.97ns  loc: pool_core_new/pool_core.cpp:44
+:1  %tmp_16 = add i32 %tmp_11, %tmp_15
+
+ST_31: feature_in2_sum5 (147)  [1/1] 1.97ns  loc: pool_core_new/pool_core.cpp:44
+:2  %feature_in2_sum5 = add i32 %tmp_16, %tmp_7
+
+ST_31: tmp_13 (169)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:43
+:0  %tmp_13 = sext i16 %h_V to i32
+
+ST_31: tmp_14 (170)  [1/1] 1.97ns  loc: pool_core_new/pool_core.cpp:43
+:1  %tmp_14 = add i32 %tmp_11, %tmp_13
+
+ST_31: feature_in2_sum6 (171)  [1/1] 1.97ns  loc: pool_core_new/pool_core.cpp:43
+:2  %feature_in2_sum6 = add i32 %tmp_7, %tmp_14
+
+ST_31: StgValue_237 (181)  [1/1] 0.00ns
+.preheader1015.loopexit:0  br label %.preheader1015
+
+
+ <State 32>: 8.75ns
+ST_32: gmem_addr_3 (124)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:45
+:3  %gmem_addr_3 = getelementptr inbounds float* %gmem, i32 %feature_in2_sum
+
+ST_32: gmem_load_2_req (125)  [7/7] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:4  %gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)
+
+ST_32: gmem_addr_2 (148)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:44
+:3  %gmem_addr_2 = getelementptr inbounds float* %gmem, i32 %feature_in2_sum5
+
+ST_32: gmem_load_1_req (149)  [7/7] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:4  %gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)
+
+
+ <State 33>: 8.75ns
+ST_33: gmem_load_2_req (125)  [6/7] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:4  %gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)
+
+ST_33: gmem_load_1_req (149)  [6/7] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:4  %gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)
+
+
+ <State 34>: 8.75ns
+ST_34: gmem_load_2_req (125)  [5/7] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:4  %gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)
+
+ST_34: gmem_load_1_req (149)  [5/7] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:4  %gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)
+
+
+ <State 35>: 8.75ns
+ST_35: gmem_load_2_req (125)  [4/7] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:4  %gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)
+
+ST_35: gmem_load_1_req (149)  [4/7] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:4  %gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)
+
+
+ <State 36>: 8.75ns
+ST_36: gmem_load_2_req (125)  [3/7] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:4  %gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)
+
+ST_36: gmem_load_1_req (149)  [3/7] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:4  %gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)
+
+
+ <State 37>: 8.75ns
+ST_37: gmem_load_2_req (125)  [2/7] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:4  %gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)
+
+ST_37: gmem_load_1_req (149)  [2/7] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:4  %gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)
+
+
+ <State 38>: 8.75ns
+ST_38: gmem_load_2_req (125)  [1/7] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:4  %gmem_load_2_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_3, i32 1)
+
+ST_38: gmem_load_1_req (149)  [1/7] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:4  %gmem_load_1_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_2, i32 1)
+
+
+ <State 39>: 8.75ns
+ST_39: gmem_addr_3_read (126)  [1/1] 8.75ns  loc: pool_core_new/pool_core.cpp:45
+:5  %gmem_addr_3_read = call float @_ssdm_op_Read.m_axi.floatP(float* %gmem_addr_3)
+
+ST_39: gmem_addr_2_read (150)  [1/1] 8.75ns  loc: pool_core_new/pool_core.cpp:44
+:5  %gmem_addr_2_read = call float @_ssdm_op_Read.m_axi.floatP(float* %gmem_addr_2)
+
+
+ <State 40>: 6.79ns
+ST_40: tmp_35 (140)  [1/1] 6.79ns  loc: pool_core_new/pool_core.cpp:45
+:19  %tmp_35 = fcmp ogt float %sum_3, %gmem_addr_3_read
+
+ST_40: tmp_24 (164)  [1/1] 6.79ns  loc: pool_core_new/pool_core.cpp:44
+:19  %tmp_24 = fcmp ogt float %sum_3, %gmem_addr_2_read
+
+
+ <State 41>: 6.70ns
+ST_41: sum_3_to_int6 (127)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29
+:6  %sum_3_to_int6 = bitcast float %sum_3 to i32
+
+ST_41: tmp_28 (128)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29
+:7  %tmp_28 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %sum_3_to_int6, i32 23, i32 30)
+
+ST_41: tmp_29 (129)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29
+:8  %tmp_29 = trunc i32 %sum_3_to_int6 to i23
+
+ST_41: feature_in_load_2_to (130)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:45
+:9  %feature_in_load_2_to = bitcast float %gmem_addr_3_read to i32
+
+ST_41: tmp_30 (131)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:45
+:10  %tmp_30 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %feature_in_load_2_to, i32 23, i32 30)
+
+ST_41: tmp_31 (132)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:45
+:11  %tmp_31 = trunc i32 %feature_in_load_2_to to i23
+
+ST_41: notlhs (133)  [1/1] 2.00ns  loc: pool_core_new/pool_core.cpp:29
+:12  %notlhs = icmp ne i8 %tmp_28, -1
+
+ST_41: notrhs (134)  [1/1] 2.39ns  loc: pool_core_new/pool_core.cpp:29
+:13  %notrhs = icmp eq i23 %tmp_29, 0
+
+ST_41: tmp_32 (135)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29 (grouped into LUT with out node tmp_36)
+:14  %tmp_32 = or i1 %notrhs, %notlhs
+
+ST_41: notlhs7 (136)  [1/1] 2.00ns  loc: pool_core_new/pool_core.cpp:45
+:15  %notlhs7 = icmp ne i8 %tmp_30, -1
+
+ST_41: notrhs8 (137)  [1/1] 2.39ns  loc: pool_core_new/pool_core.cpp:45
+:16  %notrhs8 = icmp eq i23 %tmp_31, 0
+
+ST_41: tmp_33 (138)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:45 (grouped into LUT with out node tmp_36)
+:17  %tmp_33 = or i1 %notrhs8, %notlhs7
+
+ST_41: tmp_34 (139)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29 (grouped into LUT with out node tmp_36)
+:18  %tmp_34 = and i1 %tmp_32, %tmp_33
+
+ST_41: tmp_36 (141)  [1/1] 1.37ns  loc: pool_core_new/pool_core.cpp:45 (out node of the LUT)
+:20  %tmp_36 = and i1 %tmp_34, %tmp_35
+
+ST_41: sum_3_feature_in_loa (142)  [1/1] 1.37ns  loc: pool_core_new/pool_core.cpp:45 (out node of the LUT)
+:21  %sum_3_feature_in_loa = select i1 %tmp_36, float %sum_3, float %gmem_addr_3_read
+
+ST_41: StgValue_273 (143)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:45
+:22  br label %.preheader.backedge
+
+ST_41: sum_3_to_int (151)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29
+:6  %sum_3_to_int = bitcast float %sum_3 to i32
+
+ST_41: tmp_17 (152)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29
+:7  %tmp_17 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %sum_3_to_int, i32 23, i32 30)
+
+ST_41: tmp_18 (153)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29
+:8  %tmp_18 = trunc i32 %sum_3_to_int to i23
+
+ST_41: feature_in_load_1_to (154)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:44
+:9  %feature_in_load_1_to = bitcast float %gmem_addr_2_read to i32
+
+ST_41: tmp_19 (155)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:44
+:10  %tmp_19 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %feature_in_load_1_to, i32 23, i32 30)
+
+ST_41: tmp_20 (156)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:44
+:11  %tmp_20 = trunc i32 %feature_in_load_1_to to i23
+
+ST_41: notlhs9 (157)  [1/1] 2.00ns  loc: pool_core_new/pool_core.cpp:29
+:12  %notlhs9 = icmp ne i8 %tmp_17, -1
+
+ST_41: notrhs1 (158)  [1/1] 2.39ns  loc: pool_core_new/pool_core.cpp:29
+:13  %notrhs1 = icmp eq i23 %tmp_18, 0
+
+ST_41: tmp_21 (159)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29 (grouped into LUT with out node tmp_25)
+:14  %tmp_21 = or i1 %notrhs1, %notlhs9
+
+ST_41: notlhs1 (160)  [1/1] 2.00ns  loc: pool_core_new/pool_core.cpp:44
+:15  %notlhs1 = icmp ne i8 %tmp_19, -1
+
+ST_41: notrhs2 (161)  [1/1] 2.39ns  loc: pool_core_new/pool_core.cpp:44
+:16  %notrhs2 = icmp eq i23 %tmp_20, 0
+
+ST_41: tmp_22 (162)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:44 (grouped into LUT with out node tmp_25)
+:17  %tmp_22 = or i1 %notrhs2, %notlhs1
+
+ST_41: tmp_23 (163)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:29 (grouped into LUT with out node tmp_25)
+:18  %tmp_23 = and i1 %tmp_21, %tmp_22
+
+ST_41: tmp_25 (165)  [1/1] 1.37ns  loc: pool_core_new/pool_core.cpp:44 (out node of the LUT)
+:20  %tmp_25 = and i1 %tmp_23, %tmp_24
+
+ST_41: feature_in_load_1_su (166)  [1/1] 1.37ns  loc: pool_core_new/pool_core.cpp:44 (out node of the LUT)
+:21  %feature_in_load_1_su = select i1 %tmp_25, float %gmem_addr_2_read, float %sum_3
+
+ST_41: StgValue_289 (167)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:44
+:22  br label %.preheader.backedge
+
+
+ <State 42>: 8.75ns
+ST_42: gmem_addr_1 (172)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:43
+:3  %gmem_addr_1 = getelementptr inbounds float* %gmem, i32 %feature_in2_sum6
+
+ST_42: gmem_load_req (173)  [7/7] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:4  %gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)
+
+
+ <State 43>: 8.75ns
+ST_43: gmem_load_req (173)  [6/7] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:4  %gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)
+
+
+ <State 44>: 8.75ns
+ST_44: gmem_load_req (173)  [5/7] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:4  %gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)
+
+
+ <State 45>: 8.75ns
+ST_45: gmem_load_req (173)  [4/7] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:4  %gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)
+
+
+ <State 46>: 8.75ns
+ST_46: gmem_load_req (173)  [3/7] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:4  %gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)
+
+
+ <State 47>: 8.75ns
+ST_47: gmem_load_req (173)  [2/7] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:4  %gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)
+
+
+ <State 48>: 8.75ns
+ST_48: gmem_load_req (173)  [1/7] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:4  %gmem_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %gmem_addr_1, i32 1)
+
+
+ <State 49>: 8.75ns
+ST_49: gmem_addr_1_read (174)  [1/1] 8.75ns  loc: pool_core_new/pool_core.cpp:43
+:5  %gmem_addr_1_read = call float @_ssdm_op_Read.m_axi.floatP(float* %gmem_addr_1)
+
+
+ <State 50>: 7.26ns
+ST_50: sum_2 (175)  [5/5] 7.26ns  loc: pool_core_new/pool_core.cpp:43
+:6  %sum_2 = fadd float %sum_3, %gmem_addr_1_read
+
+
+ <State 51>: 7.26ns
+ST_51: sum_2 (175)  [4/5] 7.26ns  loc: pool_core_new/pool_core.cpp:43
+:6  %sum_2 = fadd float %sum_3, %gmem_addr_1_read
+
+
+ <State 52>: 7.26ns
+ST_52: sum_2 (175)  [3/5] 7.26ns  loc: pool_core_new/pool_core.cpp:43
+:6  %sum_2 = fadd float %sum_3, %gmem_addr_1_read
+
+
+ <State 53>: 7.26ns
+ST_53: sum_2 (175)  [2/5] 7.26ns  loc: pool_core_new/pool_core.cpp:43
+:6  %sum_2 = fadd float %sum_3, %gmem_addr_1_read
+
+
+ <State 54>: 7.26ns
+ST_54: sum_2 (175)  [1/5] 7.26ns  loc: pool_core_new/pool_core.cpp:43
+:6  %sum_2 = fadd float %sum_3, %gmem_addr_1_read
+
+
+ <State 55>: 1.57ns
+ST_55: StgValue_304 (176)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:43
+:7  br label %.preheader.backedge
+
+ST_55: sum_3_be (178)  [1/1] 0.00ns
+.preheader.backedge:0  %sum_3_be = phi float [ %sum_2, %2 ], [ %sum_3, %1 ], [ %feature_in_load_1_su, %3 ], [ %sum_3_feature_in_loa, %4 ]
+
+ST_55: StgValue_306 (179)  [1/1] 0.00ns
+.preheader.backedge:1  br label %.preheader
+
+
+ <State 56>: 6.08ns
+ST_56: sum_1 (185)  [15/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 57>: 6.08ns
+ST_57: sum_1 (185)  [14/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 58>: 6.08ns
+ST_58: sum_1 (185)  [13/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 59>: 6.08ns
+ST_59: sum_1 (185)  [12/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 60>: 6.08ns
+ST_60: sum_1 (185)  [11/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 61>: 6.08ns
+ST_61: sum_1 (185)  [10/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 62>: 6.08ns
+ST_62: sum_1 (185)  [9/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 63>: 6.08ns
+ST_63: sum_1 (185)  [8/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 64>: 6.08ns
+ST_64: sum_1 (185)  [7/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 65>: 6.08ns
+ST_65: sum_1 (185)  [6/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 66>: 6.08ns
+ST_66: sum_1 (185)  [5/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 67>: 6.08ns
+ST_67: sum_1 (185)  [4/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 68>: 6.08ns
+ST_68: sum_1 (185)  [3/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 69>: 6.08ns
+ST_69: sum_1 (185)  [2/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+
+ <State 70>: 7.65ns
+ST_70: sum_1 (185)  [1/16] 6.08ns  loc: pool_core_new/pool_core.cpp:50
+:0  %sum_1 = fdiv float %i_op_assign, %tmp_3
+
+ST_70: StgValue_322 (186)  [1/1] 1.57ns  loc: pool_core_new/pool_core.cpp:50
+:1  br label %._crit_edge1022
+
+
+ <State 71>: 8.75ns
+ST_71: sum_5 (188)  [1/1] 0.00ns
+._crit_edge1022:0  %sum_5 = phi float [ %sum_1, %6 ], [ %i_op_assign, %5 ]
+
+ST_71: StgValue_324 (189)  [1/1] 8.75ns  loc: pool_core_new/pool_core.cpp:51
+._crit_edge1022:1  call void @_ssdm_op_Write.m_axi.floatP(float* %gmem_addr, float %sum_5, i4 -1)
+
+ST_71: StgValue_325 (190)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:26
+._crit_edge1022:2  br label %.preheader1016
+
+
+ <State 72>: 8.75ns
+ST_72: gmem_addr_wr_resp (192)  [4/5] 8.75ns  loc: pool_core_new/pool_core.cpp:51
+:0  %gmem_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)
+
+
+ <State 73>: 8.75ns
+ST_73: gmem_addr_wr_resp (192)  [3/5] 8.75ns  loc: pool_core_new/pool_core.cpp:51
+:0  %gmem_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)
+
+
+ <State 74>: 8.75ns
+ST_74: gmem_addr_wr_resp (192)  [2/5] 8.75ns  loc: pool_core_new/pool_core.cpp:51
+:0  %gmem_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)
+
+
+ <State 75>: 8.75ns
+ST_75: gmem_addr_wr_resp (192)  [1/5] 8.75ns  loc: pool_core_new/pool_core.cpp:51
+:0  %gmem_addr_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %gmem_addr)
+
+ST_75: StgValue_330 (193)  [1/1] 0.00ns  loc: pool_core_new/pool_core.cpp:25
+:1  br label %.preheader1017
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 5.66ns
+The critical path consists of the following:
+	s_axi read on port 'Ky_V' [13]  (1 ns)
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:22) [43]  (4.66 ns)
+
+ <State 2>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 3>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 4>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 5>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 6>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 7>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 8>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 9>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 10>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 11>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 12>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 13>: 4.66ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', pool_core_new/pool_core.cpp:21) [41]  (4.66 ns)
+
+ <State 14>: 6.38ns
+The critical path consists of the following:
+	'mul' operation ('r.V', pool_core_new/pool_core.cpp:50) [49]  (6.38 ns)
+
+ <State 15>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_3', pool_core_new/pool_core.cpp:50) [51]  (6.41 ns)
+
+ <State 16>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_3', pool_core_new/pool_core.cpp:50) [51]  (6.41 ns)
+
+ <State 17>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_3', pool_core_new/pool_core.cpp:50) [51]  (6.41 ns)
+
+ <State 18>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_3', pool_core_new/pool_core.cpp:50) [51]  (6.41 ns)
+
+ <State 19>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_3', pool_core_new/pool_core.cpp:50) [51]  (6.41 ns)
+
+ <State 20>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_3', pool_core_new/pool_core.cpp:50) [51]  (6.41 ns)
+
+ <State 21>: 2.44ns
+The critical path consists of the following:
+	'phi' operation ('phi_mul1', pool_core_new/pool_core.cpp:21) with incoming values : ('next_mul2', pool_core_new/pool_core.cpp:21) [59]  (0 ns)
+	'add' operation ('next_mul2', pool_core_new/pool_core.cpp:21) [62]  (2.44 ns)
+
+ <State 22>: 8.52ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', pool_core_new/pool_core.cpp:25) [70]  (0 ns)
+	'add' operation ('tmp', pool_core_new/pool_core.cpp:25) [79]  (2.44 ns)
+	'mul' operation ('tmp1', pool_core_new/pool_core.cpp:25) [80]  (6.08 ns)
+
+ <State 23>: 6.08ns
+The critical path consists of the following:
+	'mul' operation ('tmp1', pool_core_new/pool_core.cpp:25) [80]  (6.08 ns)
+
+ <State 24>: 8.52ns
+The critical path consists of the following:
+	'mul' operation ('tmp1', pool_core_new/pool_core.cpp:25) [80]  (6.08 ns)
+	'add' operation ('feature_out4_sum', pool_core_new/pool_core.cpp:51) [81]  (2.44 ns)
+
+ <State 25>: 8.75ns
+The critical path consists of the following:
+	'getelementptr' operation ('gmem_addr', pool_core_new/pool_core.cpp:51) [82]  (0 ns)
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:51) [83]  (8.75 ns)
+
+ <State 26>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core_new/pool_core.cpp:51) [192]  (8.75 ns)
+
+ <State 27>: 6.08ns
+The critical path consists of the following:
+	'phi' operation ('i_op', pool_core_new/pool_core.cpp:43) with incoming values : ('p_sum', pool_core_new/pool_core.cpp:29) ('sum_3_feature_in_loa', pool_core_new/pool_core.cpp:45) ('feature_in_load_1_su', pool_core_new/pool_core.cpp:44) ('sum', pool_core_new/pool_core.cpp:43) [96]  (0 ns)
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 28>: 6.08ns
+The critical path consists of the following:
+	'mul' operation ('tmp_11', pool_core_new/pool_core.cpp:43) [107]  (6.08 ns)
+
+ <State 29>: 6.08ns
+The critical path consists of the following:
+	'mul' operation ('tmp_11', pool_core_new/pool_core.cpp:43) [107]  (6.08 ns)
+
+ <State 30>: 6.08ns
+The critical path consists of the following:
+	'mul' operation ('tmp_11', pool_core_new/pool_core.cpp:43) [107]  (6.08 ns)
+
+ <State 31>: 5.9ns
+The critical path consists of the following:
+	'phi' operation ('jj') with incoming values : ('jj', pool_core_new/pool_core.cpp:37) [111]  (0 ns)
+	'add' operation ('h.V', pool_core_new/pool_core.cpp:40) [118]  (1.96 ns)
+	'add' operation ('tmp_16', pool_core_new/pool_core.cpp:44) [146]  (1.97 ns)
+	'add' operation ('feature_in2_sum5', pool_core_new/pool_core.cpp:44) [147]  (1.97 ns)
+
+ <State 32>: 8.75ns
+The critical path consists of the following:
+	'getelementptr' operation ('gmem_addr_3', pool_core_new/pool_core.cpp:45) [124]  (0 ns)
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:45) [125]  (8.75 ns)
+
+ <State 33>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:45) [125]  (8.75 ns)
+
+ <State 34>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:45) [125]  (8.75 ns)
+
+ <State 35>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:45) [125]  (8.75 ns)
+
+ <State 36>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:45) [125]  (8.75 ns)
+
+ <State 37>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:45) [125]  (8.75 ns)
+
+ <State 38>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:45) [125]  (8.75 ns)
+
+ <State 39>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'gmem' (pool_core_new/pool_core.cpp:45) [126]  (8.75 ns)
+
+ <State 40>: 6.79ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_35', pool_core_new/pool_core.cpp:45) [140]  (6.79 ns)
+
+ <State 41>: 6.7ns
+The critical path consists of the following:
+	'icmp' operation ('notrhs', pool_core_new/pool_core.cpp:29) [134]  (2.39 ns)
+	'or' operation ('tmp_32', pool_core_new/pool_core.cpp:29) [135]  (0 ns)
+	'and' operation ('tmp_34', pool_core_new/pool_core.cpp:29) [139]  (0 ns)
+	'and' operation ('tmp_36', pool_core_new/pool_core.cpp:45) [141]  (1.37 ns)
+	'select' operation ('sum_3_feature_in_loa', pool_core_new/pool_core.cpp:45) [142]  (1.37 ns)
+	multiplexor before 'phi' operation ('sum') with incoming values : ('p_sum', pool_core_new/pool_core.cpp:29) ('sum_3_feature_in_loa', pool_core_new/pool_core.cpp:45) ('feature_in_load_1_su', pool_core_new/pool_core.cpp:44) ('sum', pool_core_new/pool_core.cpp:43) [178]  (1.57 ns)
+
+ <State 42>: 8.75ns
+The critical path consists of the following:
+	'getelementptr' operation ('gmem_addr_1', pool_core_new/pool_core.cpp:43) [172]  (0 ns)
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:43) [173]  (8.75 ns)
+
+ <State 43>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:43) [173]  (8.75 ns)
+
+ <State 44>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:43) [173]  (8.75 ns)
+
+ <State 45>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:43) [173]  (8.75 ns)
+
+ <State 46>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:43) [173]  (8.75 ns)
+
+ <State 47>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:43) [173]  (8.75 ns)
+
+ <State 48>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'gmem' (pool_core_new/pool_core.cpp:43) [173]  (8.75 ns)
+
+ <State 49>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'gmem' (pool_core_new/pool_core.cpp:43) [174]  (8.75 ns)
+
+ <State 50>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core_new/pool_core.cpp:43) [175]  (7.26 ns)
+
+ <State 51>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core_new/pool_core.cpp:43) [175]  (7.26 ns)
+
+ <State 52>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core_new/pool_core.cpp:43) [175]  (7.26 ns)
+
+ <State 53>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core_new/pool_core.cpp:43) [175]  (7.26 ns)
+
+ <State 54>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', pool_core_new/pool_core.cpp:43) [175]  (7.26 ns)
+
+ <State 55>: 1.57ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('sum') with incoming values : ('p_sum', pool_core_new/pool_core.cpp:29) ('sum_3_feature_in_loa', pool_core_new/pool_core.cpp:45) ('feature_in_load_1_su', pool_core_new/pool_core.cpp:44) ('sum', pool_core_new/pool_core.cpp:43) [178]  (1.57 ns)
+	'phi' operation ('sum') with incoming values : ('p_sum', pool_core_new/pool_core.cpp:29) ('sum_3_feature_in_loa', pool_core_new/pool_core.cpp:45) ('feature_in_load_1_su', pool_core_new/pool_core.cpp:44) ('sum', pool_core_new/pool_core.cpp:43) [178]  (0 ns)
+
+ <State 56>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 57>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 58>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 59>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 60>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 61>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 62>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 63>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 64>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 65>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 66>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 67>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 68>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 69>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+
+ <State 70>: 7.65ns
+The critical path consists of the following:
+	'fdiv' operation ('sum', pool_core_new/pool_core.cpp:50) [185]  (6.08 ns)
+	multiplexor before 'phi' operation ('sum') with incoming values : ('p_sum', pool_core_new/pool_core.cpp:29) ('sum_3_feature_in_loa', pool_core_new/pool_core.cpp:45) ('feature_in_load_1_su', pool_core_new/pool_core.cpp:44) ('sum', pool_core_new/pool_core.cpp:43) ('sum', pool_core_new/pool_core.cpp:50) [188]  (1.57 ns)
+
+ <State 71>: 8.75ns
+The critical path consists of the following:
+	'phi' operation ('sum') with incoming values : ('p_sum', pool_core_new/pool_core.cpp:29) ('sum_3_feature_in_loa', pool_core_new/pool_core.cpp:45) ('feature_in_load_1_su', pool_core_new/pool_core.cpp:44) ('sum', pool_core_new/pool_core.cpp:43) ('sum', pool_core_new/pool_core.cpp:50) [188]  (0 ns)
+	bus write on port 'gmem' (pool_core_new/pool_core.cpp:51) [189]  (8.75 ns)
+
+ <State 72>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core_new/pool_core.cpp:51) [192]  (8.75 ns)
+
+ <State 73>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core_new/pool_core.cpp:51) [192]  (8.75 ns)
+
+ <State 74>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core_new/pool_core.cpp:51) [192]  (8.75 ns)
+
+ <State 75>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'gmem' (pool_core_new/pool_core.cpp:51) [192]  (8.75 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

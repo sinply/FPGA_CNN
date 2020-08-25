@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4_sdx (64-bit)
+# SW Build 1806307 on Thu Mar  9 15:24:31 MST 2017
+# IP Build 1759159 on Thu Jan 26 07:31:30 MST 2017
+# Start of session at: Thu Aug 20 20:17:33 2020
+# Process ID: 16404
+# Current directory: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/sim/verilog/xsim.dir/Pool/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/sim/verilog/webtalk.log
+# Journal file: E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1/sim/verilog/xsim.dir/Pool/webtalk/xsim_webtalk.tcl -notrace

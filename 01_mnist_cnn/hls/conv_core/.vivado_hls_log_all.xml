@@ -6,7 +6,10 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="conv_core" solutionName="solution1" date="2020-08-23T02:20:09.414+0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="conv_core" solutionName="solution1" date="2020-08-23T02:19:07.946+0800"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
@@ -17,7 +20,13 @@
       <packageLog>
         <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Conv_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="conv_core" solutionName="solution1" date="2020-08-20T20:13:01.169+0800" type="Warning"/>
       </packageLog>
-      <csimLog/>
+      <csimLog>
+        <logs message="WARNING: [SIM 211-51] HLS only supports CLANG compiler in Linux." projectName="conv_core" solutionName="solution1" date="2020-08-23T02:35:57.403+0800" type="Warning"/>
+        <logs message="WARNING: [SIM 211-51] HLS only supports CLANG compiler in Linux." projectName="conv_core" solutionName="solution1" date="2020-08-23T02:27:14.105+0800" type="Warning"/>
+        <logs message="WARNING: [SIM 211-51] HLS only supports CLANG compiler in Linux." projectName="conv_core" solutionName="solution1" date="2020-08-23T02:24:15.294+0800" type="Warning"/>
+        <logs message="WARNING: [SIM 211-51] HLS only supports CLANG compiler in Linux." projectName="conv_core" solutionName="solution1" date="2020-08-23T02:20:08.143+0800" type="Warning"/>
+        <logs message="WARNING: [SIM 211-51] HLS only supports CLANG compiler in Linux." projectName="conv_core" solutionName="solution1" date="2020-08-23T02:19:05.891+0800" type="Warning"/>
+      </csimLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

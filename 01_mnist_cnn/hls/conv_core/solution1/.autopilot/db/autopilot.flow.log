@@ -1,4 +1,4 @@
-@I [HLS-0] Workspace E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1 opened at Thu Aug 20 20:12:50 +0800 2020
+@I [HLS-0] Workspace E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1 opened at Sun Aug 23 02:35:56 +0800 2020
 @I [HLS-100] Execute     config_clock -quiet -name default -period 10 -default=false 
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-100] Command     config_clock returned 0; 0 sec.
@@ -12,25 +12,25 @@
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.lib 
 @I [HLS-100] Command           ap_source returned 0; 0 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.lib 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.001 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.lib 
 @I [HLS-100] Command           ap_source returned 0; 0 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.lib 
 @I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.003 sec.
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.lib 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.001 sec.
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.lib 
 @I [HLS-100] Command         ap_source returned 0; 0 sec.
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.lib 
 @I [HLS-100] Command         ap_source returned 0; 0 sec.
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.lib 
 @I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.008 sec.
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_old.lib 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.001 sec.
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_vivado.lib 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.001 sec.
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.hlp 
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/target_info.tcl 
 @I [HLS-100] Command         ap_source returned 0; 0 sec.
@@ -38,48 +38,48 @@
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.hlp 
 @I [HLS-100] Command           ap_source returned 0; 0 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.hlp 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.002 sec.
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.hlp 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.004 sec.
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/dsp48e1.hlp 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.001 sec.
 @I [HLS-100] Execute       get_default_platform 
 @I [HLS-100] Command       get_default_platform returned 0; 0 sec.
 @I [HLS-100] Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 @I [HLS-100] Command       config_chip_info returned 0; 0 sec.
 @I [HLS-100] Execute       config_chip_info -quiet -speed medium 
 @I [HLS-100] Command       config_chip_info returned 0; 0 sec.
-@I [HLS-100] Command     import_lib returned 0; 0.016 sec.
+@I [HLS-100] Command     import_lib returned 0; 0.02 sec.
 @I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.002 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
 @I [HLS-100] Command           ap_source returned 0; 0 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.001 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
 @I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0.016 sec.
+@I [HLS-100] Command             ap_source returned 0; 0.003 sec.
 @I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
+@I [HLS-100] Command             ap_source returned 0; 0.007 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.01 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
 @I [HLS-100] Command           ap_source returned 0; 0.009 sec.
+@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+@I [HLS-100] Command           ap_source returned 0; 0.007 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.003 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
 @I [HLS-100] Command           ap_source returned 0; 0 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.078 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.079 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.119 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.116 sec.
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
 @I [HLS-100] Command         ap_source returned 0; 0 sec.
 @I [HLS-100] Command       ap_source returned 0; 0.119 sec.
@@ -89,628 +89,80 @@
 @I [HLS-100] Execute     import_lib D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6 
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv7.lib 
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_hp.lib 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.016 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.004 sec.
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv.hlp 
 @I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.hlp 
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/target_info.tcl 
-@I [HLS-100] Command           ap_source returned 0; 0.126 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.18 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/xilinx_interface.hlp 
 @I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.hlp 
 @I [HLS-100] Command             ap_source returned 0; 0 sec.
 @I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.hlp 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
+@I [HLS-100] Command             ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.002 sec.
 @I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.hlp 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.142 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.142 sec.
+@I [HLS-100] Command           ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command         ap_source returned 0; 0.183 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.185 sec.
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_hp.hlp 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     import_lib returned 0; 0.158 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command     import_lib returned 0; 0.198 sec.
 @I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
 @I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
+@I [HLS-100] Command       ap_source returned 0; 0.001 sec.
+@I [HLS-100] Command     ap_source returned 0; 0.002 sec.
 @I [HLS-100] Execute     set_part xc7z020clg400-1 
 @I [HLS-100] Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 @I [HLS-100] Execute         get_default_platform 
 @I [HLS-100] Command         get_default_platform returned 0; 0 sec.
 @I [HLS-100] Execute         license_isbetapart xc7z020 
-@I [HLS-100] Command         license_isbetapart returned 1; 0.015 sec.
+@I [HLS-100] Command         license_isbetapart returned 1; 0.018 sec.
 @I [HLS-100] Execute         get_default_platform 
 @I [HLS-100] Command         get_default_platform returned 0; 0 sec.
 @I [HLS-100] Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 @I [HLS-100] Command         config_chip_info returned 0; 0 sec.
 @I [HLS-100] Execute         config_chip_info -quiet -speed slow 
 @I [HLS-100] Command         config_chip_info returned 0; 0 sec.
-@I [HLS-100] Command       add_library returned 0; 0.036 sec.
+@I [HLS-100] Command       add_library returned 0; 0.024 sec.
 @I [HLS-100] Execute       add_library xilinx/zynq/zynq_fpv6 
 @I [HLS-100] Execute         get_default_platform 
 @I [HLS-100] Command         get_default_platform returned 0; 0 sec.
-@I [HLS-100] Command       add_library returned 0; 0 sec.
+@I [HLS-100] Command       add_library returned 0; 0.003 sec.
 @I [HLS-10] Setting target device to 'xc7z020clg400-1'
-@I [HLS-100] Command     set_part returned 0; 0.036 sec.
+@I [HLS-100] Command     set_part returned 0; 0.03 sec.
 @I [HLS-100] Execute     get_default_platform 
 @I [HLS-100] Command     get_default_platform returned 0; 0 sec.
 @I [HLS-100] Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 @I [HLS-100] Command     config_chip_info returned 0; 0 sec.
 @I [HLS-100] Execute     config_chip_info -quiet -speed slow 
 @I [HLS-100] Command     config_chip_info returned 0; 0 sec.
-@I [HLS-100] Command   open_solution returned 0; 0.579 sec.
-@I [HLS-100] Execute   export_design -rtl verilog -format ip_catalog 
+@I [HLS-100] Command   open_solution returned 0; 0.566 sec.
+@I [HLS-100] Execute   csim_design -quiet 
 @I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.11 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.078 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.125 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.094 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.141 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.141 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.141 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.compgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.036 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.compgen.tcl 
-@I [HLS-100] Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Execute       source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command       ap_source returned 0; 0.016 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.078 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.compgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.094 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.constraint.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.rtl_wrap.cfg.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.tbgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.constraint.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.11 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.constraint.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.constraint.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0.016 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0.015 sec.
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.094 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.125 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0.015 sec.
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.094 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.125 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0.015 sec.
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.094 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.125 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
+@I [HLS-100] Command     ap_source returned 0; 0.202 sec.
+@I [SIM-2] *************** CSIM start ***************
+@W [SIM-51] HLS only supports CLANG compiler in Linux.
+@I [SIM-4] CSIM will launch GCC as the compiler.
+@I [HLS-100] Execute     source csim/.lst_opt.tcl 
 @I [HLS-100] Command     ap_source returned 0; 0.001 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.001 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.compgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.018 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.constraint.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.109 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.094 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.125 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0.016 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.079 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.11 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.11 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.125 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0.001 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.001 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0.001 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.001 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.093 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.111 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.111 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.112 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.compgen.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.031 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/Conv.constraint.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/common.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/APCoreGen.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/op_simcore.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/generic/autopilot/interface.gen 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0.109 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/virtex.gen 
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx.gen 
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/plb46.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/fsl.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/axi4.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/nativeAXI4.gen 
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/saxilite.gen 
-@I [HLS-100] Command             ap_source returned 0; 0 sec.
-@I [HLS-100] Execute             source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/maxi.gen 
-@I [HLS-100] Command             ap_source returned 0; 0.016 sec.
-@I [HLS-100] Command           ap_source returned 0; 0.016 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/scripts/xilinxcoregen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.015 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/dds_compiler.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/util.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfft.gen 
-@I [HLS-100] Command           ap_source returned 0; 0.08 sec.
-@I [HLS-100] Execute           source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/ip/xfir.gen 
-@I [HLS-100] Command           ap_source returned 0; 0 sec.
-@I [HLS-100] Command         ap_source returned 0; 0.126 sec.
-@I [HLS-100] Execute         source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/dsp48.gen 
-@I [HLS-100] Command         ap_source returned 0; 0 sec.
-@I [HLS-100] Command       ap_source returned 0; 0.126 sec.
-@I [HLS-100] Command     ap_source returned 0; 0.126 sec.
-@I [HLS-100] Execute     source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/zynq/zynq_fpv6.gen 
-@I [HLS-100] Execute       source D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/common/technology/xilinx/common/xilinx_fpv6.gen 
-@I [HLS-100] Command       ap_source returned 0; 0 sec.
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Execute     source E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/solution1/.autopilot/db/global.setting.tcl 
-@I [HLS-100] Command     ap_source returned 0; 0 sec.
-@I [HLS-100] Command   export_design returned 0; 42.582 sec.
-@I [HLS-100] Command ap_source returned 0; 43.176 sec.
+@I [HLS-100] Execute     is_encrypted E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/main.cpp 
+@I [HLS-100] Command     is_encrypted returned 0; 0 sec.
+@I [HLS-100] Execute     is_xip E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/main.cpp 
+@I [HLS-100] Command     is_xip returned 0; 0.001 sec.
+@I [HLS-100] Execute     is_encrypted E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/conv_core.h 
+@I [HLS-100] Command     is_encrypted returned 0; 0 sec.
+@I [HLS-100] Execute     is_xip E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/conv_core.h 
+@I [HLS-100] Command     is_xip returned 0; 0 sec.
+@I [HLS-100] Execute     is_encrypted E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/conv_core.cpp 
+@I [HLS-100] Command     is_encrypted returned 0; 0 sec.
+@I [HLS-100] Execute     is_xip E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/conv_core/conv_core.cpp 
+@I [HLS-100] Command     is_xip returned 0; 0 sec.
+@I [HLS-100] Execute     source run_sim.tcl 
+@I [HLS-100] Command     ap_source returned 0; 0.062 sec.
+@I [SIM-1] CSim done with 0 errors.
+@I [SIM-3] *************** CSIM finish ***************
+@I [HLS-100] Command   csim_design returned 0; 3.422 sec.
+@I [HLS-100] Command ap_source returned 0; 3.995 sec.
 @I [HLS-100] Execute cleanup_all 
-@I [HLS-100] Command cleanup_all returned 0; 0 sec.
+@I [HLS-100] Command cleanup_all returned 0; 0.001 sec.

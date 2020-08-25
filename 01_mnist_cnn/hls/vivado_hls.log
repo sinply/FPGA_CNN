@@ -1,8 +1,8 @@
 INFO: [HLS 200-10] Running 'D:/ProgramData/Xilinx/SDx/2016.4/Vivado_HLS/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'sinply' on host 'laptop-7slkk6bv' (Windows NT_amd64 version 6.2) on Thu Aug 20 20:24:41 +0800 2020
+INFO: [HLS 200-10] For user 'sinply' on host 'laptop-7slkk6bv' (Windows NT_amd64 version 6.2) on Sun Aug 23 16:41:22 +0800 2020
 INFO: [HLS 200-10] In directory 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls'
-INFO: [HLS 200-10] Opening project 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core'.
-INFO: [HLS 200-10] Opening solution 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core/solution1'.
+INFO: [HLS 200-10] Opening project 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core_new'.
+INFO: [HLS 200-10] Opening solution 'E:/Exercise/FPGA/FPGA_CNN/01_mnist_cnn/hls/pool_core_new/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
 INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
@@ -33,4 +33,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Pool_ap_sitofp_4_
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/SDx/2016.4/Vivado/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Aug 20 20:24:57 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 23 16:41:37 2020...

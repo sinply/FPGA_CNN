@@ -1,0 +1,25 @@
+INFO: [SIM 2] *************** CSIM start ***************
+WARNING: [SIM 51] HLS only supports CLANG compiler in Linux.
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../conv_core.cpp in debug mode
+   Generating csim.exe
+OUT[0][0][0]=12.000000
+OUT[0][0][1]=18.000000
+OUT[0][0][2]=12.000000
+OUT[0][1][0]=18.000000
+OUT[0][1][1]=27.000000
+OUT[0][1][2]=18.000000
+OUT[0][2][0]=12.000000
+OUT[0][2][1]=18.000000
+OUT[0][2][2]=12.000000
+OUT[1][0][0]=13.000000
+OUT[1][0][1]=19.000000
+OUT[1][0][2]=13.000000
+OUT[1][1][0]=19.000000
+OUT[1][1][1]=28.000000
+OUT[1][1][2]=19.000000
+OUT[1][2][0]=13.000000
+OUT[1][2][1]=19.000000
+OUT[1][2][2]=13.000000
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

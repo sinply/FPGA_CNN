@@ -7,4 +7,8 @@ Copyright (C) 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-10] Setting target device to 'xc7z020clg400-1'
-@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+@I [SIM-2] *************** CSIM start ***************
+@W [SIM-51] HLS only supports CLANG compiler in Linux.
+@I [SIM-4] CSIM will launch GCC as the compiler.
+@I [SIM-1] CSim done with 0 errors.
+@I [SIM-3] *************** CSIM finish ***************

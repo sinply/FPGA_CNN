@@ -64,7 +64,7 @@ void Conv(ap_uint<16> CHin,ap_uint<16> Hin,ap_uint<16> Win,ap_uint<16> CHout,
 					}
 
 				sum+=bias[cout];
-				if(relu_en && sum<0)
+				if(relu_en & sum<0)
 					sum=0;
 				//feature_out[i][j][cout]=sum;
 				feature_out[i*Wout*CHout+j*CHout+cout]=sum;

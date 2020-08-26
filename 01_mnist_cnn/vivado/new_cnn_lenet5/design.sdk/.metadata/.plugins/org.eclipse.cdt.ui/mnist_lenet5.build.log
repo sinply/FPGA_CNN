@@ -1,8 +1,8 @@
-23:21:28 **** Incremental Build of configuration Debug for project mnist_lenet5 ****
+10:34:48 **** Incremental Build of configuration Debug for project mnist_lenet5 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for `main-build'.
 
-23:21:28 Build Finished (took 221ms)
+10:34:48 Build Finished (took 220ms)
 

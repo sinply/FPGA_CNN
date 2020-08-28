@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1598619169">
+  <File Type="ROUTE-PWR-RPX" Name="pfm_cmos_wrapper_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="pfm_cmos_wrapper.tcl"/>
+  <File Type="INIT-TIMING" Name="pfm_cmos_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pfm_cmos_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="pfm_cmos_wrapper_drc_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="pfm_cmos_wrapper.vdi"/>
+  <File Type="OPT-DCP" Name="pfm_cmos_wrapper_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="pfm_cmos_wrapper.hwdef"/>
+  <File Type="OPT-DRC" Name="pfm_cmos_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="pfm_cmos_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="pfm_cmos_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="pfm_cmos_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="pfm_cmos_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="pfm_cmos_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pfm_cmos_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="pfm_cmos_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pfm_cmos_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="pfm_cmos_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pfm_cmos_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pfm_cmos_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="pfm_cmos_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pfm_cmos_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pfm_cmos_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pfm_cmos_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="pfm_cmos_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="pfm_cmos_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="pfm_cmos_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="pfm_cmos_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pfm_cmos_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="pfm_cmos_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="pfm_cmos_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="pfm_cmos_wrapper_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="pfm_cmos_wrapper.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="pfm_cmos_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BG-DRC" Name="pfm_cmos_wrapper.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pfm_cmos_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="pfm_cmos_wrapper.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pfm_cmos_wrapper_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="pfm_cmos_wrapper.bgn"/>
+  <File Type="ROUTE-PWR" Name="pfm_cmos_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="pfm_cmos_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="pfm_cmos_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="pfm_cmos_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pfm_cmos_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="pfm_cmos_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pfm_cmos_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="pfm_cmos_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="pfm_cmos_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pfm_cmos_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pfm_cmos_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pfm_cmos_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pfm_cmos_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pfm_cmos_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="pfm_cmos_wrapper.bit"/>
+  <File Type="BITSTR-RBT" Name="pfm_cmos_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="pfm_cmos_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="pfm_cmos_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="pfm_cmos_wrapper.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="pfm_cmos_wrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/pfm_cmos/pfm_cmos.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex01_pfm_cmos/hw/pfm_cmos.srcs/sources_1/bd/pfm_cmos/pfm_cmos.bd"/>
+        <Attr Name="ImportTime" Val="1598618846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/pfm_cmos/hdl/pfm_cmos_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex01_pfm_cmos/hw/pfm_cmos.srcs/sources_1/bd/pfm_cmos/hdl/pfm_cmos_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1598618846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="pfm_cmos_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/pfm_cmos.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex01_pfm_cmos/hw/pfm_cmos.srcs/constrs_1/new/pfm_cmos.xdc"/>
+        <Attr Name="ImportTime" Val="1598436578"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

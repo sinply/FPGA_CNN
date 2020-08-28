@@ -1,7 +1,0 @@
-/* standalone */
-the_ROM_image:
-{
-  [bootloader]<config0/boot/fsbl.elf>
-  <bitstream>
-  <elf>
-}

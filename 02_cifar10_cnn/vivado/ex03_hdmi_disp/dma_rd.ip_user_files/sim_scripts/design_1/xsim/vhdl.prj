@@ -1,0 +1,7 @@
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/904f/hdmi_out.srcs/sources_1/imports/src/TMDSEncoder.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/904f/hdmi_out.srcs/sources_1/imports/src/SerializerN_1.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/904f/hdmi_out.srcs/sources_1/imports/src/DVITransmitter.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/904f/hdmi_out.srcs/sources_1/imports/src/hdmi_tx.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_hdmi_tx_0_0/sim/design_1_hdmi_tx_0_0.vhd" 
+
+nosort

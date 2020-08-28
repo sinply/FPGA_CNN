@@ -1,0 +1,51 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port HDMI_CLK_P -pg 1 -y 270 -defaultsOSRD
+preplace port DDR -pg 1 -y 170 -defaultsOSRD
+preplace port HDMI_D2_N -pg 1 -y 330 -defaultsOSRD
+preplace port HDMI_D0_N -pg 1 -y 410 -defaultsOSRD
+preplace port HDMI_D1_N -pg 1 -y 370 -defaultsOSRD
+preplace port HDMI_D2_P -pg 1 -y 310 -defaultsOSRD
+preplace port HDMI_D1_P -pg 1 -y 350 -defaultsOSRD
+preplace port HDMI_D0_P -pg 1 -y 390 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 190 -defaultsOSRD
+preplace port HDMI_CLK_N -pg 1 -y 290 -defaultsOSRD
+preplace portBus hdmi_out_en -pg 1 -y 40 -defaultsOSRD
+preplace inst hdmi_tx_0 -pg 1 -lvl 4 -y 340 -defaultsOSRD
+preplace inst VGA_TIMING_0 -pg 1 -lvl 2 -y 420 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -y 40 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -y 100 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 270 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 200 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 170 NJ 170 NJ 170 NJ
+preplace netloc xlconstant_1_dout 1 3 1 700
+preplace netloc hdmi_tx_0_HDMI_D1_N 1 4 1 NJ
+preplace netloc hdmi_tx_0_HDMI_D2_P 1 4 1 NJ
+preplace netloc clk_wiz_0_locked 1 2 2 N 290 N
+preplace netloc hdmi_tx_0_HDMI_D1_P 1 4 1 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 270
+preplace netloc VGA_TIMING_0_po_vga_b 1 2 2 N 410 650
+preplace netloc VGA_TIMING_0_po_de 1 2 2 N 430 700
+preplace netloc VGA_TIMING_0_po_h_sync 1 2 2 N 470 670
+preplace netloc xlconstant_0_dout 1 4 1 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 190 NJ 190 NJ 190 NJ
+preplace netloc hdmi_tx_0_HDMI_CLK_N 1 4 1 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 3 290 200 510 250 N
+preplace netloc VGA_TIMING_0_po_vga_r 1 2 2 N 370 690
+preplace netloc clk_wiz_0_clk_out2 1 2 2 N 270 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 1 280
+preplace netloc hdmi_tx_0_HDMI_D0_N 1 4 1 NJ
+preplace netloc hdmi_tx_0_HDMI_CLK_P 1 4 1 NJ
+preplace netloc VGA_TIMING_0_po_vga_g 1 2 2 N 390 660
+preplace netloc VGA_TIMING_0_po_v_sync 1 2 2 N 450 680
+preplace netloc hdmi_tx_0_HDMI_D0_P 1 4 1 NJ
+preplace netloc hdmi_tx_0_HDMI_D2_N 1 4 1 NJ
+levelinfo -pg 1 0 140 420 580 800 920 -top -40 -bot 510
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_board_cnt: "2",
+   da_ps7_cnt: "1",
+}

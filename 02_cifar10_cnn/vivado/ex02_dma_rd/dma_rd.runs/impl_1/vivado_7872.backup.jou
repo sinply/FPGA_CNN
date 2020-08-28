@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4_sdx (64-bit)
+# SW Build 1806307 on Thu Mar  9 15:24:31 MST 2017
+# IP Build 1759159 on Thu Jan 26 07:31:30 MST 2017
+# Start of session at: Thu Aug 27 18:43:13 2020
+# Process ID: 7872
+# Current directory: E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.runs/impl_1/design_1_wrapper.vdi
+# Journal file: E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

@@ -1,0 +1,8 @@
+16:40:22 **** Incremental Build of configuration Debug for project hdmi ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+
+16:40:23 Build Finished (took 218ms)
+

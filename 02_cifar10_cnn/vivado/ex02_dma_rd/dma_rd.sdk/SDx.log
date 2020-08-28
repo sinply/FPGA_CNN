@@ -1,0 +1,117 @@
+10:15:38 INFO  : Registering command handlers for SDK TCF services
+10:15:38 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\02_cifar10_cnn\vivado\ex02_dma_rd\dma_rd.sdk\temp_xsdb_launch_script.tcl
+10:15:38 INFO  : Validating SDSoC License
+10:15:39 INFO  : License available for SDSoC
+10:15:39 INFO  : Validating SDAccel License
+10:15:39 INFO  : License for SDAccel is unavailable
+10:15:40 INFO  : XSCT server has started successfully.
+10:15:40 INFO  : Successfully done setting XSCT server connection channel  
+10:15:40 INFO  : Successfully done setting SDK workspace  
+10:16:11 INFO  : Project 'hw_dma' created. You can now create BSPs and application projects targeting this hardware platform.
+10:21:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:07 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+10:21:07 INFO  : 'jtag frequency' command is executed.
+10:21:07 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/ps7_init.tcl' is done.
+10:21:07 INFO  : Context for 'APU' is selected.
+10:21:07 INFO  : System reset is completed.
+10:21:10 INFO  : 'after 3000' command is executed.
+10:21:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+10:21:13 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/design_1_wrapper.bit"
+10:21:13 INFO  : Context for 'APU' is selected.
+10:21:13 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/system.hdf'.
+10:21:13 INFO  : Context for 'APU' is selected.
+10:21:13 INFO  : 'ps7_init' command is executed.
+10:21:13 INFO  : 'ps7_post_config' command is executed.
+10:21:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:14 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/dma_rd/Debug/dma_rd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:21:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/dma_rd/Debug/dma_rd.elf
+----------------End of Script----------------
+
+10:21:14 INFO  : Memory regions updated for context APU
+10:21:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:14 INFO  : 'con' command is executed.
+10:21:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+10:21:14 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\02_cifar10_cnn\vivado\ex02_dma_rd\dma_rd.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_rd.elf_on_local.tcl'
+10:25:10 INFO  : Disconnected from the channel tcfchan#1.
+20:11:38 ERROR : Can not find SDx install location: 
+20:11:41 INFO  : Registering command handlers for SDK TCF services
+20:12:01 INFO  : Registering command handlers for SDK TCF services
+20:12:01 INFO  : Launching XSCT server: xsct.bat -interactive E:\Exercise\FPGA\FPGA_CNN\02_cifar10_cnn\vivado\ex02_dma_rd\dma_rd.sdk\temp_xsdb_launch_script.tcl
+20:12:02 INFO  : Validating SDSoC License
+20:12:03 INFO  : License available for SDSoC
+20:12:03 INFO  : Validating SDAccel License
+20:12:03 INFO  : License for SDAccel is unavailable
+20:12:04 INFO  : XSCT server has started successfully.
+20:12:07 INFO  : Successfully done setting XSCT server connection channel  
+20:12:07 INFO  : Successfully done setting SDK workspace  
+20:12:12 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1598615766403,  Project:1598580896608
+20:12:12 INFO  : Project hw_dma's source hardware specification located at E:\Exercise\FPGA\FPGA_CNN\02_cifar10_cnn\vivado\ex02_dma_rd\dma_rd.sdk\design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:12:38 INFO  : Copied contents of E:\Exercise\FPGA\FPGA_CNN\02_cifar10_cnn\vivado\ex02_dma_rd\dma_rd.sdk\design_1_wrapper.hdf into \hw_dma\system.hdf.
+20:12:43 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:12:47 INFO  : 
+20:12:48 INFO  : Updating hardware inferred compiler options for dma_rd.
+20:12:48 INFO  : Clearing existing target manager status.
+20:13:36 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
+20:14:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:14:26 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203368853A' is selected.
+20:14:26 INFO  : 'jtag frequency' command is executed.
+20:14:26 INFO  : Sourcing of 'E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/ps7_init.tcl' is done.
+20:14:26 INFO  : Context for 'APU' is selected.
+20:14:26 INFO  : System reset is completed.
+20:14:29 INFO  : 'after 3000' command is executed.
+20:14:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1' command is executed.
+20:14:32 INFO  : FPGA configured successfully with bitstream "E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/design_1_wrapper.bit"
+20:14:33 INFO  : Context for 'APU' is selected.
+20:14:33 INFO  : Hardware design information is loaded from 'E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/system.hdf'.
+20:14:33 INFO  : Context for 'APU' is selected.
+20:14:33 INFO  : 'ps7_init' command is executed.
+20:14:33 INFO  : 'ps7_post_config' command is executed.
+20:14:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:33 INFO  : The application 'E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/dma_rd/Debug/dma_rd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:14:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A" && level==0} -index 1
+fpga -file E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+loadhw E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/hw_dma/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+dow E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.sdk/dma_rd/Debug/dma_rd.elf
+----------------End of Script----------------
+
+20:14:33 INFO  : Memory regions updated for context APU
+20:14:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:33 INFO  : 'con' command is executed.
+20:14:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203368853A"} -index 0
+con
+----------------End of Script----------------
+
+20:14:33 INFO  : Launch script is exported to file 'E:\Exercise\FPGA\FPGA_CNN\02_cifar10_cnn\vivado\ex02_dma_rd\dma_rd.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_rd.elf_on_local.tcl'
+20:14:51 INFO  : Disconnected from the channel tcfchan#1.
+20:14:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

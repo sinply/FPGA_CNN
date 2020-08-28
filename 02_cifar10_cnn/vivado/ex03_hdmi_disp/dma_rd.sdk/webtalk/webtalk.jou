@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4_sdx (64-bit)
+# SW Build 1806307 on Thu Mar  9 15:24:31 MST 2017
+# 
+# Start of session at: Thu Aug 27 16:41:03 2020
+# Process ID: 7932
+# Current directory: E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex03_hdmi_disp/dma_rd.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex03_hdmi_disp/dma_rd.sdk/webtalk/webtalk.log
+# Journal file: E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex03_hdmi_disp/dma_rd.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

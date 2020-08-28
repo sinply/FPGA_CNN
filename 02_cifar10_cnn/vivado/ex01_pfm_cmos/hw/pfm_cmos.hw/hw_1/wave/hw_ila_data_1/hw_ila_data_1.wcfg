@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/pfm_cmos/hw/pfm_cmos.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3161fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="148"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="48" />
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_WREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_WREADY</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_WREADY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWADDR" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWADDR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_BRESP" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_BRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_BVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_BVALID</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_BVALID</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_BREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_BREADY</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_BREADY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARADDR" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARADDR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_RREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_RREADY</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_RREADY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_WVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_WVALID</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_WVALID</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARVALID</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARREADY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_RDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_RDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWVALID</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWREADY</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_RRESP" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_RRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_WDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_WDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_WSTRB" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_WSTRB[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_RVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_RVALID</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_RVALID</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARPROT" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARPROT[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWPROT" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWPROT[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWID" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWID[11:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWID[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_BID" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_BID[11:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_BID[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWLEN" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWLEN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWLEN[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_1</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_1</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWSIZE" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWBURST" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWBURST[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARID" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARID[11:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARID[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWLOCK" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWLOCK[1:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWLOCK[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARLEN" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARLEN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARLEN[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARSIZE" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARBURST" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARBURST[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARLOCK" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARLOCK[1:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARLOCK[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARCACHE" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARCACHE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARCACHE[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWCACHE" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWCACHE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWCACHE[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_2" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_2</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_2</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_3" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_3</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_3</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_4" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_4</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_4</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_5" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_5</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_5</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARQOS" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_ARQOS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_ARQOS[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_6" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_6</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_6</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_7" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_7</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_7</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWQOS" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_AWQOS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_AWQOS[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_RID" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_RID[11:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_RID[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_8" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_8</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_8</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_RLAST" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_RLAST</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_RLAST</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_9" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_9</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_9</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_WLAST" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_WLAST</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_WLAST</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/&lt;const0&gt;_10" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/&lt;const0&gt;_10</obj_property>
+      <obj_property name="ObjectShortName">&lt;const0&gt;_10</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="pfm_cmos_i/processing_system7_0_M_AXI_GP0_WID" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">pfm_cmos_i/processing_system7_0_M_AXI_GP0_WID[11:0]</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_M_AXI_GP0_WID[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4_sdx (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="17" Path="e:/exercise/fpga/fpga_cnn/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.tmp/pldma_rgbout_v1_0_project/pldma_rgbout_v1_0_project.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="6deb8bb81c094a4199206e213349092a"/>
+    <Option Name="Part" Val="xc7z020clg400-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/pldma_rgbout_v1_0_project.ip_user_files"/>
+    <Option Name="IPStaticSourceDir" Val="$PPRDIR/pldma_rgbout_v1_0_project.ip_user_files/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSANumComputeUnits" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="0"/>
+    <Option Name="WTModelSimExportSim" Val="0"/>
+    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTIesExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="0"/>
+    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="64"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/lib_pkg_v1_0/hdl/src/vhdl/lib_pkg.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="lib_pkg_v1_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/lib_srl_fifo_v1_0/hdl/src/vhdl/dynshreg_f.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="lib_srl_fifo_v1_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/lib_srl_fifo_v1_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="lib_srl_fifo_v1_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_rbu_f.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="lib_srl_fifo_v1_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_f.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="lib_srl_fifo_v1_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_wr_demux.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_strb_gen.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_rdmux.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_fifo.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_wr_status_cntl.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_wrdata_cntl.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_stbs_set.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_skid_buf.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_skid2mm_buf.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_rd_status_cntl.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_rddata_cntl.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_pcc.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_first_stb_offset.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_addr_cntl.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/ipcore/fifo_8192x64_16384x32.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/src/ila_0/ila_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/verilog/vga720p.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_wr_llink.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_reset.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_rd_wr_cntlr.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_rd_llink.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst_cmd_status.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_master_burst_v2_0/hdl/src/vhdl/axi_master_burst.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_master_burst_v2_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/xilinx/axi_lite_ipif_v3_0/hdl/src/vhdl/axi_lite_ipif.vhd">
+        <FileInfo>
+          <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/verilog/user_logic.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/vhdl/pldma_rgbout.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/component.xml">
+        <FileInfo SFType="IPXACT"/>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="pldma_rgbout"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../Exercise/FPGA/FPGA_CNN/02_cifar10_cnn/vivado/ex02_dma_rd/dma_rd.ipdefs/ip/xilinx.com_user_pldma_rgbout_1.0/hdl/vhdl/pldma_rgbout.vhd"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="pldma_rgbout"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+</Project>

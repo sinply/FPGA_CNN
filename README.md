@@ -1,8 +1,8 @@
 # FPGA_CNN
 
-* use fpga to create cnn， then realize some ai production
+* use hls to finish the frame of lenet5, realize to recognize handwritten numbers
 
-* use sdsoc software
+* try to use sdsoc software
 
 ## FPGA实现手写数字识别
 
